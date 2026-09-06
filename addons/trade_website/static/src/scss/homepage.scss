@@ -1,28 +1,7 @@
-/* Trade Website — homepage
- * Palette: navy #17324D / dark navy #0F2233 / blue gray #5F7487
- *          bg #F3F5F6 / white / copper accent #C9873D
- * Rules: no neon, no big gradients, no SaaS card feel, minimal radius.
+/* Trade Website — homepage only styles.
+ * Shared palette / buttons / headings live in site.scss.
+ * Product card styles live in products.scss.
  */
-
-.trade-home {
-    --trade-navy: #17324d;
-    --trade-navy-dark: #0f2233;
-    --trade-blue-gray: #5f7487;
-    --trade-bg: #f3f5f6;
-    --trade-white: #ffffff;
-    --trade-copper: #c9873d;
-    --trade-radius: 2px;
-
-    overflow-x: hidden;
-    color: var(--trade-navy-dark);
-    background: var(--trade-white);
-
-    h1,
-    h2,
-    h3 {
-        letter-spacing: -0.01em;
-    }
-}
 
 /* ------------------------------------------------------------------ */
 /* SECTION 1 — HERO                                                     */
@@ -31,14 +10,6 @@
 .trade-hero {
     padding: 88px 0 72px;
     background: linear-gradient(100deg, #f4f7f9 0%, #ffffff 58%, #edf2f5 100%);
-}
-
-.trade-eyebrow {
-    margin-bottom: 18px;
-    color: var(--trade-blue-gray);
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
 }
 
 .trade-hero-title {
@@ -61,61 +32,6 @@
     color: #425463;
     font-size: 1.12rem;
     line-height: 1.7;
-}
-
-.trade-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-    margin-top: 32px;
-}
-
-.trade-btn-primary {
-    padding: 13px 22px;
-    border: 1px solid var(--trade-copper);
-    border-radius: var(--trade-radius);
-    background: var(--trade-copper);
-    color: white;
-    font-weight: 650;
-
-    &:hover,
-    &:focus {
-        border-color: #ad7131;
-        background: #ad7131;
-        color: white;
-    }
-}
-
-.trade-btn-secondary {
-    padding: 13px 22px;
-    border: 1px solid #b9c3cb;
-    border-radius: var(--trade-radius);
-    background: transparent;
-    color: var(--trade-navy);
-    font-weight: 650;
-
-    &:hover,
-    &:focus {
-        border-color: var(--trade-navy);
-        background: var(--trade-navy);
-        color: white;
-    }
-}
-
-.trade-btn-ghost {
-    padding: 13px 22px;
-    border: 1px solid rgba(255, 255, 255, 0.45);
-    border-radius: var(--trade-radius);
-    background: transparent;
-    color: white;
-    font-weight: 650;
-
-    &:hover,
-    &:focus {
-        border-color: white;
-        background: white;
-        color: var(--trade-navy-dark);
-    }
 }
 
 /* Industrial collage — placeholders until real factory photos exist */
@@ -194,98 +110,6 @@
 }
 
 /* ------------------------------------------------------------------ */
-/* Shared section heading                                               */
-/* ------------------------------------------------------------------ */
-
-.trade-section {
-    padding: 78px 0;
-}
-
-.trade-section-heading {
-    margin-bottom: 32px;
-
-    h2 {
-        margin-bottom: 7px;
-        color: var(--trade-navy-dark);
-        font-size: 2rem;
-        font-weight: 700;
-    }
-
-    p {
-        margin: 0;
-        max-width: 720px;
-        color: var(--trade-blue-gray);
-        line-height: 1.6;
-    }
-}
-
-/* ------------------------------------------------------------------ */
-/* SECTION 3 — SELECTED PRODUCTS                                        */
-/* ------------------------------------------------------------------ */
-
-.trade-product-card {
-    height: 100%;
-    overflow: hidden;
-    border: 1px solid #dde4e8;
-    border-radius: var(--trade-radius);
-    background: white;
-}
-
-.trade-product-media {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 235px;
-    background: #f1f3f4;
-    color: #8b989f;
-    font-size: 0.8rem;
-    letter-spacing: 0.04em;
-}
-
-.trade-product-body {
-    padding: 20px;
-
-    h3 {
-        color: var(--trade-navy-dark);
-        font-size: 1.05rem;
-        font-weight: 700;
-    }
-
-    p {
-        min-height: 64px;
-        color: #667783;
-        font-size: 0.9rem;
-        line-height: 1.5;
-    }
-}
-
-.trade-tag {
-    display: inline-block;
-    padding: 5px 9px;
-    background: #edf2f5;
-    color: var(--trade-navy);
-    font-size: 0.72rem;
-    font-weight: 650;
-}
-
-.trade-link {
-    display: inline-block;
-    margin-top: 14px;
-    color: var(--trade-navy);
-    font-size: 0.85rem;
-    font-weight: 650;
-    text-decoration: none;
-
-    &::after {
-        content: " \2192";
-    }
-
-    &:hover {
-        color: var(--trade-copper);
-    }
-}
-
-/* ------------------------------------------------------------------ */
 /* SECTION 4 — MANUFACTURING CONTROL (dark navy)                        */
 /* ------------------------------------------------------------------ */
 
@@ -351,21 +175,13 @@
 .trade-capability-card {
     height: 100%;
     overflow: hidden;
-    border: 1px solid #dde4e8;
+    border: 1px solid var(--trade-line);
     border-radius: var(--trade-radius);
     background: white;
 }
 
 .trade-capability-media {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 150px;
-    background: linear-gradient(160deg, #cdd7dd, #95a5b1);
-    color: white;
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
 }
 
 .trade-capability-body {
@@ -380,7 +196,7 @@
 
     p {
         margin: 0;
-        color: #667783;
+        color: var(--trade-muted);
         font-size: 0.88rem;
         line-height: 1.55;
     }
@@ -435,7 +251,7 @@
 
 .trade-step {
     padding-top: 16px;
-    border-top: 2px solid #dde4e8;
+    border-top: 2px solid var(--trade-line);
 }
 
 .trade-step-index {
@@ -454,43 +270,9 @@
 }
 
 /* ------------------------------------------------------------------ */
-/* SECTION 8 — CTA                                                      */
-/* ------------------------------------------------------------------ */
-
-.trade-cta {
-    padding: 76px 0;
-    background: var(--trade-navy-dark);
-}
-
-.trade-cta-inner {
-    max-width: 760px;
-
-    h2 {
-        margin-bottom: 16px;
-        color: white;
-        font-size: clamp(1.7rem, 3vw, 2.4rem);
-        font-weight: 700;
-        line-height: 1.2;
-    }
-
-    p {
-        max-width: 620px;
-        margin: 0;
-        color: #b3c2cd;
-        font-size: 1rem;
-        line-height: 1.7;
-    }
-}
-
-.trade-actions-center {
-    margin-top: 28px;
-}
-
-/* ------------------------------------------------------------------ */
 /* Responsive                                                           */
 /* ------------------------------------------------------------------ */
 
-/* Laptop / tablet: hero collapses to one column under 992px */
 @media (max-width: 991.98px) {
     .trade-hero {
         padding-top: 64px;
@@ -499,7 +281,43 @@
     .trade-hero-media {
         grid-template-rows: repeat(2, 150px);
     }
+}
 
+@media (max-width: 575.98px) {
+    .trade-hero {
+        padding: 52px 0;
+    }
+
+    .trade-hero-title {
+        font-size: 2.6rem;
+    }
+
+    .trade-hero-copy {
+        font-size: 1.05rem;
+    }
+
+    .trade-hero-media {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .trade-media-main {
+        grid-row: auto;
+        min-height: 260px;
+    }
+
+    .trade-media-small {
+        min-height: 130px;
+    }
+
+    .trade-control-item {
+        min-height: 0;
+        padding: 14px 0;
+    }
+}
+
+/* Sections 4–7 responsive */
+@media (max-width: 991.98px) {
     .trade-manufacturing {
         padding: 64px 0;
     }
@@ -518,52 +336,9 @@
     .trade-compliance-grid {
         grid-template-columns: 1fr;
     }
-
-    .trade-section-heading h2 {
-        font-size: 1.7rem;
-    }
 }
 
-/* Mobile (390px) */
 @media (max-width: 575.98px) {
-    .trade-hero {
-        padding: 52px 0;
-    }
-
-    .trade-hero-title {
-        font-size: 2.6rem;
-    }
-
-    .trade-hero-copy {
-        font-size: 1.05rem;
-    }
-
-    .trade-actions {
-        flex-direction: column;
-
-        .btn {
-            width: 100%;
-        }
-    }
-
-    .trade-hero-media {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-
-    .trade-media-main {
-        grid-row: auto;
-        min-height: 260px;
-    }
-
-    .trade-media-small {
-        min-height: 130px;
-    }
-
-    .trade-section {
-        padding: 56px 0;
-    }
-
     .trade-manufacturing {
         padding: 56px 0;
     }
@@ -585,13 +360,5 @@
 
     .trade-step-title {
         margin-top: 0;
-    }
-
-    .trade-product-body p {
-        min-height: 0;
-    }
-
-    .trade-cta {
-        padding: 56px 0;
     }
 }

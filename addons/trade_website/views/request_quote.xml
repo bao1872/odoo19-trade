@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================================================= -->
+    <!-- /request-quote — official website form → crm.lead              -->
+    <!-- No custom controller: /website/form/crm.lead                   -->
+    <!-- Custom (non-whitelisted) fields land in crm.lead.description   -->
+    <!-- ============================================================= -->
+    <template id="page_request_quote" name="Request a Quote">
+
+        <t t-call="website.layout">
+
+            <t t-set="additional_title">Request a Quote</t>
+
+            <div id="wrap" class="oe_structure trade-site trade-page-quote">
+
+                <section class="trade-page-hero">
+                    <div class="container">
+                        <div class="trade-eyebrow">REQUEST A QUOTE</div>
+                        <h1 class="trade-page-title">
+                            Request a Quote
+                        </h1>
+                        <p class="trade-page-lead">
+                            Tell us the product, quantity and customization
+                            requirements. We will review product, factory and
+                            customization options.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="trade-form-wrap">
+                    <div class="container">
+                        <div class="row g-4">
+
+                            <div class="col-lg-8">
+
+                                <form action="/website/form/crm.lead"
+                                      method="post"
+                                      enctype="multipart/form-data"
+                                      class="o_mark_required trade-form"
+                                      data-model_name="crm.lead"
+                                      data-success-mode="redirect"
+                                      data-success-page="/request-quote-thank-you">
+
+                                    <input type="hidden"
+                                           name="csrf_token"
+                                           t-att-value="request.csrf_token()"/>
+
+                                    <input type="hidden"
+                                           name="name"
+                                           value="Website Request a Quote"/>
+
+                                    <div class="row">
+
+                                        <div class="col-md-6">
+                                            <div class="trade-form-group">
+                                                <label for="contact_name">
+                                                    Name
+                                                    <span class="trade-form-required">*</span>
+                                                </label>
+                                                <input type="text"
+                                                       id="contact_name"
+                                                       name="contact_name"
+                                                       required=""/>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="trade-form-group">
+                                                <label for="email_from">
+                                                    Business Email
+                                                    <span class="trade-form-required">*</span>
+                                                </label>
+                                                <input type="email"
+                                                       id="email_from"
+                                                       name="email_from"
+                                                       required=""/>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="trade-form-group">
+                                                <label for="partner_name">
+                                                    Company
+                                                </label>
+                                                <input type="text"
+                                                       id="partner_name"
+                                                       name="partner_name"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="trade-form-group">
+                                                <label for="phone">Phone</label>
+                                                <input type="tel"
+                                                       id="phone"
+                                                       name="phone"/>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="trade-form-group">
+                                        <label for="product_interest">
+                                            Product Interest
+                                            <span class="trade-form-required">*</span>
+                                        </label>
+                                        <select id="product_interest"
+                                                name="Product Interest"
+                                                required="">
+                                            <option value="">Select a product</option>
+                                            <option value="Cordless Air Duster">
+                                                Cordless Air Duster
+                                            </option>
+                                            <option value="Instant Print Camera">
+                                                Instant Print Camera
+                                            </option>
+                                            <option value="Ultrasonic Cutter">
+                                                Ultrasonic Cutter
+                                            </option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="trade-form-group">
+                                                <label for="estimated_quantity">
+                                                    Estimated Quantity
+                                                </label>
+                                                <input type="text"
+                                                       id="estimated_quantity"
+                                                       name="Estimated Quantity"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="trade-form-group">
+                                                <label for="destination_country">
+                                                    Destination Country
+                                                </label>
+                                                <input type="text"
+                                                       id="destination_country"
+                                                       name="Destination Country"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="trade-form-group">
+                                        <label>Customization</label>
+                                        <div class="trade-form-choices">
+                                            <label class="trade-form-choice">
+                                                <input type="checkbox"
+                                                       name="Customization Logo"
+                                                       value="Yes"/>
+                                                Logo
+                                            </label>
+                                            <label class="trade-form-choice">
+                                                <input type="checkbox"
+                                                       name="Customization Packaging"
+                                                       value="Yes"/>
+                                                Packaging
+                                            </label>
+                                            <label class="trade-form-choice">
+                                                <input type="checkbox"
+                                                       name="Customization Color"
+                                                       value="Yes"/>
+                                                Color
+                                            </label>
+                                            <label class="trade-form-choice">
+                                                <input type="checkbox"
+                                                       name="Customization Other"
+                                                       value="Yes"/>
+                                                Other
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="trade-form-group">
+                                        <label for="target_delivery_date">
+                                            Target Delivery Date
+                                        </label>
+                                        <input type="date"
+                                               id="target_delivery_date"
+                                               name="Target Delivery Date"/>
+                                    </div>
+
+                                    <div class="trade-form-group">
+                                        <label for="project_details">
+                                            Project Details
+                                            <span class="trade-form-required">*</span>
+                                        </label>
+                                        <textarea id="project_details"
+                                                  name="Project Details"
+                                                  required=""/>
+                                    </div>
+
+                                    <button type="submit"
+                                            class="btn trade-btn-primary">
+                                        Submit Request
+                                    </button>
+
+                                    <p class="trade-form-note">
+                                        We review product, factory and
+                                        customization options before
+                                        responding. No obligation.
+                                    </p>
+
+                                </form>
+
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="trade-info-item">
+                                    <strong>What Happens Next</strong>
+                                    <span>
+                                        We review your request, confirm
+                                        product and factory options, and
+                                        respond with next steps.
+                                    </span>
+                                </div>
+                                <div class="trade-info-item" style="margin-top:12px">
+                                    <strong>Products</strong>
+                                    <span>
+                                        <a href="/products/cordless-air-duster">Cordless Air Duster</a><br/>
+                                        <a href="/products/instant-print-camera">Instant Print Camera</a><br/>
+                                        <a href="/products/ultrasonic-cutter">Ultrasonic Cutter</a>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </t>
+
+    </template>
+
+    <record id="page_request_quote_page" model="website.page">
+        <field name="name">Request a Quote</field>
+        <field name="url">/request-quote</field>
+        <field name="is_published" eval="True"/>
+        <field name="view_id" ref="page_request_quote"/>
+    </record>
+
+
+    <!-- ============================================================= -->
+    <!-- /request-quote-thank-you                                       -->
+    <!-- ============================================================= -->
+    <template id="page_request_quote_thanks" name="Request a Quote - Thank You">
+
+        <t t-call="website.layout">
+
+            <t t-set="additional_title">Thank You</t>
+
+            <div id="wrap" class="oe_structure trade-site trade-page-thanks">
+
+                <section class="trade-thanks">
+                    <div class="container">
+                        <h1>Thank You</h1>
+                        <p>
+                            Your request has been received. We will review
+                            product, factory and customization options and
+                            get back to you.
+                        </p>
+                        <div class="trade-actions trade-actions-center"
+                             style="justify-content:center">
+                            <a href="/products" class="btn trade-btn-secondary">
+                                Back to Products
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </t>
+
+    </template>
+
+    <record id="page_request_quote_thanks_page" model="website.page">
+        <field name="name">Request a Quote - Thank You</field>
+        <field name="url">/request-quote-thank-you</field>
+        <field name="is_published" eval="True"/>
+        <field name="view_id" ref="page_request_quote_thanks"/>
+    </record>
+
+</odoo>

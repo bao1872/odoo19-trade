@@ -14,14 +14,14 @@
 
         <xpath expr="//div[@id='wrap']" position="replace">
 
-            <div id="wrap" class="oe_structure trade-home">
+            <div id="wrap" class="oe_structure trade-site trade-home">
 
                 <!-- ==================================================== -->
                 <!-- SECTION 1 — HERO                                     -->
                 <!-- ==================================================== -->
                 <section class="trade-hero">
                     <div class="container">
-                        <div class="row align-items-center g-5">
+                        <div class="row align-items-center g-4">
 
                             <div class="col-lg-6">
 
@@ -153,84 +153,75 @@
 
                         <div class="row g-4">
 
-                            <div class="col-md-6 col-xl-3">
+                            <div class="col-md-6 col-lg-4">
                                 <article class="trade-product-card">
-                                    <div class="trade-product-media">
+                                    <div class="trade-product-media trade-placeholder-flat">
                                         Product Image
                                     </div>
                                     <div class="trade-product-body">
                                         <h3>Cordless Air Duster</h3>
                                         <p>
-                                            Portable cleaning solution for electronics,
-                                            automotive and workspaces.
+                                            Reusable air cleaning solution for
+                                            electronics, automotive and
+                                            workspace applications.
                                         </p>
-                                        <span class="trade-tag">OEM Available</span>
-                                        <a class="trade-link" href="/contactus">
-                                            Learn More
+                                        <span class="trade-tag">OEM / Private Label</span>
+                                        <a class="trade-link"
+                                           href="/products/cordless-air-duster">
+                                            View Product
                                         </a>
                                     </div>
                                 </article>
                             </div>
 
-                            <div class="col-md-6 col-xl-3">
+                            <div class="col-md-6 col-lg-4">
                                 <article class="trade-product-card">
-                                    <div class="trade-product-media">
+                                    <div class="trade-product-media trade-placeholder-flat">
                                         Product Image
                                     </div>
                                     <div class="trade-product-body">
-                                        <h3>Mini Thumb Camera</h3>
+                                        <h3>Instant Print Camera</h3>
                                         <p>
-                                            Compact camera platform for portable
-                                            recording applications.
+                                            Compact instant-print platform for
+                                            gift, lifestyle and private-label
+                                            programs.
                                         </p>
                                         <span class="trade-tag">Private Label</span>
-                                        <a class="trade-link" href="/contactus">
-                                            Learn More
+                                        <a class="trade-link"
+                                           href="/products/instant-print-camera">
+                                            View Product
                                         </a>
                                     </div>
                                 </article>
                             </div>
 
-                            <div class="col-md-6 col-xl-3">
+                            <div class="col-md-6 col-lg-4">
                                 <article class="trade-product-card">
-                                    <div class="trade-product-media">
+                                    <div class="trade-product-media trade-placeholder-flat">
                                         Product Image
                                     </div>
                                     <div class="trade-product-body">
-                                        <h3>Temperature-Control Mug</h3>
+                                        <h3>Ultrasonic Cutter</h3>
                                         <p>
-                                            Temperature-managed drinkware for
-                                            home and office use.
-                                        </p>
-                                        <span class="trade-tag">
-                                            Specifications Available
-                                        </span>
-                                        <a class="trade-link" href="/contactus">
-                                            Learn More
-                                        </a>
-                                    </div>
-                                </article>
-                            </div>
-
-                            <div class="col-md-6 col-xl-3">
-                                <article class="trade-product-card">
-                                    <div class="trade-product-media">
-                                        Product Image
-                                    </div>
-                                    <div class="trade-product-body">
-                                        <h3>Star Projector</h3>
-                                        <p>
-                                            Compact ambient lighting solution
-                                            with customization options.
+                                            Precision cutting tool platform for
+                                            workshop, craft and light
+                                            fabrication applications.
                                         </p>
                                         <span class="trade-tag">OEM Available</span>
-                                        <a class="trade-link" href="/contactus">
-                                            Learn More
+                                        <a class="trade-link"
+                                           href="/products/ultrasonic-cutter">
+                                            View Product
                                         </a>
                                     </div>
                                 </article>
                             </div>
 
+                        </div>
+
+                        <div class="trade-section-footer">
+                            <a class="trade-link" href="/products">
+                                View All Products
+                            </a>
                         </div>
                     </div>
                 </section>
@@ -242,7 +233,7 @@
                 <section id="manufacturing" class="trade-manufacturing">
 
                     <div class="container">
-                        <div class="row g-5 align-items-center">
+                        <div class="row g-4 align-items-center">
 
                             <div class="col-lg-5">
                                 <h2 class="trade-manufacturing-title">
@@ -255,6 +246,10 @@
                                     across factory, quality, customization and
                                     delivery.
                                 </p>
+                                <a class="trade-link trade-link-light"
+                                   href="/manufacturing">
+                                    How We Control the Factory Side
+                                </a>
                             </div>
 
                             <div class="col-lg-7">
@@ -402,6 +397,9 @@
                                     documentation before presenting compliance
                                     claims to buyers.
                                 </p>
+                                <a class="trade-link" href="/quality">
+                                    See Our Quality Checkpoints
+                                </a>
                             </div>
                         </div>
 

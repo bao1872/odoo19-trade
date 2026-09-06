@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Lightweight footer branding.
+         Applied on top of the official footer (website.footer_custom) by
+         priority, navbar/header structure untouched.
+    -->
+    <template id="trade_footer"
+              inherit_id="website.layout"
+              name="Trade Footer"
+              priority="99">
+
+        <xpath expr="//div[@id='footer']" position="replace">
+
+            <div id="footer"
+                 class="oe_structure oe_structure_solo trade-footer"
+                 t-ignore="true"
+                 t-if="not no_footer">
+
+                <div class="container">
+                    <div class="row g-4">
+
+                        <div class="col-lg-4">
+                            <div class="trade-footer-brand">
+                                China Manufacturing.<br/>
+                                U.S. Market Execution.
+                            </div>
+                            <p class="trade-footer-tagline">
+                                Sourcing, validation and manufacturing
+                                coordination between selected Chinese
+                                factories and U.S. buyers.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-2 col-6">
+                            <h5>PRODUCTS</h5>
+                            <ul>
+                                <li><a href="/products">All Products</a></li>
+                                <li>
+                                    <a href="/products/cordless-air-duster">Air Duster</a>
+                                </li>
+                                <li>
+                                    <a href="/products/instant-print-camera">Instant Print Camera</a>
+                                </li>
+                                <li>
+                                    <a href="/products/ultrasonic-cutter">Ultrasonic Cutter</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-6">
+                            <h5>CAPABILITIES</h5>
+                            <ul>
+                                <li><a href="/manufacturing">Manufacturing</a></li>
+                                <li><a href="/quality">Quality</a></li>
+                                <li><a href="/our-advantage">Our Advantage</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-6">
+                            <h5>COMPANY</h5>
+                            <ul>
+                                <li><a href="/about-us">About Us</a></li>
+                                <li><a href="/contactus">Contact</a></li>
+                                <li><a href="/request-quote">Request a Quote</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="trade-footer-bottom">
+                        China Manufacturing. U.S. Market Execution.
+                    </div>
+                </div>
+
+            </div>
+
+        </xpath>
+
+    </template>
+
+</odoo>

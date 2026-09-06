@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================================================= -->
+    <!-- /manufacturing                                                 -->
+    <!-- ============================================================= -->
+    <template id="page_manufacturing" name="Manufacturing">
+
+        <t t-call="website.layout">
+
+            <t t-set="additional_title">Manufacturing</t>
+
+            <div id="wrap" class="oe_structure trade-site trade-page-manufacturing">
+
+                <section class="trade-page-hero">
+                    <div class="container">
+                        <div class="trade-eyebrow">MANUFACTURING</div>
+                        <h1 class="trade-page-title">
+                            China Manufacturing.<br/>
+                            <span>Coordinated From Specification to Shipment.</span>
+                        </h1>
+                        <p class="trade-page-lead">
+                            How we control the factory side: a defined
+                            sequence from product specification to shipment
+                            preparation.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="trade-section">
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>How We Control the Factory Side</h2>
+                            <p>
+                                Each step is coordinated with the
+                                manufacturing partner and confirmed before
+                                the next step starts.
+                            </p>
+                        </div>
+
+                        <div class="trade-flow-grid">
+
+                            <div class="trade-flow-item">
+                                <span class="trade-flow-index">01</span>
+                                <strong>Specification Alignment</strong>
+                                <span>
+                                    Product specification, materials and
+                                    requirements confirmed with the factory.
+                                </span>
+                            </div>
+
+                            <div class="trade-flow-item">
+                                <span class="trade-flow-index">02</span>
+                                <strong>Sample Validation</strong>
+                                <span>
+                                    Samples reviewed against the agreed
+                                    specification before production.
+                                </span>
+                            </div>
+
+                            <div class="trade-flow-item">
+                                <span class="trade-flow-index">03</span>
+                                <strong>Production Scheduling</strong>
+                                <span>
+                                    Production slots, quantities and timing
+                                    coordinated with the factory.
+                                </span>
+                            </div>
+
+                            <div class="trade-flow-item">
+                                <span class="trade-flow-index">04</span>
+                                <strong>Quality Checkpoints</strong>
+                                <span>
+                                    Defined inspection points during and
+                                    after production.
+                                </span>
+                            </div>
+
+                            <div class="trade-flow-item">
+                                <span class="trade-flow-index">05</span>
+                                <strong>Packaging Confirmation</strong>
+                                <span>
+                                    Packaging, labeling and documentation
+                                    confirmed before packing.
+                                </span>
+                            </div>
+
+                            <div class="trade-flow-item">
+                                <span class="trade-flow-index">06</span>
+                                <strong>Shipping Preparation</strong>
+                                <span>
+                                    Carton data and shipment readiness
+                                    confirmed before handover.
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="trade-section trade-capabilities">
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>Factory-Side Visibility</h2>
+                            <p>
+                                Information we track and confirm with the
+                                manufacturing partner.
+                            </p>
+                        </div>
+
+                        <div class="trade-visibility-grid">
+                            <div class="trade-visibility-item">Product</div>
+                            <div class="trade-visibility-item">Packaging</div>
+                            <div class="trade-visibility-item">Schedule</div>
+                            <div class="trade-visibility-item">QC</div>
+                            <div class="trade-visibility-item">Documentation</div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="trade-cta">
+                    <div class="container">
+                        <div class="trade-cta-inner">
+                            <h2>Discuss Your Project</h2>
+                            <p>
+                                Share your product, target specification and
+                                quantity. We will review factory and
+                                production options.
+                            </p>
+                            <div class="trade-actions trade-actions-center">
+                                <a href="/request-quote"
+                                   class="btn trade-btn-primary">
+                                    Request a Quote
+                                </a>
+                                <a href="/contactus"
+                                   class="btn trade-btn-ghost">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </t>
+
+    </template>
+
+    <record id="page_manufacturing_page" model="website.page">
+        <field name="name">Manufacturing</field>
+        <field name="url">/manufacturing</field>
+        <field name="is_published" eval="True"/>
+        <field name="view_id" ref="page_manufacturing"/>
+    </record>
+
+
+    <!-- ============================================================= -->
+    <!-- /quality                                                       -->
+    <!-- ============================================================= -->
+    <template id="page_quality" name="Quality">
+
+        <t t-call="website.layout">
+
+            <t t-set="additional_title">Quality</t>
+
+            <div id="wrap" class="oe_structure trade-site trade-page-quality">
+
+                <section class="trade-page-hero">
+                    <div class="container">
+                        <div class="trade-eyebrow">QUALITY</div>
+                        <h1 class="trade-page-title">
+                            Defined Checkpoints.<br/>
+                            <span>Documented Requirements.</span>
+                        </h1>
+                        <p class="trade-page-lead">
+                            Product and packaging requirements are defined
+                            before production and reviewed at defined
+                            checkpoints.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="trade-section">
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>Checkpoint Sequence</h2>
+                            <p>
+                                Four stages where requirements are reviewed
+                                and recorded.
+                            </p>
+                        </div>
+
+                        <div class="trade-check-grid">
+
+                            <div class="trade-check-item">
+                                <span class="trade-check-index">STAGE 01</span>
+                                <strong>Sample Review</strong>
+                                <span>
+                                    Sample checked against the agreed product
+                                    specification.
+                                </span>
+                            </div>
+
+                            <div class="trade-check-item">
+                                <span class="trade-check-index">STAGE 02</span>
+                                <strong>Pre-production Confirmation</strong>
+                                <span>
+                                    Specification, materials and packaging
+                                    confirmed before mass production.
+                                </span>
+                            </div>
+
+                            <div class="trade-check-item">
+                                <span class="trade-check-index">STAGE 03</span>
+                                <strong>Inspection Checkpoints</strong>
+                                <span>
+                                    Defined inspection points during
+                                    production and before packing.
+                                </span>
+                            </div>
+
+                            <div class="trade-check-item">
+                                <span class="trade-check-index">STAGE 04</span>
+                                <strong>Pre-shipment Review</strong>
+                                <span>
+                                    Quantity, packaging, labeling and
+                                    carton data reviewed before shipment.
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="trade-section trade-capabilities">
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>What We Check</h2>
+                            <p>
+                                Items covered at the defined checkpoints.
+                            </p>
+                        </div>
+
+                        <ul class="trade-check-list">
+                            <li>Product specification</li>
+                            <li>Function</li>
+                            <li>Appearance</li>
+                            <li>Packaging</li>
+                            <li>Quantity</li>
+                            <li>Labeling</li>
+                            <li>Carton information</li>
+                            <li>Required documentation</li>
+                        </ul>
+
+                    </div>
+                </section>
+
+                <section class="trade-cta">
+                    <div class="container">
+                        <div class="trade-cta-inner">
+                            <h2>Define Your Quality Requirements</h2>
+                            <p>
+                                Tell us the checks and documentation your
+                                program requires.
+                            </p>
+                            <div class="trade-actions trade-actions-center">
+                                <a href="/request-quote"
+                                   class="btn trade-btn-primary">
+                                    Request a Quote
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </t>
+
+    </template>
+
+    <record id="page_quality_page" model="website.page">
+        <field name="name">Quality</field>
+        <field name="url">/quality</field>
+        <field name="is_published" eval="True"/>
+        <field name="view_id" ref="page_quality"/>
+    </record>
+
+
+    <!-- ============================================================= -->
+    <!-- /our-advantage                                                 -->
+    <!-- ============================================================= -->
+    <template id="page_our_advantage" name="Our Advantage">
+
+        <t t-call="website.layout">
+
+            <t t-set="additional_title">Our Advantage</t>
+
+            <div id="wrap" class="oe_structure trade-site trade-page-advantage">
+
+                <section class="trade-page-hero">
+                    <div class="container">
+                        <div class="trade-eyebrow">OUR ADVANTAGE</div>
+                        <h1 class="trade-page-title">
+                            A Defined Role<br/>
+                            <span>Between Buyer and Factory.</span>
+                        </h1>
+                        <p class="trade-page-lead">
+                            We focus on product selection, factory
+                            coordination and destination market readiness.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="trade-section">
+                    <div class="container">
+
+                        <div class="trade-advantage-grid">
+
+                            <div class="trade-advantage-item">
+                                <h3>Market-Side Product Selection</h3>
+                                <p>
+                                    We do not simply publish factory
+                                    catalogs. Products are selected with the
+                                    destination market in mind.
+                                </p>
+                            </div>
+
+                            <div class="trade-advantage-item">
+                                <h3>Factory-Side Coordination</h3>
+                                <p>
+                                    Specifications, samples, customization
+                                    and production are coordinated directly
+                                    with manufacturing partners.
+                                </p>
+                            </div>
+
+                            <div class="trade-advantage-item">
+                                <h3>U.S. Market Readiness</h3>
+                                <p>
+                                    Product, packaging, documentation and
+                                    logistics requirements are reviewed with
+                                    the destination market in mind.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="trade-section trade-not">
+                    <div class="container">
+
+                        <div class="trade-section-heading trade-section-light">
+                            <h2>What We Are Not</h2>
+                        </div>
+
+                        <ul class="trade-not-list">
+                            <li>
+                                <strong>Not a mass product directory.</strong>
+                            </li>
+                            <li>
+                                <strong>Not a dropshipping marketplace.</strong>
+                            </li>
+                            <li>
+                                <strong>
+                                    Not an anonymous sourcing middleman.
+                                </strong>
+                            </li>
+                        </ul>
+
+                    </div>
+                </section>
+
+                <section class="trade-cta">
+                    <div class="container">
+                        <div class="trade-cta-inner">
+                            <h2>Talk Through Your Sourcing Program</h2>
+                            <p>
+                                Share your product scope and target market.
+                                We will review how we can support it.
+                            </p>
+                            <div class="trade-actions trade-actions-center">
+                                <a href="/request-quote"
+                                   class="btn trade-btn-primary">
+                                    Request a Quote
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </t>
+
+    </template>
+
+    <record id="page_our_advantage_page" model="website.page">
+        <field name="name">Our Advantage</field>
+        <field name="url">/our-advantage</field>
+        <field name="is_published" eval="True"/>
+        <field name="view_id" ref="page_our_advantage"/>
+    </record>
+
+
+    <!-- ============================================================= -->
+    <!-- /about-us                                                      -->
+    <!-- ============================================================= -->
+    <template id="page_about_us" name="About Us">
+
+        <t t-call="website.layout">
+
+            <t t-set="additional_title">About Us</t>
+
+            <div id="wrap" class="oe_structure trade-site trade-page-about">
+
+                <section class="trade-page-hero">
+                    <div class="container">
+                        <div class="trade-eyebrow">ABOUT US</div>
+                        <h1 class="trade-page-title">
+                            Connecting Chinese Manufacturing<br/>
+                            <span>With U.S. Market Opportunities.</span>
+                        </h1>
+                        <p class="trade-page-lead">
+                            We work between buyers and factories on product
+                            sourcing, validation and manufacturing
+                            coordination.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="trade-section">
+                    <div class="container">
+
+                        <div class="trade-about-grid">
+
+                            <div class="trade-about-block">
+                                <h3>What We Do</h3>
+                                <p>
+                                    Sourcing, validation, customization and
+                                    manufacturing coordination for selected
+                                    products.
+                                </p>
+                            </div>
+
+                            <div class="trade-about-block">
+                                <h3>How We Work</h3>
+                                <p>
+                                    Selected products, not catalog dumping.
+                                    Each product is reviewed before it is
+                                    presented.
+                                </p>
+                            </div>
+
+                            <div class="trade-about-block">
+                                <h3>Who We Work With</h3>
+                                <ul>
+                                    <li>Brands</li>
+                                    <li>Distributors</li>
+                                    <li>Specialty retailers</li>
+                                    <li>Product companies</li>
+                                </ul>
+                            </div>
+
+                            <div class="trade-about-block">
+                                <h3>Our Approach</h3>
+                                <p>
+                                    Product, factory and documentation
+                                    requirements are aligned before
+                                    production starts.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="trade-section trade-capabilities">
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>Our Role</h2>
+                        </div>
+
+                        <div class="trade-role">
+                            We operate between the buyer and the factory,
+                            managing the information and execution that often
+                            gets lost between the two.
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="trade-cta">
+                    <div class="container">
+                        <div class="trade-cta-inner">
+                            <h2>Start a Conversation</h2>
+                            <p>
+                                Tell us what you are sourcing and which
+                                market you are targeting.
+                            </p>
+                            <div class="trade-actions trade-actions-center">
+                                <a href="/request-quote"
+                                   class="btn trade-btn-primary">
+                                    Request a Quote
+                                </a>
+                                <a href="/contactus"
+                                   class="btn trade-btn-ghost">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </t>
+
+    </template>
+
+    <record id="page_about_us_page" model="website.page">
+        <field name="name">About Us</field>
+        <field name="url">/about-us</field>
+        <field name="is_published" eval="True"/>
+        <field name="view_id" ref="page_about_us"/>
+    </record>
+
+</odoo>

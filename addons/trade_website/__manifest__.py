@@ -5,28 +5,40 @@
 Trade Website
 =============
 
-Official website UI for the trading business.
+Public B2B marketing website for the trading business.
 
-Scope of this module:
-- public website homepage (QWeb + SCSS)
+Scope:
+- public B2B marketing website
+- homepage
+- product index / product detail pages
+- manufacturing / quality / company pages
+- request a quote form (official website form -> crm.lead)
 
 Out of scope:
-- product / eCommerce logic
-- CRM / sales automation
-- custom models and controllers
+- eCommerce checkout
+- dynamic product catalog
+- custom product model
+- sales/purchase customization
     """,
-    "author": "My Company",
-    "website": "https://www.yourcompany.com",
+    "author": "Trade Website",
     "category": "Website/Website",
     "version": "19.0.1.0.0",
     "license": "LGPL-3",
-    "depends": ["website"],
+    "depends": ["website", "website_crm"],
     "data": [
         "views/homepage.xml",
+        "views/products.xml",
+        "views/company_pages.xml",
+        "views/request_quote.xml",
+        "views/navigation.xml",
+        "views/footer.xml",
     ],
     "assets": {
         "web.assets_frontend": [
+            "trade_website/static/src/scss/site.scss",
             "trade_website/static/src/scss/homepage.scss",
+            "trade_website/static/src/scss/products.scss",
+            "trade_website/static/src/scss/pages.scss",
         ],
     },
     "installable": True,

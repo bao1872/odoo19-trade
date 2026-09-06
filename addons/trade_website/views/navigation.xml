@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Official website.menu / website.main_menu — no navbar rewrite -->
+
+    <record id="menu_products" model="website.menu">
+        <field name="name">Products</field>
+        <field name="url">/products</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">20</field>
+    </record>
+
+    <record id="menu_manufacturing" model="website.menu">
+        <field name="name">Manufacturing</field>
+        <field name="url">/manufacturing</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">30</field>
+    </record>
+
+    <record id="menu_quality" model="website.menu">
+        <field name="name">Quality</field>
+        <field name="url">/quality</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">40</field>
+    </record>
+
+    <record id="menu_our_advantage" model="website.menu">
+        <field name="name">Our Advantage</field>
+        <field name="url">/our-advantage</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">50</field>
+    </record>
+
+    <record id="menu_about_us" model="website.menu">
+        <field name="name">About Us</field>
+        <field name="url">/about-us</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">60</field>
+    </record>
+
+    <record id="website.menu_contactus" model="website.menu">
+        <field name="name">Contact</field>
+        <field name="sequence" type="int">70</field>
+    </record>
+
+    <record id="menu_request_quote" model="website.menu">
+        <field name="name">Request a Quote</field>
+        <field name="url">/request-quote</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">80</field>
+    </record>
+
+</odoo>

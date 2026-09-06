@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================================================= -->
+    <!-- /products — product index                                      -->
+    <!-- ============================================================= -->
+    <template id="products_index" name="Selected Products">
+
+        <t t-call="website.layout">
+
+            <t t-set="additional_title">Selected Products</t>
+
+            <div id="wrap" class="oe_structure trade-site trade-products-index">
+
+                <section class="trade-page-hero">
+                    <div class="container">
+                        <div class="trade-eyebrow">PRODUCTS</div>
+                        <h1 class="trade-page-title">Selected Products</h1>
+                        <p class="trade-page-lead">
+                            Products selected for U.S. market evaluation and
+                            B2B sourcing programs.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="trade-section">
+                    <div class="container">
+                        <div class="row g-4">
+
+                            <div class="col-md-6 col-lg-4">
+                                <article class="trade-product-card">
+                                    <div class="trade-product-media trade-placeholder-flat">
+                                        Product Image
+                                    </div>
+                                    <div class="trade-product-body">
+                                        <h3>Cordless Air Duster</h3>
+                                        <p>
+                                            Reusable air cleaning solution for
+                                            electronics, automotive and
+                                            workspace applications.
+                                        </p>
+                                        <span class="trade-tag">
+                                            OEM / Private Label
+                                        </span>
+                                        <a class="trade-link"
+                                           href="/products/cordless-air-duster">
+                                            View Product
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <article class="trade-product-card">
+                                    <div class="trade-product-media trade-placeholder-flat">
+                                        Product Image
+                                    </div>
+                                    <div class="trade-product-body">
+                                        <h3>Instant Print Camera</h3>
+                                        <p>
+                                            Compact instant-print platform for
+                                            gift, lifestyle and private-label
+                                            programs.
+                                        </p>
+                                        <span class="trade-tag">Private Label</span>
+                                        <a class="trade-link"
+                                           href="/products/instant-print-camera">
+                                            View Product
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <article class="trade-product-card">
+                                    <div class="trade-product-media trade-placeholder-flat">
+                                        Product Image
+                                    </div>
+                                    <div class="trade-product-body">
+                                        <h3>Ultrasonic Cutter</h3>
+                                        <p>
+                                            Precision cutting tool platform for
+                                            workshop, craft and light
+                                            fabrication applications.
+                                        </p>
+                                        <span class="trade-tag">OEM Available</span>
+                                        <a class="trade-link"
+                                           href="/products/ultrasonic-cutter">
+                                            View Product
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="trade-cta">
+                    <div class="container">
+                        <div class="trade-cta-inner">
+                            <h2>Need a Product That Is Not Listed?</h2>
+                            <p>
+                                Tell us the product category, target
+                                specification and quantity. We will review
+                                sourcing and factory options.
+                            </p>
+                            <div class="trade-actions trade-actions-center">
+                                <a href="/request-quote"
+                                   class="btn trade-btn-primary">
+                                    Request a Quote
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </t>
+
+    </template>
+
+    <record id="products_index_page" model="website.page">
+        <field name="name">Selected Products</field>
+        <field name="url">/products</field>
+        <field name="is_published" eval="True"/>
+        <field name="view_id" ref="products_index"/>
+    </record>
+
+
+    <!-- ============================================================= -->
+    <!-- /products/cordless-air-duster                                  -->
+    <!-- ============================================================= -->
+    <template id="product_air_duster" name="Cordless Air Duster">
+
+        <t t-call="website.layout">
+
+            <t t-set="additional_title">Cordless Air Duster</t>
+
+            <div id="wrap" class="oe_structure trade-site trade-product-detail">
+
+                <section class="trade-product-hero">
+                    <div class="container">
+
+                        <div class="trade-breadcrumb">
+                            <a href="/">Home</a>
+                            <span>/</span>
+                            <a href="/products">Products</a>
+                            <span>/</span>
+                            Cordless Air Duster
+                        </div>
+
+                        <div class="row g-4 align-items-center">
+
+                            <div class="col-lg-6">
+                                <div class="trade-eyebrow">
+                                    CLEANING &amp; MAINTENANCE
+                                </div>
+
+                                <h1 class="trade-product-title">
+                                    Cordless Air Duster
+                                </h1>
+
+                                <p class="trade-product-lead">
+                                    Reusable cordless air cleaning solution
+                                    for electronics, vehicle interiors and
+                                    workspaces.
+                                </p>
+
+                                <div class="trade-tags trade-product-tags">
+                                    <span class="trade-tag">Cordless</span>
+                                    <span class="trade-tag">OEM / Private Label</span>
+                                    <span class="trade-tag">
+                                        Multi-Nozzle Configuration
+                                    </span>
+                                </div>
+
+                                <div class="trade-actions">
+                                    <a href="/request-quote"
+                                       class="btn trade-btn-primary">
+                                        Request a Quote
+                                    </a>
+                                    <a href="/request-quote"
+                                       class="btn trade-btn-secondary">
+                                        Ask About OEM
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="trade-product-image-placeholder trade-placeholder">
+                                    PRODUCT IMAGE
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="trade-section">
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>Product Overview</h2>
+                            <p>
+                                Typical application areas for this product
+                                platform.
+                            </p>
+                        </div>
+
+                        <div class="trade-overview-grid">
+                            <div class="trade-overview-item">
+                                <strong>Electronics</strong>
+                                <span>
+                                    Cleaning of keyboards, devices and
+                                    electronic assemblies.
+                                </span>
+                            </div>
+                            <div class="trade-overview-item">
+                                <strong>Automotive Interiors</strong>
+                                <span>
+                                    Vents, dashboards and interior detailing.
+                                </span>
+                            </div>
+                            <div class="trade-overview-item">
+                                <strong>Workbench &amp; Tools</strong>
+                                <span>
+                                    Dust removal on benches, tools and
+                                    equipment.
+                                </span>
+                            </div>
+                            <div class="trade-overview-item">
+                                <strong>General Dust Removal</strong>
+                                <span>
+                                    Reusable alternative to disposable
+                                    compressed air cans.
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="trade-section trade-capabilities">
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>Key Specifications</h2>
+                            <p>
+                                Preliminary specification fields.
+                                Factory confirmation pending.
+                            </p>
+                        </div>
+
+                        <dl class="trade-spec-grid">
+
+                            <div class="trade-spec-row">
+                                <dt>Motor Type</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Maximum Motor Speed</dt>
+                                <dd class="trade-tbd">TBD rpm</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Air Speed</dt>
+                                <dd class="trade-tbd">TBD m/s</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Air Flow</dt>
+                                <dd class="trade-tbd">TBD CFM</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Speed Control</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Battery Type</dt>
+                                <dd>Rechargeable lithium battery</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Battery Capacity</dt>
+                                <dd class="trade-tbd">TBD mAh</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Runtime</dt>
+                                <dd class="trade-tbd">TBD min</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Charging Interface</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Charging Time</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Noise Level</dt>
+                                <dd class="trade-tbd">TBD dBA</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Nozzle Configuration</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Product Weight</dt>
+                                <dd class="trade-tbd">TBD g</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Product Dimensions</dt>
+                                <dd class="trade-tbd">TBD mm</dd>
+                            </div>
+
+                        </dl>
+
+                        <p class="trade-spec-note">
+                            Values marked TBD — Supplier confirmation pending.
+                        </p>
+
+                    </div>
+                </section>
+
+                <section class="trade-section">
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>OEM &amp; Customization</h2>
+                        </div>
+
+                        <div class="trade-info-grid">
+                            <div class="trade-info-item">
+                                <strong>Logo</strong>
+                                <span>
+                                    Available options and MOQ confirmed per
+                                    project.
+                                </span>
+                            </div>
+                            <div class="trade-info-item">
+                                <strong>Product Color</strong>
+                                <span>
+                                    Available options and MOQ confirmed per
+                                    project.
+                                </span>
+                            </div>
+                            <div class="trade-info-item">
+                                <strong>Packaging</strong>
+                                <span>
+                                    Available options and MOQ confirmed per
+                                    project.
+                                </span>
+                            </div>
+                            <div class="trade-info-item">
+                                <strong>Manual</strong>
+                                <span>
+                                    Available options and MOQ confirmed per
+                                    project.
+                                </span>
+                            </div>
+                            <div class="trade-info-item">
+                                <strong>Accessories</strong>
+                                <span>
+                                    Available options and MOQ confirmed per
+                                    project.
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="trade-section trade-capabilities">
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>Supply Information</h2>
+                        </div>
+
+                        <div class="trade-supply-grid">
+                            <div class="trade-supply-item">
+                                <strong>MOQ</strong>
+                                <span class="trade-tbd">TBD</span>
+                            </div>
+                            <div class="trade-supply-item">
+                                <strong>Sample</strong>
+                                <span class="trade-tbd">TBD</span>
+                            </div>
+                            <div class="trade-supply-item">
+                                <strong>Lead Time</strong>
+                                <span class="trade-tbd">TBD</span>
+                            </div>
+                            <div class="trade-supply-item">
+                                <strong>Packaging</strong>
+                                <span class="trade-tbd">TBD</span>
+                            </div>
+                            <div class="trade-supply-item">
+                                <strong>Incoterm</strong>
+                                <span class="trade-tbd">TBD</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="trade-section">
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>Documentation</h2>
+                        </div>
+
+                        <div class="trade-doc-block">
+                            <ul>
+                                <li>Compliance documentation</li>
+                                <li>Battery documents</li>
+                                <li>User manual</li>
+                                <li>Packaging data</li>
+                            </ul>
+                        </div>
+
+                        <p class="trade-spec-note">
+                            Available documents confirmed per product.
+                        </p>
+
+                    </div>
+                </section>
+
+                <section class="trade-cta">
+                    <div class="container">
+                        <div class="trade-cta-inner">
+                            <h2>Interested in This Product?</h2>
+                            <p>
+                                Request product details, specification
+                                confirmation and quotation.
+                            </p>
+                            <div class="trade-actions trade-actions-center">
+                                <a href="/request-quote"
+                                   class="btn trade-btn-primary">
+                                    Request Product Details
+                                </a>
+                                <a href="/request-quote"
+                                   class="btn trade-btn-ghost">
+                                    Request a Quote
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </t>
+
+    </template>
+
+    <record id="product_air_duster_page" model="website.page">
+        <field name="name">Cordless Air Duster</field>
+        <field name="url">/products/cordless-air-duster</field>
+        <field name="is_published" eval="True"/>
+        <field name="view_id" ref="product_air_duster"/>
+    </record>
+
+
+    <!-- ============================================================= -->
+    <!-- /products/instant-print-camera                                 -->
+    <!-- ============================================================= -->
+    <template id="product_instant_print_camera" name="Instant Print Camera">
+
+        <t t-call="website.layout">
+
+            <t t-set="additional_title">Instant Print Camera</t>
+
+            <div id="wrap" class="oe_structure trade-site trade-product-detail">
+
+                <section class="trade-product-hero">
+                    <div class="container">
+
+                        <div class="trade-breadcrumb">
+                            <a href="/">Home</a>
+                            <span>/</span>
+                            <a href="/products">Products</a>
+                            <span>/</span>
+                            Instant Print Camera
+                        </div>
+
+                        <div class="row g-4 align-items-center">
+
+                            <div class="col-lg-6">
+                                <div class="trade-eyebrow">
+                                    CONSUMER ELECTRONICS
+                                </div>
+
+                                <h1 class="trade-product-title">
+                                    Instant Print Camera
+                                </h1>
+
+                                <p class="trade-product-lead">
+                                    Compact instant-print camera platform
+                                    designed for gifts, lifestyle products and
+                                    private-label programs.
+                                </p>
+
+                                <div class="trade-tags trade-product-tags">
+                                    <span class="trade-tag">Instant Print</span>
+                                    <span class="trade-tag">Private Label</span>
+                                    <span class="trade-tag">Gift / Lifestyle</span>
+                                </div>
+
+                                <div class="trade-actions">
+                                    <a href="/request-quote"
+                                       class="btn trade-btn-primary">
+                                        Request a Quote
+                                    </a>
+                                    <a href="/request-quote"
+                                       class="btn trade-btn-secondary">
+                                        Ask About OEM
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="trade-product-image-placeholder trade-placeholder">
+                                    PRODUCT IMAGE
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="trade-section">
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>Product Overview</h2>
+                            <p>
+                                Typical application areas for this product
+                                platform.
+                            </p>
+                        </div>
+
+                        <div class="trade-overview-grid">
+                            <div class="trade-overview-item">
+                                <strong>Gift Programs</strong>
+                                <span>
+                                    Consumer gift and seasonal product lines.
+                                </span>
+                            </div>
+                            <div class="trade-overview-item">
+                                <strong>Lifestyle Retail</strong>
+                                <span>
+                                    Lifestyle and specialty retail assortments.
+                                </span>
+                            </div>
+                            <div class="trade-overview-item">
+                                <strong>Private-Label Programs</strong>
+                                <span>
+                                    Branding, packaging and color programs.
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="trade-section trade-capabilities">
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>Key Specifications</h2>
+                            <p>
+                                Preliminary specification fields.
+                                Factory confirmation pending.
+                            </p>
+                        </div>
+
+                        <dl class="trade-spec-grid">
+
+                            <div class="trade-spec-row">
+                                <dt>Imaging Sensor</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Photo Resolution</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Print Technology</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Print Media</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Print Size</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Print Time</dt>
+                                <dd class="trade-tbd">TBD sec</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Display</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Storage</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Connectivity</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Battery Type</dt>
+                                <dd>Rechargeable</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Battery Capacity</dt>
+                                <dd class="trade-tbd">TBD mAh</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Charging Interface</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Product Dimensions</dt>
+                                <dd class="trade-tbd">TBD mm</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Product Weight</dt>
+                                <dd class="trade-tbd">TBD g</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Available Colors</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+
+                        </dl>
+
+                        <p class="trade-spec-note">
+                            Values marked TBD — Supplier confirmation pending.
+                            Print technology must be confirmed
+                            (ZINK / thermal / other) as it defines the
+                            consumable model and U.S. market positioning.
+                        </p>
+
+                    </div>
+                </section>
+
+                <section class="trade-section">
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>OEM &amp; Customization</h2>
+                        </div>
+
+                        <div class="trade-info-grid">
+                            <div class="trade-info-item">
+                                <strong>Logo</strong>
+                                <span>
+                                    Available options and MOQ confirmed per
+                                    project.
+                                </span>
+                            </div>
+                            <div class="trade-info-item">
+                                <strong>Product Color</strong>
+                                <span>
+                                    Available options and MOQ confirmed per
+                                    project.
+                                </span>
+                            </div>
+                            <div class="trade-info-item">
+                                <strong>Packaging</strong>
+                                <span>
+                                    Available options and MOQ confirmed per
+                                    project.
+                                </span>
+                            </div>
+                            <div class="trade-info-item">
+                                <strong>Manual</strong>
+                                <span>
+                                    Available options and MOQ confirmed per
+                                    project.
+                                </span>
+                            </div>
+                            <div class="trade-info-item">
+                                <strong>Accessories</strong>
+                                <span>
+                                    Available options and MOQ confirmed per
+                                    project.
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="trade-section trade-capabilities">
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>Supply Information</h2>
+                        </div>
+
+                        <div class="trade-supply-grid">
+                            <div class="trade-supply-item">
+                                <strong>MOQ</strong>
+                                <span class="trade-tbd">TBD</span>
+                            </div>
+                            <div class="trade-supply-item">
+                                <strong>Sample</strong>
+                                <span class="trade-tbd">TBD</span>
+                            </div>
+                            <div class="trade-supply-item">
+                                <strong>Lead Time</strong>
+                                <span class="trade-tbd">TBD</span>
+                            </div>
+                            <div class="trade-supply-item">
+                                <strong>Packaging</strong>
+                                <span class="trade-tbd">TBD</span>
+                            </div>
+                            <div class="trade-supply-item">
+                                <strong>Incoterm</strong>
+                                <span class="trade-tbd">TBD</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="trade-section">
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>Documentation</h2>
+                        </div>
+
+                        <div class="trade-doc-block">
+                            <ul>
+                                <li>Compliance documentation</li>
+                                <li>Battery documents</li>
+                                <li>User manual</li>
+                                <li>Packaging data</li>
+                            </ul>
+                        </div>
+
+                        <p class="trade-spec-note">
+                            Available documents confirmed per product.
+                        </p>
+
+                    </div>
+                </section>
+
+                <section class="trade-cta">
+                    <div class="container">
+                        <div class="trade-cta-inner">
+                            <h2>Interested in This Product?</h2>
+                            <p>
+                                Request product details, specification
+                                confirmation and quotation.
+                            </p>
+                            <div class="trade-actions trade-actions-center">
+                                <a href="/request-quote"
+                                   class="btn trade-btn-primary">
+                                    Request Product Details
+                                </a>
+                                <a href="/request-quote"
+                                   class="btn trade-btn-ghost">
+                                    Request a Quote
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </t>
+
+    </template>
+
+    <record id="product_instant_print_camera_page" model="website.page">
+        <field name="name">Instant Print Camera</field>
+        <field name="url">/products/instant-print-camera</field>
+        <field name="is_published" eval="True"/>
+        <field name="view_id" ref="product_instant_print_camera"/>
+    </record>
+
+
+    <!-- ============================================================= -->
+    <!-- /products/ultrasonic-cutter                                    -->
+    <!-- ============================================================= -->
+    <template id="product_ultrasonic_cutter" name="Ultrasonic Cutter">
+
+        <t t-call="website.layout">
+
+            <t t-set="additional_title">Ultrasonic Cutter</t>
+
+            <div id="wrap" class="oe_structure trade-site trade-product-detail">
+
+                <section class="trade-product-hero">
+                    <div class="container">
+
+                        <div class="trade-breadcrumb">
+                            <a href="/">Home</a>
+                            <span>/</span>
+                            <a href="/products">Products</a>
+                            <span>/</span>
+                            Ultrasonic Cutter
+                        </div>
+
+                        <div class="row g-4 align-items-center">
+
+                            <div class="col-lg-6">
+                                <div class="trade-eyebrow">
+                                    TOOLS &amp; EQUIPMENT
+                                </div>
+
+                                <h1 class="trade-product-title">
+                                    Ultrasonic Cutter
+                                </h1>
+
+                                <p class="trade-product-lead">
+                                    Precision cutting tool platform for
+                                    workshop, craft and light fabrication
+                                    applications.
+                                </p>
+
+                                <div class="trade-tags trade-product-tags">
+                                    <span class="trade-tag">Precision Tool</span>
+                                    <span class="trade-tag">Replaceable Blade</span>
+                                    <span class="trade-tag">OEM Available</span>
+                                </div>
+
+                                <div class="trade-actions">
+                                    <a href="/request-quote"
+                                       class="btn trade-btn-primary">
+                                        Request a Quote
+                                    </a>
+                                    <a href="/request-quote"
+                                       class="btn trade-btn-secondary">
+                                        Ask About OEM
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="trade-product-image-placeholder trade-placeholder">
+                                    PRODUCT IMAGE
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="trade-section">
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>Product Overview</h2>
+                            <p>
+                                Typical application areas for this product
+                                platform.
+                            </p>
+                        </div>
+
+                        <div class="trade-overview-grid">
+                            <div class="trade-overview-item">
+                                <strong>Workshop Use</strong>
+                                <span>
+                                    Precision cutting tasks in workshop
+                                    environments.
+                                </span>
+                            </div>
+                            <div class="trade-overview-item">
+                                <strong>Craft &amp; Hobby</strong>
+                                <span>
+                                    Craft, model-making and hobby
+                                    applications.
+                                </span>
+                            </div>
+                            <div class="trade-overview-item">
+                                <strong>Light Fabrication</strong>
+                                <span>
+                                    Light fabrication and prototyping tasks.
+                                </span>
+                            </div>
+                            <div class="trade-overview-item">
+                                <strong>Blade &amp; Accessory Supply</strong>
+                                <span>
+                                    Replacement blades and accessory
+                                    availability confirmed per program.
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="trade-section trade-capabilities">
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>Key Specifications</h2>
+                            <p>
+                                Preliminary specification fields.
+                                Factory confirmation pending.
+                            </p>
+                        </div>
+
+                        <dl class="trade-spec-grid">
+
+                            <div class="trade-spec-row">
+                                <dt>Ultrasonic Frequency</dt>
+                                <dd class="trade-tbd">TBD kHz</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Rated Power</dt>
+                                <dd class="trade-tbd">TBD W</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Power / Speed Levels</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Power Supply</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Input Voltage</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Blade Type</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Blade Compatibility</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Tool Weight</dt>
+                                <dd class="trade-tbd">TBD g</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Product Dimensions</dt>
+                                <dd class="trade-tbd">TBD mm</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Operating Mode</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Safety Lock</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Included Accessories</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+                            <div class="trade-spec-row">
+                                <dt>Replacement Blades</dt>
+                                <dd class="trade-tbd">TBD</dd>
+                            </div>
+
+                        </dl>
+
+                        <p class="trade-spec-note">
+                            Values marked TBD — Supplier confirmation pending.
+                            Blade system, blade compatibility and replacement
+                            blade supply are key items for B2B programs.
+                        </p>
+
+                    </div>
+                </section>
+
+                <section class="trade-section">
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>OEM &amp; Customization</h2>
+                        </div>
+
+                        <div class="trade-info-grid">
+                            <div class="trade-info-item">
+                                <strong>Logo</strong>
+                                <span>
+                                    Available options and MOQ confirmed per
+                                    project.
+                                </span>
+                            </div>
+                            <div class="trade-info-item">
+                                <strong>Product Color</strong>
+                                <span>
+                                    Available options and MOQ confirmed per
+                                    project.
+                                </span>
+                            </div>
+                            <div class="trade-info-item">
+                                <strong>Packaging</strong>
+                                <span>
+                                    Available options and MOQ confirmed per
+                                    project.
+                                </span>
+                            </div>
+                            <div class="trade-info-item">
+                                <strong>Manual</strong>
+                                <span>
+                                    Available options and MOQ confirmed per
+                                    project.
+                                </span>
+                            </div>
+                            <div class="trade-info-item">
+                                <strong>Accessories</strong>
+                                <span>
+                                    Available options and MOQ confirmed per
+                                    project.
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="trade-section trade-capabilities">
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>Supply Information</h2>
+                        </div>
+
+                        <div class="trade-supply-grid">
+                            <div class="trade-supply-item">
+                                <strong>MOQ</strong>
+                                <span class="trade-tbd">TBD</span>
+                            </div>
+                            <div class="trade-supply-item">
+                                <strong>Sample</strong>
+                                <span class="trade-tbd">TBD</span>
+                            </div>
+                            <div class="trade-supply-item">
+                                <strong>Lead Time</strong>
+                                <span class="trade-tbd">TBD</span>
+                            </div>
+                            <div class="trade-supply-item">
+                                <strong>Packaging</strong>
+                                <span class="trade-tbd">TBD</span>
+                            </div>
+                            <div class="trade-supply-item">
+                                <strong>Incoterm</strong>
+                                <span class="trade-tbd">TBD</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="trade-section">
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>Documentation</h2>
+                        </div>
+
+                        <div class="trade-doc-block">
+                            <ul>
+                                <li>Compliance documentation</li>
+                                <li>Tool and blade documentation</li>
+                                <li>User manual</li>
+                                <li>Packaging data</li>
+                            </ul>
+                        </div>
+
+                        <p class="trade-spec-note">
+                            Available documents confirmed per product.
+                        </p>
+
+                    </div>
+                </section>
+
+                <section class="trade-cta">
+                    <div class="container">
+                        <div class="trade-cta-inner">
+                            <h2>Interested in This Product?</h2>
+                            <p>
+                                Request product details, specification
+                                confirmation and quotation.
+                            </p>
+                            <div class="trade-actions trade-actions-center">
+                                <a href="/request-quote"
+                                   class="btn trade-btn-primary">
+                                    Request Product Details
+                                </a>
+                                <a href="/request-quote"
+                                   class="btn trade-btn-ghost">
+                                    Request a Quote
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </t>
+
+    </template>
+
+    <record id="product_ultrasonic_cutter_page" model="website.page">
+        <field name="name">Ultrasonic Cutter</field>
+        <field name="url">/products/ultrasonic-cutter</field>
+        <field name="is_published" eval="True"/>
+        <field name="view_id" ref="product_ultrasonic_cutter"/>
+    </record>
+
+</odoo>
