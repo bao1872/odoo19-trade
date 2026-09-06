@@ -29,8 +29,10 @@
 
                             <div class="col-md-6 col-lg-4">
                                 <article class="trade-product-card">
-                                    <div class="trade-product-media trade-placeholder-flat">
-                                        Product Image
+                                    <div class="trade-product-media">
+                                        <img loading="lazy"
+                                             src="/trade_website/static/src/img/products/air-duster/air-duster-card.webp"
+                                             alt="Cordless Air Duster product photo"/>
                                     </div>
                                     <div class="trade-product-body">
                                         <h3>Cordless Air Duster</h3>
@@ -52,8 +54,10 @@
 
                             <div class="col-md-6 col-lg-4">
                                 <article class="trade-product-card">
-                                    <div class="trade-product-media trade-placeholder-flat">
-                                        Product Image
+                                    <div class="trade-product-media">
+                                        <img loading="lazy"
+                                             src="/trade_website/static/src/img/products/instant-print-camera/instant-camera-card.webp"
+                                             alt="Instant Print Camera product photo"/>
                                     </div>
                                     <div class="trade-product-body">
                                         <h3>Instant Print Camera</h3>
@@ -73,8 +77,10 @@
 
                             <div class="col-md-6 col-lg-4">
                                 <article class="trade-product-card">
-                                    <div class="trade-product-media trade-placeholder-flat">
-                                        Product Image
+                                    <div class="trade-product-media">
+                                        <img loading="lazy"
+                                             src="/trade_website/static/src/img/products/ultrasonic-cutter/ultrasonic-cutter-card.webp"
+                                             alt="Ultrasonic Cutter product photo"/>
                                     </div>
                                     <div class="trade-product-body">
                                         <h3>Ultrasonic Cutter</h3>
@@ -189,8 +195,8 @@
                             </div>
 
                             <div class="col-lg-6">
-                                <div class="trade-product-image-placeholder trade-placeholder">
-                                    PRODUCT IMAGE
+                                <div class="trade-product-image-placeholder">
+                                    <img src="/trade_website/static/src/img/products/air-duster/air-duster-detail.webp" alt="Cordless Air Duster product detail"/>
                                 </div>
                             </div>
 
@@ -519,8 +525,8 @@
                             </div>
 
                             <div class="col-lg-6">
-                                <div class="trade-product-image-placeholder trade-placeholder">
-                                    PRODUCT IMAGE
+                                <div class="trade-product-image-placeholder">
+                                    <img src="/trade_website/static/src/img/products/instant-print-camera/instant-camera-print.webp" alt="Instant Print Camera printing a photo"/>
                                 </div>
                             </div>
 
@@ -847,8 +853,8 @@
                             </div>
 
                             <div class="col-lg-6">
-                                <div class="trade-product-image-placeholder trade-placeholder">
-                                    PRODUCT IMAGE
+                                <div class="trade-product-image-placeholder">
+                                    <img src="/trade_website/static/src/img/products/ultrasonic-cutter/ultrasonic-cutter-kit.webp" alt="Ultrasonic Cutter with case and accessories"/>
                                 </div>
                             </div>
 

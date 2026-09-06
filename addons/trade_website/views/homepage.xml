@@ -60,20 +60,39 @@
                                 <div class="trade-hero-media">
 
                                     <div class="trade-media-main">
-                                        <span>FACTORY</span>
-                                        <strong>
-                                            Production &amp; Quality Control
-                                        </strong>
+                                        <img
+                                            src="/trade_website/static/src/img/homepage/product-collage.webp"
+                                            alt="Selected products under evaluation: cordless air duster, instant print camera, ultrasonic cutter"/>
+                                        <div class="trade-media-caption">
+                                            <span>SELECTED</span>
+                                            <strong>
+                                                Products In Evaluation
+                                            </strong>
+                                        </div>
                                     </div>
 
                                     <div class="trade-media-small">
-                                        <span>QC</span>
-                                        <strong>Inspection</strong>
+                                        <img
+                                            loading="lazy"
+                                            src="/trade_website/static/src/img/process/factory-coordination.webp"
+                                            alt="Factory coordination illustration"/>
+                                        <div class="trade-media-caption">
+                                            <span>FACTORY</span>
+                                            <strong>Specification Alignment</strong>
+                                        </div>
                                     </div>
 
                                     <div class="trade-media-small">
-                                        <span>DELIVERY</span>
-                                        <strong>Packaging &amp; Shipping</strong>
+                                        <img
+                                            loading="lazy"
+                                            src="/trade_website/static/src/img/process/shipping-preparation.webp"
+                                            alt="Shipping preparation illustration"/>
+                                        <div class="trade-media-caption">
+                                            <span>SHIPPING</span>
+                                            <strong>
+                                                Packaging &amp; Shipment
+                                            </strong>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -155,9 +174,7 @@
 
                             <div class="col-md-6 col-lg-4">
                                 <article class="trade-product-card">
-                                    <div class="trade-product-media trade-placeholder-flat">
-                                        Product Image
-                                    </div>
+                                    <div class="trade-product-media"><img loading="lazy" src="/trade_website/static/src/img/products/air-duster/air-duster-card.webp" alt="Cordless Air Duster"/></div>
                                     <div class="trade-product-body">
                                         <h3>Cordless Air Duster</h3>
                                         <p>
@@ -176,9 +193,7 @@
 
                             <div class="col-md-6 col-lg-4">
                                 <article class="trade-product-card">
-                                    <div class="trade-product-media trade-placeholder-flat">
-                                        Product Image
-                                    </div>
+                                    <div class="trade-product-media"><img loading="lazy" src="/trade_website/static/src/img/products/instant-print-camera/instant-camera-card.webp" alt="Instant Print Camera"/></div>
                                     <div class="trade-product-body">
                                         <h3>Instant Print Camera</h3>
                                         <p>
@@ -197,9 +212,7 @@
 
                             <div class="col-md-6 col-lg-4">
                                 <article class="trade-product-card">
-                                    <div class="trade-product-media trade-placeholder-flat">
-                                        Product Image
-                                    </div>
+                                    <div class="trade-product-media"><img loading="lazy" src="/trade_website/static/src/img/products/ultrasonic-cutter/ultrasonic-cutter-card.webp" alt="Ultrasonic Cutter"/></div>
                                     <div class="trade-product-body">
                                         <h3>Ultrasonic Cutter</h3>
                                         <p>

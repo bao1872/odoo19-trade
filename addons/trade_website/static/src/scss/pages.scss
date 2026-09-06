@@ -45,6 +45,20 @@
     padding-top: 16px;
     border-top: 2px solid var(--trade-line);
 
+    .trade-flow-image {
+        position: relative;
+        aspect-ratio: 4 / 3;
+        margin-bottom: 14px;
+        overflow: hidden;
+        background: var(--trade-bg);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
     .trade-flow-index {
         color: var(--trade-copper);
         font-size: 0.85rem;

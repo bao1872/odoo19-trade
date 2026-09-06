@@ -13,7 +13,16 @@
 }
 
 .trade-product-media {
-    min-height: 235px;
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: var(--trade-bg);
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 .trade-product-body {
@@ -64,7 +73,16 @@
 }
 
 .trade-product-image-placeholder {
-    min-height: 420px;
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: var(--trade-bg);
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 /* ------------------------------------------------------------------ */
@@ -252,10 +270,6 @@
     .trade-product-hero {
         padding-bottom: 56px;
     }
-
-    .trade-product-image-placeholder {
-        min-height: 300px;
-    }
 }
 
 @media (max-width: 767.98px) {
@@ -267,10 +281,6 @@
 @media (max-width: 575.98px) {
     .trade-product-hero {
         padding: 24px 0 48px;
-    }
-
-    .trade-product-image-placeholder {
-        min-height: 240px;
     }
 
     .trade-overview-grid,
