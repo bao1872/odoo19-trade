@@ -34,6 +34,18 @@
 - [ ] 之后按 C2 级验证 + 额外 production gate
 - [ ] 禁止 Executor 自行扩展 scope
 
+### Minimal Production Preflight（任何 future production mutation 前）
+
+- [ ] confirm exact deployment target
+- [ ] confirm authorized scope
+- [ ] establish current runtime ownership / state
+- [ ] identify deployed revision if applicable
+- [ ] define rollback / recovery plan
+- [ ] verify SSH / operational access
+- [ ] ensure secrets are not logged or committed
+
+Do NOT build a deployment framework or CI/CD system.
+
 ## Universal STOP rules
 
 - 验收没完成 → 不 push

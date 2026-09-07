@@ -214,6 +214,38 @@ Evidence: 390 / 768 / 1024 / 1440
 - 进 Git 的 screenshot / review 材料**不得含真实客户 PII**。
 - Production credentials **never** stored in repo。
 
+## 10b. Production / Deployment Access Governance
+
+Principle:
+Access capability != mutation authority.
+
+Knowing the deployment target or having a valid SSH key
+does not authorize：
+- deployment
+- file mutation
+- service restart
+- package installation
+- database mutation
+- Docker / container changes
+- sudo operations
+
+Production / deployment mutations remain C3 and require
+explicit Owner authorization plus an approved task contract.
+Read-only operational checks may be authorized separately.
+
+For the current task, Owner authorizes ONLY：
+read-only SSH connectivity verification to `175.178.86.231`.
+No production mutation is authorized.
+
+Never commit：
+- private SSH keys
+- private-key contents
+- passwords
+- tokens
+- raw credentials
+
+Do not print private key contents in reports.
+
 ## 11. Migration Governance
 
 ```text

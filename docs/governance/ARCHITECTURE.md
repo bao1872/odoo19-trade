@@ -36,6 +36,29 @@
 
 > Current Website v1 baseline facts（非永久架构不变量）：version `19.0.1.0.6`、PO 347 条。未来版本 / 翻译条数变化不视为架构违规。
 
+## Deployment Runtime Facts
+
+Current deployment target:
+`175.178.86.231`
+
+Access model:
+SSH key-based access is already configured on the Owner's
+local development machine.
+
+Important:
+- This IP is a current deployment/runtime fact, not a permanent architecture invariant.
+- Server address may change without constituting an architecture change.
+- SSH username / port / identity-file path are environment-local configuration unless explicitly approved for documentation.
+- Private key material MUST NEVER be committed.
+- Possession of SSH access is NOT deployment authorization.
+
+Do not claim (unless independently verified):
+- current deployed commit
+- current Odoo service topology
+- Docker / non-Docker deployment
+- database location
+- domain / TLS state
+
 ## Supported Public Locales（语言不变量）
 
 - Primary / default：`en_US`
