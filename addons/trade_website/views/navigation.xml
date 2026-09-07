@@ -5,15 +5,25 @@
         Menu *entities* only — no parent_id / website_id here on purpose.
 
         Why: Odoo renders each website's navigation from that website's
-        own "Top Menu for Website N" record. A menu written with
-        parent_id="website.main_menu" lands under the shared
-        "Default Main Menu" (invisible) AND every module upgrade would
-        reset that parent again, undoing any fix.
+        own "Top Menu for Website N" record (website.menu_id). A menu
+        written with a fixed parent in XML would be reset on every module
+        upgrade, dropping the hierarchy back to root nodes.
 
-        So the hierarchy is built by name in
-        migrations/<version>/post-migrate.py, which assigns parent_id and
-        website_id per website. Idempotent, upgrade-safe.
+        So the hierarchy is owned by XML ID in addons/trade_website/hooks.py
+        (configure_navigation), wired by:
+          * post_init_hook          — fresh install
+          * migrations/19.0.1.0.5   — existing DB upgrade
+
+        noupdate="1" keeps these records stable across upgrades: the XML
+        no longer re-creates them as root nodes, and the migration flips
+        ir.model.data noupdate=True so future upgrades never strip the
+        parent_id it sets.
+
+        Never build the tree by searching menu `name` — that field is
+        translatable and unstable.
     -->
+
+    <data noupdate="1">
 
     <!-- Top-level conceptual groups -->
     <record id="menu_products" model="website.menu">
@@ -102,5 +112,7 @@
         <field name="url">/contactus</field>
         <field name="sequence" type="int">52</field>
     </record>
+
+    </data>
 
 </odoo>

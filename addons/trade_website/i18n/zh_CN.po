@@ -1,7 +1,14 @@
 # Translation of Odoo Server.
+
 # This file contains the translation of the following modules:
+
 # 	* trade_website
+
 #
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
@@ -15,8 +22,9 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
+#: model_terms:ir.ui.view,arch_db:trade_website.page_quality
 msgid ""
 "<select id=\"product_interest\" name=\"Product Interest\" required=\"\">\n"
 "                                            <option value=\"\">Select a product</option>\n"
@@ -31,7 +39,8 @@ msgid ""
 "                                            </option>\n"
 "                                            <option value=\"Other\">Other</option>\n"
 "                                        </select>"
-msgstr ""
+msgstr "<select id=\"product_interest\" name=\"Product Interest\" required=\"\">\n                                            <option value=\"\">请选择产品</option>\n                                            <option value=\"Cordless Air Duster\">\n                                                无线电动吹尘器\n                                            </option>\n                                            <option value=\"Instant Print Camera\">\n                                                即时打印相机\n                                            </option>\n                                            <option value=\"Ultrasonic Cutter\">\n                                                超声波切割刀\n                                            </option>\n                                            <option value=\"Other\">其他</option>\n                                        </select>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_quality
@@ -42,7 +51,8 @@ msgid ""
 "                                    Sample checked against the agreed product\n"
 "                                    specification.\n"
 "                                </span>"
-msgstr ""
+msgstr "<span class=\"trade-check-index\">阶段 01</span>\n                                <strong>样品审核</strong>\n                                <span>\n                                    按双方确认的产品规格审核样品。\n                                </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_quality
@@ -53,7 +63,8 @@ msgid ""
 "                                    Specification, materials and packaging\n"
 "                                    confirmed before mass production.\n"
 "                                </span>"
-msgstr ""
+msgstr "<span class=\"trade-check-index\">阶段 02</span>\n                                <strong>量产前确认</strong>\n                                <span>\n                                    规格、材料及包装在量产前完成确认。\n                                </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_quality
@@ -64,10 +75,11 @@ msgid ""
 "                                    Defined inspection points during\n"
 "                                    production and before packing.\n"
 "                                </span>"
-msgstr ""
+msgstr "<span class=\"trade-check-index\">阶段 03</span>\n                                <strong>检查节点</strong>\n                                <span>\n                                    在生产过程中及包装前设置明确检查节点。\n                                </span>"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_quality
+#: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
 msgid ""
 "<span class=\"trade-check-index\">STAGE 04</span>\n"
 "                                <strong>Pre-shipment Review</strong>\n"
@@ -75,7 +87,8 @@ msgid ""
 "                                    Quantity, packaging, labeling and\n"
 "                                    carton data reviewed before shipment.\n"
 "                                </span>"
-msgstr ""
+msgstr "<span class=\"trade-check-index\">阶段 04</span>\n                                <strong>出货前审核</strong>\n                                <span>\n                                    出货前审核数量、包装、标签和箱规信息。\n                                </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
@@ -86,7 +99,8 @@ msgid ""
 "                                    Product specification, materials and\n"
 "                                    requirements confirmed with the factory.\n"
 "                                </span>"
-msgstr ""
+msgstr "<span class=\"trade-flow-index\">01</span>\n                                <strong>规格对齐</strong>\n                                <span>\n                                    与工厂确认产品规格、材料及相关要求。\n                                </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
@@ -97,7 +111,8 @@ msgid ""
 "                                    Samples reviewed against the agreed\n"
 "                                    specification before production.\n"
 "                                </span>"
-msgstr ""
+msgstr "<span class=\"trade-flow-index\">02</span>\n                                <strong>样品验证</strong>\n                                <span>\n                                    Samples reviewed against the agreed\n                                    specification before production.\n                                </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
@@ -108,7 +123,8 @@ msgid ""
 "                                    Production slots, quantities and timing\n"
 "                                    coordinated with the factory.\n"
 "                                </span>"
-msgstr ""
+msgstr "<span class=\"trade-flow-index\">03</span>\n                                <strong>生产排期</strong>\n                                <span>\n                                    与工厂协调生产排期、数量与时间。\n                                </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
@@ -119,7 +135,8 @@ msgid ""
 "                                    Defined inspection points during and\n"
 "                                    after production.\n"
 "                                </span>"
-msgstr ""
+msgstr "<span class=\"trade-flow-index\">04</span>\n                                <strong>质量检查节点</strong>\n                                <span>\n                                    Defined inspection points during and\n                                    after production.\n                                </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
@@ -130,10 +147,12 @@ msgid ""
 "                                    Packaging, labeling and documentation\n"
 "                                    confirmed before packing.\n"
 "                                </span>"
-msgstr ""
+msgstr "<span class=\"trade-flow-index\">05</span>\n                                <strong>包装确认</strong>\n                                <span>\n                                    包装前确认包装、标签及相关文件。\n                                </span>"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
+#: model_terms:ir.ui.view,arch_db:trade_website.trade_header_default
+#: model_terms:ir.ui.view,arch_db:trade_website.trade_header_mobile
 msgid ""
 "<span class=\"trade-flow-index\">06</span>\n"
 "                                <strong>Shipping Preparation</strong>\n"
@@ -141,11 +160,11 @@ msgid ""
 "                                    Carton data and shipment readiness\n"
 "                                    confirmed before handover.\n"
 "                                </span>"
-msgstr ""
+msgstr "<span class=\"trade-flow-index\">06</span>\n                                <strong>出货准备</strong>\n                                <span>\n                                    Carton data and shipment readiness\n                                    confirmed before handover.\n                                </span>"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.trade_header_default
-#: model_terms:ir.ui.view,arch_db:trade_website.trade_header_mobile
+#: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
 msgid ""
 "<span class=\"trade-header-brand-main\">\n"
 "                    Global Sourcing\n"
@@ -154,9 +173,11 @@ msgid ""
 "                <span class=\"trade-header-brand-sub\">\n"
 "                    China · U.S.\n"
 "                </span>"
-msgstr ""
+msgstr "<span class=\"trade-header-brand-main\">\n                    全球采购\n                </span>\n\n                <span class=\"trade-header-brand-sub\">\n                    中国 · 美国\n                </span>"
+
 
 #. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.products_index
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
 msgid ""
 "<span class=\"trade-hero-line\">\n"
@@ -165,7 +186,8 @@ msgid ""
 "                                    <span class=\"trade-hero-line trade-hero-accent\">\n"
 "                                        U.S. Market Execution.\n"
 "                                    </span>"
-msgstr ""
+msgstr "<span class=\"trade-hero-line\">\n                                        中国制造。\n                                    </span>\n                                    <span class=\"trade-hero-line trade-hero-accent\">\n                                        美国市场落地。\n                                    </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.products_index
@@ -174,7 +196,8 @@ msgid ""
 "<span class=\"trade-product-cat\">\n"
 "                                            Cleaning &amp; Maintenance\n"
 "                                        </span>"
-msgstr ""
+msgstr "<span class=\"trade-product-cat\">\n                                            清洁与维护\n                                        </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.products_index
@@ -183,16 +206,17 @@ msgid ""
 "<span class=\"trade-product-cat\">\n"
 "                                            Consumer Electronics\n"
 "                                        </span>"
-msgstr ""
+msgstr "<span class=\"trade-product-cat\">\n                                            消费电子\n                                        </span>"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.products_index
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
 msgid ""
 "<span class=\"trade-product-cat\">\n"
 "                                            Tools &amp; Equipment\n"
 "                                        </span>"
-msgstr ""
+msgstr "<span class=\"trade-product-cat\">\n                                            工具与设备\n                                        </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
@@ -200,7 +224,8 @@ msgid ""
 "<span class=\"trade-solution-tile-label\">\n"
 "                                            Factory Alignment\n"
 "                                        </span>"
-msgstr ""
+msgstr "<span class=\"trade-solution-tile-label\">\n                                            工厂与需求对齐\n                                        </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
@@ -208,7 +233,8 @@ msgid ""
 "<span class=\"trade-solution-tile-label\">\n"
 "                                            Quality Checkpoints\n"
 "                                        </span>"
-msgstr ""
+msgstr "<span class=\"trade-solution-tile-label\">\n                                            质量检查节点\n                                        </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
@@ -216,48 +242,56 @@ msgid ""
 "<span class=\"trade-solution-tile-label\">\n"
 "                                            Sample Validation\n"
 "                                        </span>"
-msgstr ""
+msgstr "<span class=\"trade-solution-tile-label\">\n                                            样品验证\n                                        </span>"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
+#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid ""
 "<span class=\"trade-solution-tile-label\">\n"
 "                                            Shipping Preparation\n"
 "                                        </span>"
-msgstr ""
+msgstr "<span class=\"trade-solution-tile-label\">\n                                            出货准备\n                                        </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "<span class=\"trade-step-index\">01</span>"
 msgstr ""
 
+
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "<span class=\"trade-step-index\">02</span>"
 msgstr ""
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "<span class=\"trade-step-index\">03</span>"
 msgstr ""
 
+
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "<span class=\"trade-step-index\">04</span>"
 msgstr ""
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "<span class=\"trade-step-index\">05</span>"
 msgstr ""
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
-msgid "<span class=\"trade-step-index\">06</span>"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
+msgid "<span class=\"trade-step-index\">06</span>"
+msgstr ""
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.products_index
 msgid ""
 "<span class=\"trade-tag\">\n"
 "                                                Instant Print\n"
@@ -268,7 +302,8 @@ msgid ""
 "                                            <span class=\"trade-tag\">\n"
 "                                                Gift &amp; Lifestyle\n"
 "                                            </span>"
-msgstr ""
+msgstr "<span class=\"trade-tag\">\n                                                即时打印\n                                            </span>\n                                            <span class=\"trade-tag\">\n                                                自有品牌\n                                            </span>\n                                            <span class=\"trade-tag\">\n                                                礼品与生活方式\n                                            </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.products_index
@@ -279,10 +314,11 @@ msgid ""
 "                                            <span class=\"trade-tag\">\n"
 "                                                Multi-Nozzle\n"
 "                                            </span>"
-msgstr ""
+msgstr "<span class=\"trade-tag\">\n                                                OEM / 自有品牌\n                                            </span>\n                                            <span class=\"trade-tag\">\n                                                多喷嘴\n                                            </span>"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.products_index
+#: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
 msgid ""
 "<span class=\"trade-tag\">\n"
 "                                                OEM Available\n"
@@ -290,10 +326,11 @@ msgid ""
 "                                            <span class=\"trade-tag\">\n"
 "                                                Replaceable Blade\n"
 "                                            </span>"
-msgstr ""
+msgstr "<span class=\"trade-tag\">\n                                                支持 OEM\n                                            </span>\n                                            <span class=\"trade-tag\">\n                                                可更换刀片\n                                            </span>"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
+#: model_terms:ir.ui.view,arch_db:trade_website.products_index
 msgid ""
 "<span class=\"trade-tag\">\n"
 "                                                Precision Tool\n"
@@ -302,10 +339,11 @@ msgid ""
 "                                                Replaceable Blade\n"
 "                                            </span>\n"
 "                                            <span class=\"trade-tag\">OEM</span>"
-msgstr ""
+msgstr "<span class=\"trade-tag\">\n                                                精密工具\n                                            </span>\n                                            <span class=\"trade-tag\">\n                                                可更换刀片\n                                            </span>\n                                            <span class=\"trade-tag\">OEM</span>"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.products_index
+#: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
 msgid ""
 "<span class=\"trade-tag\">\n"
 "                                                Private Label\n"
@@ -313,20 +351,22 @@ msgid ""
 "                                            <span class=\"trade-tag\">\n"
 "                                                Gift &amp; Lifestyle\n"
 "                                            </span>"
-msgstr ""
+msgstr "<span class=\"trade-tag\">\n                                                自有品牌\n                                            </span>\n                                            <span class=\"trade-tag\">\n                                                礼品与生活方式\n                                            </span>"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
+#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 msgid ""
 "<span class=\"trade-tag\">Cordless</span>\n"
 "                                            <span class=\"trade-tag\">OEM</span>\n"
 "                                            <span class=\"trade-tag\">\n"
 "                                                Multi-Nozzle\n"
 "                                            </span>"
-msgstr ""
+msgstr "<span class=\"trade-tag\">无线</span>\n                                            <span class=\"trade-tag\">OEM</span>\n                                            <span class=\"trade-tag\">\n                                                多喷嘴\n                                            </span>"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
+#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 msgid ""
 "<span class=\"trade-tag\">Cordless</span>\n"
 "                                    <span class=\"trade-tag\">\n"
@@ -335,17 +375,21 @@ msgid ""
 "                                    <span class=\"trade-tag\">\n"
 "                                        Multi-Nozzle Configuration\n"
 "                                    </span>"
-msgstr ""
+msgstr "<span class=\"trade-tag\">无线</span>\n                                    <span class=\"trade-tag\">\n                                        OEM / 自有品牌\n                                    </span>\n                                    <span class=\"trade-tag\">\n                                        多喷嘴配置\n                                    </span>"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
+#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid ""
 "<span class=\"trade-tag\">Instant Print</span>\n"
 "                                    <span class=\"trade-tag\">Private Label</span>\n"
 "                                    <span class=\"trade-tag\">Gift / Lifestyle</span>"
-msgstr ""
+msgstr "<span class=\"trade-tag\">即时打印</span>\n                                    <span class=\"trade-tag\">自有品牌</span>\n                                    <span class=\"trade-tag\">Gift / Lifestyle</span>"
+
 
 #. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
+#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid ""
 "<span class=\"trade-tag\">Precision Tool</span>\n"
@@ -353,47 +397,51 @@ msgid ""
 "                                        Replaceable Blade\n"
 "                                    </span>\n"
 "                                    <span class=\"trade-tag\">OEM Available</span>"
-msgstr ""
+msgstr "<span class=\"trade-tag\">精密工具</span>\n                                    <span class=\"trade-tag\">\n                                        可更换刀片\n                                    </span>\n                                    <span class=\"trade-tag\">支持 OEM</span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid "<span>/</span>"
 msgstr ""
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-msgid ""
-"<span>/</span>\n"
-"                            Cordless Air Duster"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 msgid ""
 "<span>/</span>\n"
-"                            Instant Print Camera"
-msgstr ""
+"                            Cordless Air Duster"
+msgstr "<span>/</span>\n                            无线电动吹尘器"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid ""
 "<span>/</span>\n"
-"                            Ultrasonic Cutter"
-msgstr ""
+"                            Instant Print Camera"
+msgstr "<span>/</span>\n                            即时打印相机"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
 msgid ""
-"<strong>\n"
-"                                    Not an anonymous sourcing middleman.\n"
-"                                </strong>"
-msgstr ""
+"<span>/</span>\n"
+"                            Ultrasonic Cutter"
+msgstr "<span>/</span>\n                            超声波切割刀"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
+#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
+msgid ""
+"<strong>\n"
+"                                    Not an anonymous sourcing middleman.\n"
+"                                </strong>"
+msgstr "<strong>\n                                    不是信息不透明的采购中间商。\n                                </strong>"
+
+
+#. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid ""
 "<strong>Accessories</strong>\n"
@@ -401,10 +449,11 @@ msgid ""
 "                                    Customization options confirmed per\n"
 "                                    project.\n"
 "                                </span>"
-msgstr ""
+msgstr "<strong>配件</strong>\n                                <span>\n                                    可定制选项及起订要求按具体项目确认。\n                                </span>"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
+#: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
 msgid ""
 "<strong>Blade System</strong>\n"
 "                                    <span>\n"
@@ -412,7 +461,8 @@ msgid ""
 "                                        replacement availability confirmed\n"
 "                                        per program.\n"
 "                                    </span>"
-msgstr ""
+msgstr "<strong>刀片系统</strong>\n                                    <span>\n                                        刀片类型、兼容性与替换供应情况按具体项目确认。\n                                    </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
@@ -422,7 +472,8 @@ msgid ""
 "                                            Production follow-up and\n"
 "                                            U.S.-bound logistics.\n"
 "                                        </span>"
-msgstr ""
+msgstr "<strong>交付协调</strong>\n                                        <span>\n                                            跟进生产进度并协调赴美物流。\n                                        </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
@@ -432,7 +483,8 @@ msgid ""
 "                                            Work with selected manufacturing\n"
 "                                            partners.\n"
 "                                        </span>"
-msgstr ""
+msgstr "<strong>直连工厂</strong>\n                                        <span>\n                                            与筛选后的制造合作伙伴直接协作。\n                                        </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
@@ -442,27 +494,32 @@ msgid ""
 "                                            Direct communication across\n"
 "                                            critical manufacturing steps.\n"
 "                                        </span>"
-msgstr ""
+msgstr "<strong>工厂端协同</strong>\n                                        <span>\n                                            Direct communication across\n                                            critical manufacturing steps.\n                                        </span>"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
+#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 msgid ""
 "<strong>Focus on Real Opportunities</strong>\n"
 "                                        <span>\n"
 "                                            Selected products, not endless\n"
 "                                            catalogs.\n"
 "                                        </span>"
-msgstr ""
+msgstr "<strong>聚焦真实机会</strong>\n                                        <span>\n                                            Selected products, not endless\n                                            catalogs.\n                                        </span>"
+
 
 #. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
+#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid ""
 "<strong>Gift Programs</strong>\n"
 "                                <span>\n"
 "                                    Consumer gift and seasonal product\n"
 "                                    lines.\n"
 "                                </span>"
-msgstr ""
+msgstr "<strong>礼品项目</strong>\n                                <span>\n                                    适用于消费礼品与季节性产品线。\n                                </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
@@ -471,26 +528,29 @@ msgstr ""
 msgid ""
 "<strong>Incoterm</strong>\n"
 "                                <span class=\"trade-tbd\">TBD</span>"
-msgstr ""
+msgstr "<strong>贸易条款</strong>\n                                <span class=\"trade-tbd\">待确认</span>"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
+msgid ""
+"<strong>Lead Time</strong>\n"
+"                                <span class=\"trade-tbd\">TBD</span>"
+msgstr "<strong>交期</strong>\n                                <span class=\"trade-tbd\">待确认</span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid ""
-"<strong>Lead Time</strong>\n"
-"                                <span class=\"trade-tbd\">TBD</span>"
-msgstr ""
-
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-msgid ""
 "<strong>Lifestyle Retail</strong>\n"
 "                                <span>\n"
 "                                    Lifestyle and specialty retail\n"
 "                                    assortments.\n"
 "                                </span>"
-msgstr ""
+msgstr "<strong>生活方式零售</strong>\n                                <span>\n                                    适用于生活方式及专业零售产品组合。\n                                </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
@@ -502,7 +562,8 @@ msgid ""
 "                                    Customization options confirmed per\n"
 "                                    project.\n"
 "                                </span>"
-msgstr ""
+msgstr "<strong>Logo</strong>\n                                <span>\n                                    可定制选项及起订要求按具体项目确认。\n                                </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
@@ -511,39 +572,44 @@ msgstr ""
 msgid ""
 "<strong>MOQ</strong>\n"
 "                                <span class=\"trade-tbd\">TBD</span>"
-msgstr ""
+msgstr "<strong>起订量（MOQ）</strong>\n                                <span class=\"trade-tbd\">待确认</span>"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
+#: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
 msgid ""
 "<strong>Manual</strong>\n"
 "                                <span>\n"
 "                                    Customization options confirmed per\n"
 "                                    project.\n"
 "                                </span>"
-msgstr ""
+msgstr "<strong>说明书</strong>\n                                <span>\n                                    可定制选项及起订要求按具体项目确认。\n                                </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
 msgid "<strong>Not a dropshipping marketplace.</strong>"
-msgstr ""
+msgstr "<strong>不是一件代发平台。</strong>"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
-msgid "<strong>Not a mass product directory.</strong>"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
+msgid "<strong>Not a mass product directory.</strong>"
+msgstr "<strong>不是海量产品目录。</strong>"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
+#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
+#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid ""
 "<strong>OEM / Private Label</strong>\n"
 "                                        <span>\n"
 "                                            Logo, packaging and product\n"
 "                                            customization.\n"
 "                                        </span>"
-msgstr ""
+msgstr "<strong>OEM / 自有品牌</strong>\n                                        <span>\n                                            支持品牌标识、包装及产品定制。\n                                        </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
@@ -552,96 +618,105 @@ msgstr ""
 msgid ""
 "<strong>Packaging</strong>\n"
 "                                <span class=\"trade-tbd\">TBD</span>"
-msgstr ""
+msgstr "<strong>包装</strong>\n                                <span class=\"trade-tbd\">待确认</span>"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid ""
 "<strong>Packaging</strong>\n"
 "                                <span>\n"
 "                                    Customization options confirmed per\n"
 "                                    project.\n"
 "                                </span>"
-msgstr ""
+msgstr "<strong>包装</strong>\n                                <span>\n                                    可定制选项及起订要求按具体项目确认。\n                                </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 msgid ""
 "<strong>Print Media</strong>\n"
 "                                <span class=\"trade-tbd\">TBD</span>"
-msgstr ""
+msgstr "<strong>打印耗材</strong>\n                                <span class=\"trade-tbd\">待确认</span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 msgid ""
 "<strong>Print Size</strong>\n"
 "                                <span class=\"trade-tbd\">TBD</span>"
-msgstr ""
+msgstr "<strong>打印尺寸</strong>\n                                <span class=\"trade-tbd\">待确认</span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 msgid ""
 "<strong>Print Technology</strong>\n"
 "                                <span class=\"trade-tbd\">TBD</span>"
-msgstr ""
+msgstr "<strong>打印技术</strong>\n                                <span class=\"trade-tbd\">待确认</span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 msgid ""
 "<strong>Print Time</strong>\n"
 "                                <span class=\"trade-tbd\">TBD sec</span>"
-msgstr ""
+msgstr "<strong>打印时间</strong>\n                                <span class=\"trade-tbd\">TBD sec</span>"
+
 
 #. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
+#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid ""
 "<strong>Private-Label Programs</strong>\n"
 "                                <span>\n"
 "                                    Branding, packaging and color\n"
 "                                    programs.\n"
 "                                </span>"
-msgstr ""
+msgstr "<strong>自有品牌项目</strong>\n                                <span>\n                                    支持品牌标识、包装与颜色定制方案。\n                                </span>"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
+#: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
 msgid ""
 "<strong>Product Color</strong>\n"
 "                                <span>\n"
 "                                    Customization options confirmed per\n"
 "                                    project.\n"
 "                                </span>"
-msgstr ""
+msgstr "<strong>产品颜色</strong>\n                                <span>\n                                    可定制选项及起订要求按具体项目确认。\n                                </span>"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
-msgid "<strong>Products</strong>"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
-msgid ""
-"<strong>Quality Checkpoints</strong>\n"
-"                                        <span>\n"
-"                                            Defined inspection points from\n"
-"                                            sample to shipment.\n"
-"                                        </span>"
-msgstr ""
+msgid "<strong>Products</strong>"
+msgstr "<strong>产品</strong>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid ""
-"<strong>Sample</strong>\n"
-"                                <span class=\"trade-tbd\">TBD</span>"
-msgstr ""
+"<strong>Quality Checkpoints</strong>\n"
+"                                        <span>\n"
+"                                            Defined inspection points from\n"
+"                                            sample to shipment.\n"
+"                                        </span>"
+msgstr "<strong>质量检查节点</strong>\n                                        <span>\n                                            从样品到出货设置明确的检查节点。\n                                        </span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
+msgid ""
+"<strong>Sample</strong>\n"
+"                                <span class=\"trade-tbd\">TBD</span>"
+msgstr "<strong>样品</strong>\n                                <span class=\"trade-tbd\">待确认</span>"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
 msgid ""
 "<strong>U.S. Market Readiness</strong>\n"
 "                                        <span>\n"
@@ -650,10 +725,11 @@ msgid ""
 "                                            destination requirements in\n"
 "                                            mind.\n"
 "                                        </span>"
-msgstr ""
+msgstr "<strong>美国市场准备度</strong>\n                                        <span>\n                                            结合美国市场要求审查产品、包装与相关文件。\n                                        </span>"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
+#: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
 msgid ""
 "<strong>What Happens Next</strong>\n"
 "                                    <span>\n"
@@ -661,306 +737,351 @@ msgid ""
 "                                        product and factory options, and\n"
 "                                        respond with next steps.\n"
 "                                    </span>"
-msgstr ""
+msgstr "<strong>后续流程</strong>\n                                    <span>\n                                        我们会审核您的需求，确认产品与工厂方案，并回复下一步安排。\n                                    </span>"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
-msgid ""
-"A Defined Role<br/>\n"
-"                            <span>Between Buyer and Factory.</span>"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
+msgid ""
+"A Defined Role<br/>\n"
+"                            <span>Between Buyer and Factory.</span>"
+msgstr "在买家与工厂之间，承担清晰的协同角色。</span>"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
 msgid ""
 "A reusable alternative to disposable\n"
 "                                    compressed-air cans for keyboards,\n"
 "                                    electronics, lab and workshop\n"
 "                                    equipment."
-msgstr ""
+msgstr "适用于键盘、电子设备、实验室及工作台设备的可重复使用清洁方案，可替代一次性压缩空气罐。"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
-msgid "ABOUT US"
-msgstr ""
 
 #. module: trade_website
 #: model:website.menu,name:trade_website.menu_about
-msgid "About"
-msgstr ""
+msgid "ABOUT US"
+msgstr "关于我们"
+
 
 #. module: trade_website
 #: model:website.menu,name:trade_website.menu_about_us
 #: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_footer
-msgid "About Us"
-msgstr ""
+msgid "About"
+msgstr "关于我们"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_footer
+msgid "About Us"
+msgstr "关于我们"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 msgid "Air Duster"
-msgstr ""
+msgstr "电动吹尘器"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 msgid "Air Flow"
-msgstr ""
+msgstr "风量"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-msgid "Air Speed"
-msgstr ""
 
 #. module: trade_website
 #: model:website.menu,name:trade_website.menu_products_all
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_footer
-msgid "All Products"
-msgstr ""
+msgid "Air Speed"
+msgstr "风速"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_quality
-msgid "Appearance"
-msgstr ""
+msgid "All Products"
+msgstr "全部产品"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "Ask About OEM"
-msgstr ""
+msgid "Appearance"
+msgstr "外观"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-msgid "Available Colors"
-msgstr ""
+msgid "Ask About OEM"
+msgstr "咨询 OEM"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
+#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
+msgid "Available Colors"
+msgstr "可选颜色"
+
+
+#. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid "Available documents confirmed per product."
-msgstr ""
+msgstr "可提供的文件按具体产品确认。"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid ""
-"B2B programs depend on a clear blade\n"
-"                                system and replacement accessory supply."
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote_thanks
+msgid ""
+"B2B programs depend on a clear blade\n"
+"                                system and replacement accessory supply."
+msgstr "B2B 项目需要明确刀片系统以及替换配件的持续供应方案。"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
+#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 msgid "Back to Products"
-msgstr ""
+msgstr "返回产品页"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 msgid "Battery Capacity"
-msgstr ""
+msgstr "电池容量"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 msgid "Battery Type"
-msgstr ""
+msgstr "电池类型"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
+#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid "Battery documents"
-msgstr ""
+msgstr "电池文件"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid "Blade &amp; Accessories"
-msgstr ""
+msgstr "刀片与配件"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid "Blade Compatibility"
-msgstr ""
+msgstr "刀片兼容性"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "Blade Type"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
-msgid "Brands"
-msgstr ""
+msgid "Blade Type"
+msgstr "刀片类型"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
-msgid "Browse Products"
-msgstr ""
+msgid "Brands"
+msgstr "品牌方"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
-msgid ""
-"Business Email\n"
-"                                                    <span class=\"trade-form-required\">*</span>"
-msgstr ""
+msgid "Browse Products"
+msgstr "浏览产品"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-msgid "CLEANING &amp; MAINTENANCE"
-msgstr ""
+msgid ""
+"Business Email\n"
+"                                                    <span class=\"trade-form-required\">*</span>"
+msgstr "商务邮箱\n                                                    <span class=\"trade-form-required\">*</span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_footer
-msgid "COMPANY"
-msgstr ""
+msgid "CLEANING &amp; MAINTENANCE"
+msgstr "清洁与维护"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-msgid "CONSUMER ELECTRONICS"
-msgstr ""
+msgid "COMPANY"
+msgstr "公司"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
-msgid ""
-"Capture Moments.\n"
-"                                            Print Happiness."
-msgstr ""
+msgid "CONSUMER ELECTRONICS"
+msgstr "消费电子"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 msgid ""
 "Capture Moments.\n"
-"                                    Print Happiness."
-msgstr ""
+"                                            Print Happiness."
+msgstr "记录当下，即时打印。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid ""
-"Carton data, labeling and shipment\n"
-"                                        readiness confirmed before handover."
-msgstr ""
+"Capture Moments.\n"
+"                                    Print Happiness."
+msgstr "记录当下，即时打印。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_quality
-msgid "Carton information"
-msgstr ""
+msgid ""
+"Carton data, labeling and shipment\n"
+"                                        readiness confirmed before handover."
+msgstr "交接前确认箱规、标签及出货准备情况。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-msgid "Charging Interface"
-msgstr ""
+msgid "Carton information"
+msgstr "箱规信息"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-msgid "Charging Time"
-msgstr ""
+msgid "Charging Interface"
+msgstr "充电接口"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_quality
+msgid "Charging Time"
+msgstr "充电时间"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.trade_footer
 msgid "Checkpoint Sequence"
-msgstr ""
+msgstr "检查节点流程"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_footer
 msgid "China Manufacturing. U.S. Market Execution."
-msgstr ""
+msgstr "中国制造，美国市场落地。"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.trade_footer
-msgid ""
-"China Manufacturing.<br/>\n"
-"                                U.S. Market Execution."
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
 msgid ""
 "China Manufacturing.<br/>\n"
-"                            <span>Coordinated From Specification to Shipment.</span>"
-msgstr ""
+"                                U.S. Market Execution."
+msgstr "中国制造。<br/>\n                                美国市场落地。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
 msgid ""
+"China Manufacturing.<br/>\n"
+"                            <span>Coordinated From Specification to Shipment.</span>"
+msgstr "中国制造。<br/>\n                            <span>从规格确认到出货全程协同。</span>"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
+msgid ""
 "Clean More.\n"
 "                                            Worry Less."
-msgstr ""
+msgstr "清洁更高效，使用更省心。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 msgid ""
 "Cleaner Devices.\n"
 "                                    A Cleaner Workspace."
-msgstr ""
+msgstr "设备更洁净，工作空间更整洁。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 msgid "Cleaning electronics with the cordless air duster"
 msgstr ""
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-msgid "Cleaning vehicle vents and interior"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
-msgid "Color"
+msgid "Cleaning vehicle vents and interior"
 msgstr ""
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
+msgid "Color"
+msgstr "颜色"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.products_index
 msgid ""
 "Compact instant-print camera platform\n"
 "                                    designed for gifts, lifestyle products\n"
 "                                    and private-label programs."
 msgstr ""
 
+
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.products_index
+#: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
 msgid ""
 "Compact instant-print platform\n"
 "                                            designed for gifts, lifestyle\n"
 "                                            products and private-label\n"
 "                                            programs."
-msgstr ""
+msgstr "面向礼品、生活方式产品和自有品牌项目的紧凑型即时打印相机方案。"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
-msgid "Company"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "Compliance documentation"
-msgstr ""
+msgid "Company"
+msgstr "公司"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
-msgid ""
-"Connecting Chinese Manufacturing<br/>\n"
-"                            <span>With U.S. Market Opportunities.</span>"
-msgstr ""
+msgid "Compliance documentation"
+msgstr "合规文件"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-msgid "Connectivity"
-msgstr ""
+msgid ""
+"Connecting Chinese Manufacturing<br/>\n"
+"                            <span>With U.S. Market Opportunities.</span>"
+msgstr "连接中国制造与美国市场机会。</span>"
+
 
 #. module: trade_website
 #: model:website.menu,name:trade_website.menu_contact
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_footer
-msgid "Contact"
-msgstr ""
+msgid "Connectivity"
+msgstr "连接方式"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
-msgid "Contact Us"
-msgstr ""
+msgid "Contact"
+msgstr "联系我们"
+
 
 #. module: trade_website
 #: model:website.menu,name:trade_website.menu_product_air_duster
@@ -968,73 +1089,90 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.products_index
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
-msgid "Cordless Air Duster"
-msgstr ""
+msgid "Contact Us"
+msgstr "联系我们"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.products_index
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
-msgid "Cordless Air Duster with nozzles"
-msgstr ""
+msgid "Cordless Air Duster"
+msgstr "无线电动吹尘器"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
+msgid "Cordless Air Duster with nozzles"
+msgstr ""
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
 msgid ""
 "Cordless Air Duster, Instant Print Camera and Ultrasonic Cutter on a "
 "presentation stage"
 msgstr ""
 
+
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
+#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "Customization"
-msgstr ""
+msgstr "定制需求"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "Customization &amp; Packaging"
-msgstr ""
+msgstr "定制与包装"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "Customization and packaging"
 msgstr ""
 
+
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
+#: model_terms:ir.ui.view,arch_db:trade_website.page_quality
 msgid ""
 "Customization options — logo, color,\n"
 "                                    packaging, manuals and accessories —\n"
 "                                    are confirmed per project."
-msgstr ""
+msgstr "Logo、颜色、包装、说明书和配件等定制选项按具体项目确认。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_quality
 msgid "Define Your Quality Requirements"
-msgstr ""
+msgstr "明确您的质量要求"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_quality
+#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid ""
 "Defined Checkpoints.<br/>\n"
 "                            <span>Documented Requirements.</span>"
-msgstr ""
+msgstr "明确检查节点。<br/>\n                            <span>记录关键要求。</span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "Defined checkpoints, not vague promises."
-msgstr ""
+msgstr "明确检查节点，而不是模糊承诺。"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
+#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 msgid ""
 "Defined inspection points and\n"
 "                                        document review across production\n"
 "                                        and pre-shipment."
-msgstr ""
+msgstr "在生产及出货前设置明确的检查节点并审核相关文件。"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
+#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid ""
 "Designed for gift programs, lifestyle\n"
 "                                    retail assortments and private-label\n"
@@ -1042,194 +1180,221 @@ msgid ""
 "                                    instantly printable photo experience."
 msgstr ""
 
+
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
+#: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
 msgid ""
 "Designed for workshop, craft, model\n"
 "                                    making and light fabrication tasks.\n"
 "                                    Blade system, replaceable blades and\n"
 "                                    accessories confirmed per program."
-msgstr ""
+msgstr "面向工作台、手工制作、模型制作及轻型加工场景。刀片系统、替换刀片及配件需按具体项目确认。"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
+#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "Destination Country"
-msgstr ""
+msgstr "目的国家"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid ""
 "Direct visibility across\n"
 "                                    factory coordination."
-msgstr ""
+msgstr "工厂协同过程清晰可控。"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
-msgid "Discuss Customization"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
-msgid "Discuss Your Project"
-msgstr ""
+msgid "Discuss Customization"
+msgstr "洽谈定制"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-msgid "Display"
-msgstr ""
+msgid "Discuss Your Project"
+msgstr "沟通您的项目"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
-msgid "Distributors"
-msgstr ""
+msgid "Display"
+msgstr "显示屏"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "Documentation"
-msgstr ""
+msgid "Distributors"
+msgstr "分销商"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
+msgid "Documentation"
+msgstr "文件资料"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
 msgid ""
 "Each step is coordinated with the\n"
 "                                manufacturing partner and confirmed before\n"
 "                                the next step starts."
-msgstr ""
+msgstr "每一步都与制造合作伙伴协同，并在进入下一阶段前完成确认。"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
-msgid "Estimated Quantity"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
-msgid "Explore Our Products"
-msgstr ""
+msgid "Estimated Quantity"
+msgstr "预计数量"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
+msgid "Explore Our Products"
+msgstr "查看产品"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "Explore Our Solution"
-msgstr ""
+msgstr "了解我们的方案"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "FACTORY-SIDE CONTROL"
-msgstr ""
+msgstr "工厂端控制"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
-msgid "FROM PRODUCT SELECTION TO SHIPMENT"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
-msgid "Factory coordination illustration"
-msgstr ""
+msgid "FROM PRODUCT SELECTION TO SHIPMENT"
+msgstr "从产品筛选到出货"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
-msgid "Factory-Side Coordination"
+msgid "Factory coordination illustration"
 msgstr ""
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
-msgid "Factory-Side Visibility"
-msgstr ""
+msgid "Factory-Side Coordination"
+msgstr "工厂端协同"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
+msgid "Factory-Side Visibility"
+msgstr "工厂端可视化"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
 msgid "Factory-side coordination illustration"
 msgstr ""
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
-msgid "Featured Products"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-msgid ""
-"For Home, Car and\n"
-"                                    Everyday Use."
-msgstr ""
+msgid "Featured Products"
+msgstr "精选产品"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_quality
 msgid ""
-"Four stages where requirements are reviewed\n"
-"                                and recorded."
-msgstr ""
+"For Home, Car and\n"
+"                                    Everyday Use."
+msgstr "适用于家庭、汽车及日常清洁。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
 msgid ""
-"From Good Products<br/>\n"
-"                                    to Great Opportunities."
-msgstr ""
+"Four stages where requirements are reviewed\n"
+"                                and recorded."
+msgstr "四个阶段对要求进行审核与记录。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid ""
-"From Product Selection<br/>\n"
-"                            <span>to Shipment.</span>"
-msgstr ""
+"From Good Products<br/>\n"
+"                                    to Great Opportunities."
+msgstr "从好产品，到真实的市场机会。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_quality
-msgid "Function"
-msgstr ""
+msgid ""
+"From Product Selection<br/>\n"
+"                            <span>to Shipment.</span>"
+msgstr "从产品筛选到出货。</span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "Home"
-msgstr ""
+msgid "Function"
+msgstr "功能"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
-msgid "How We Control the Factory Side"
-msgstr ""
+msgid "Home"
+msgstr "首页"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
-msgid "How We Work"
-msgstr ""
+msgid "How We Control the Factory Side"
+msgstr "我们如何管理工厂端"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
+msgid "How We Work"
+msgstr "我们如何工作"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 msgid ""
 "How we control the factory side: a defined\n"
 "                            sequence from product specification to shipment\n"
 "                            preparation."
-msgstr ""
+msgstr "我们通过明确流程管理工厂端，从产品规格确认一直推进到出货准备。"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-msgid "Imaging Sensor"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "Included Accessories"
-msgstr ""
+msgid "Imaging Sensor"
+msgstr "图像传感器"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
-msgid ""
-"Information we track and confirm with the\n"
-"                                manufacturing partner."
-msgstr ""
+msgid "Included Accessories"
+msgstr "随附配件"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "Input Voltage"
-msgstr ""
+msgid ""
+"Information we track and confirm with the\n"
+"                                manufacturing partner."
+msgstr "我们与制造合作伙伴持续跟踪并确认以下信息。"
+
 
 #. module: trade_website
 #: model:website.menu,name:trade_website.menu_product_instant_camera
@@ -1238,49 +1403,63 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:trade_website.products_index
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_footer
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
-msgid "Instant Print Camera"
-msgstr ""
+msgid "Input Voltage"
+msgstr "输入电压"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-msgid "Instant Print Camera in lifestyle settings"
-msgstr ""
+msgid "Instant Print Camera"
+msgstr "即时打印相机"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 #: model_terms:ir.ui.view,arch_db:trade_website.products_index
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
+msgid "Instant Print Camera in lifestyle settings"
+msgstr ""
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
+#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
+#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid "Instant Print Camera printing a photo"
 msgstr ""
 
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.page_quality
+msgid "Interested in This Product?"
+msgstr "对这款产品感兴趣？"
+
+
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "Interested in This Product?"
-msgstr ""
-
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_quality
 msgid "Items covered at the defined checkpoints."
 msgstr ""
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "Key Specifications"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_quality
-msgid "Labeling"
-msgstr ""
+msgid "Key Specifications"
+msgstr "关键参数"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
+msgid "Labeling"
+msgstr "标签"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "Logo"
 msgstr ""
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
@@ -1288,230 +1467,270 @@ msgid ""
 "Logo, color, packaging and\n"
 "                                        accessory programs coordinated with\n"
 "                                        the factory."
-msgstr ""
+msgstr "与工厂协调 Logo、颜色、包装及配件定制方案。"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
+#: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
 msgid ""
 "Looking for the Right Product\n"
 "                                or Manufacturing Partner?"
-msgstr ""
+msgstr "正在寻找合适的产品或制造合作伙伴？"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
 msgid "MANUFACTURING"
-msgstr ""
+msgstr "制造协同"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
-msgid "Manufacturing"
-msgstr ""
 
 #. module: trade_website
 #: model:website.menu,name:trade_website.menu_manufacturing
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_footer
-msgid "Manufacturing Control"
-msgstr ""
+msgid "Manufacturing"
+msgstr "制造协同"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
-msgid "Market-Side Product Selection"
-msgstr ""
+msgid "Manufacturing Control"
+msgstr "制造协同"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-msgid "Maximum Motor Speed"
-msgstr ""
+msgid "Market-Side Product Selection"
+msgstr "面向市场的产品筛选"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
-msgid ""
-"More Than Product Sourcing.<br/>\n"
-"                                    A Controlled Supply Process."
-msgstr ""
+msgid "Maximum Motor Speed"
+msgstr "最高电机转速"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-msgid "Motor Type"
-msgstr ""
+msgid ""
+"More Than Product Sourcing.<br/>\n"
+"                                    A Controlled Supply Process."
+msgstr "不止于产品采购。<br/>\n                                    更在于可控的供应流程。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
-msgid ""
-"Name\n"
-"                                                    <span class=\"trade-form-required\">*</span>"
-msgstr ""
+msgid "Motor Type"
+msgstr "电机类型"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.products_index
+msgid ""
+"Name\n"
+"                                                    <span class=\"trade-form-required\">*</span>"
+msgstr "姓名\n                                                    <span class=\"trade-form-required\">*</span>"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 msgid "Need a Product That Is Not Listed?"
-msgstr ""
+msgstr "没有找到您要的产品？"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 msgid "Noise Level"
-msgstr ""
+msgstr "噪音水平"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-msgid "Nozzle Configuration"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "OEM"
-msgstr ""
+msgid "Nozzle Configuration"
+msgstr "喷嘴配置"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-msgid "OEM &amp; Customization"
+msgid "OEM"
 msgstr ""
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
+msgid "OEM &amp; Customization"
+msgstr "OEM 与定制"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "OEM &amp; PRIVATE LABEL"
-msgstr ""
+msgstr "OEM 与自有品牌"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
+#: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
 msgid "OEM and private label illustration"
 msgstr ""
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
-msgid "OUR ADVANTAGE"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
-msgid "OUR MANUFACTURING SOLUTION"
-msgstr ""
+msgid "OUR ADVANTAGE"
+msgstr "我们的优势"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_footer
-msgid "OUR SOLUTION"
-msgstr ""
+msgid "OUR MANUFACTURING SOLUTION"
+msgstr "我们的制造协同方案"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "Operating Mode"
-msgstr ""
+msgid "OUR SOLUTION"
+msgstr "解决方案"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
-msgid "Other"
-msgstr ""
+msgid "Operating Mode"
+msgstr "工作模式"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
+msgid "Other"
+msgstr "其他"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
 msgid "Our Advantage"
-msgstr ""
+msgstr "我们的优势"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
 msgid "Our Approach"
-msgstr ""
+msgstr "我们的方式"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
-msgid "Our Role"
-msgstr ""
 
 #. module: trade_website
 #: model:website.menu,name:trade_website.menu_solution
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
-msgid "Our Solution"
-msgstr ""
+msgid "Our Role"
+msgstr "我们的角色"
+
 
 #. module: trade_website
 #: model:website.menu,name:trade_website.menu_solution_overview
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_footer
-msgid "Overview"
-msgstr ""
+msgid "Our Solution"
+msgstr "解决方案"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.products_index
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_footer
-msgid "PRODUCTS"
-msgstr ""
+msgid "Overview"
+msgstr "方案总览"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
 #: model_terms:ir.ui.view,arch_db:trade_website.page_quality
 #: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
-msgid "Packaging"
-msgstr ""
+msgid "PRODUCTS"
+msgstr "产品"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
-msgid "Packaging confirmation illustration"
-msgstr ""
+msgid "Packaging"
+msgstr "包装"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "Packaging data"
+msgid "Packaging confirmation illustration"
 msgstr ""
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
-msgid "Phone"
-msgstr ""
+msgid "Packaging data"
+msgstr "包装数据"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
+msgid "Phone"
+msgstr "电话"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid "Photo Resolution"
-msgstr ""
+msgstr "照片分辨率"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid "Power / Speed Levels"
-msgstr ""
+msgstr "功率 / 速度档位"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "Power Supply"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
-msgid ""
-"Precision Tools\n"
-"                                            for Creative Ideas."
-msgstr ""
+msgid "Power Supply"
+msgstr "供电方式"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid ""
 "Precision Tools\n"
-"                                    for Creative Ideas."
-msgstr ""
+"                                            for Creative Ideas."
+msgstr "精密切割，为创意而生。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.products_index
 msgid ""
+"Precision Tools\n"
+"                                    for Creative Ideas."
+msgstr "精密切割，为创意而生。"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
+msgid ""
 "Precision cutting tool platform\n"
 "                                            for workshop, craft and light\n"
 "                                            fabrication applications."
-msgstr ""
+msgstr "面向工作台、手工制作和轻型加工场景的精密切割工具方案。"
+
 
 #. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
+#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid ""
 "Precision cutting tool platform for\n"
 "                                    workshop, craft and light fabrication\n"
 "                                    applications."
-msgstr ""
+msgstr "面向工作台、手工制作和轻型加工场景的精密切割工具方案。"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid ""
 "Preliminary specification fields.\n"
 "                                Factory confirmation pending."
-msgstr ""
+msgstr "当前为初步参数字段，具体数值仍需工厂确认。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
@@ -1519,107 +1738,124 @@ msgid ""
 "Print technology to be confirmed. It\n"
 "                                defines the consumable model and U.S.\n"
 "                                market positioning."
-msgstr ""
+msgstr "打印技术仍待确认，该项将直接影响耗材模式与美国市场定位。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 msgid "Printing Experience"
-msgstr ""
+msgstr "打印体验"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-msgid "Private Label Options"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
+msgid "Private Label Options"
+msgstr "自有品牌选项"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "Product"
-msgstr ""
+msgstr "产品"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "Product & factory alignment"
-msgstr ""
+msgstr "产品与工厂对齐"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
-msgid "Product &amp; Factory Alignment"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "Product Dimensions"
-msgstr ""
+msgid "Product &amp; Factory Alignment"
+msgstr "产品与工厂对齐"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
-msgid ""
-"Product Interest\n"
-"                                            <span class=\"trade-form-required\">*</span>"
-msgstr ""
+msgid "Product Dimensions"
+msgstr "产品尺寸"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-msgid "Product Overview"
-msgstr ""
+msgid ""
+"Product Interest\n"
+"                                            <span class=\"trade-form-required\">*</span>"
+msgstr "感兴趣的产品\n                                            <span class=\"trade-form-required\">*</span>"
+
 
 #. module: trade_website
 #: model:website.menu,name:trade_website.menu_our_advantage
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_footer
-msgid "Product Selection Focus"
-msgstr ""
+msgid "Product Overview"
+msgstr "产品概览"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-msgid "Product Weight"
-msgstr ""
+msgid "Product Selection Focus"
+msgstr "产品筛选"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
-msgid "Product and factory alignment"
-msgstr ""
+msgid "Product Weight"
+msgstr "产品重量"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
+msgid "Product and factory alignment"
+msgstr ""
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.page_quality
 msgid ""
 "Product and packaging requirements are\n"
 "                                    defined up front and reviewed at defined\n"
 "                                    checkpoints. Available documentation is\n"
 "                                    confirmed per product before it is\n"
 "                                    presented as a compliance claim."
-msgstr ""
+msgstr "产品与包装要求在前期明确，并在既定节点进行审核。只有在逐项确认后，现有文件才会作为合规信息向买家展示。"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_quality
+#: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
 msgid ""
 "Product and packaging requirements are defined\n"
 "                            before production and reviewed at defined\n"
 "                            checkpoints."
 msgstr ""
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
-msgid "Product companies"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_quality
-msgid "Product specification"
-msgstr ""
+msgid "Product companies"
+msgstr "产品公司"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
+msgid "Product specification"
+msgstr "产品规格"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid ""
 "Product, factory and documentation\n"
 "                                    requirements are aligned before\n"
 "                                    production starts."
 msgstr ""
 
+
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
+#: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
 msgid ""
 "Product, packaging and documentation\n"
 "                                    expectations are aligned with the U.S.\n"
@@ -1627,138 +1863,157 @@ msgid ""
 "                                    begins. Logistics coordination covers\n"
 "                                    freight, customs documentation and\n"
 "                                    shipment readiness."
-msgstr ""
+msgstr "在生产开始前，结合美国目的市场要求对产品、包装与文件进行确认；物流协调覆盖货运、报关文件与出货准备。"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
+#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid ""
 "Product, packaging, documentation and\n"
 "                                    logistics requirements are reviewed with\n"
 "                                    the destination market in mind."
 msgstr ""
 
+
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "Production Coordination"
-msgstr ""
+msgstr "生产协调"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
-msgid "Production coordination"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
-msgid "Production scheduling illustration"
-msgstr ""
+msgid "Production coordination"
+msgstr "生产协调"
+
 
 #. module: trade_website
 #: model:website.menu,name:trade_website.menu_products
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "Products"
+msgid "Production scheduling illustration"
 msgstr ""
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
-msgid ""
-"Project Details\n"
-"                                            <span class=\"trade-form-required\">*</span>"
-msgstr ""
+msgid "Products"
+msgstr "产品"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
-msgid "QC"
-msgstr ""
+msgid ""
+"Project Details\n"
+"                                            <span class=\"trade-form-required\">*</span>"
+msgstr "项目说明\n                                            <span class=\"trade-form-required\">*</span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_quality
-msgid "QUALITY"
-msgstr ""
+msgid "QC"
+msgstr "质检"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
-msgid "QUALITY &amp; DOCUMENTATION"
-msgstr ""
+msgid "QUALITY"
+msgstr "质量管理"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_quality
-msgid "Quality"
-msgstr ""
+msgid "QUALITY &amp; DOCUMENTATION"
+msgstr "质量与文件"
+
 
 #. module: trade_website
 #: model:website.menu,name:trade_website.menu_quality
-msgid "Quality & Documentation"
-msgstr ""
+msgid "Quality"
+msgstr "质量管理"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_footer
+msgid "Quality & Documentation"
+msgstr "质量与文件"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "Quality &amp; Documentation"
-msgstr ""
+msgstr "质量与文件"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "Quality and documentation"
 msgstr ""
 
+
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
+#: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
 msgid "Quality and documentation illustration"
 msgstr ""
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
-msgid "Quality checkpoints"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
-msgid "Quality checkpoints illustration"
-msgstr ""
+msgid "Quality checkpoints"
+msgstr "质量检查节点"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_quality
-msgid "Quantity"
+msgid "Quality checkpoints illustration"
 msgstr ""
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
-msgid "REQUEST A QUOTE"
-msgstr ""
+msgid "Quantity"
+msgstr "数量"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "Rated Power"
-msgstr ""
+msgid "REQUEST A QUOTE"
+msgstr "获取报价"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
-msgid "Ready to Start Your Next Project?"
-msgstr ""
+msgid "Rated Power"
+msgstr "额定功率"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-msgid "Rechargeable"
-msgstr ""
+msgid "Ready to Start Your Next Project?"
+msgstr "准备启动下一个项目？"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-msgid "Rechargeable lithium battery"
-msgstr ""
+msgid "Rechargeable"
+msgstr "可充电"
+
 
 #. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
+msgid "Rechargeable lithium battery"
+msgstr "可充电锂电池"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
+#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid "Replacement Blades"
-msgstr ""
+msgstr "替换刀片"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "Request Product Details"
-msgstr ""
 
 #. module: trade_website
 #: model:website.menu,name:trade_website.menu_request_quote
@@ -1773,84 +2028,103 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:trade_website.products_index
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_footer
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
-msgid "Request a Quote"
-msgstr ""
+msgid "Request Product Details"
+msgstr "索取产品资料"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid ""
-"Request product details, specification\n"
-"                                confirmation and quotation."
-msgstr ""
+msgid "Request a Quote"
+msgstr "获取报价"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_quality
-msgid "Required documentation"
-msgstr ""
+msgid ""
+"Request product details, specification\n"
+"                                confirmation and quotation."
+msgstr "可索取产品资料、确认规格并获取报价。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.products_index
+msgid "Required documentation"
+msgstr "所需文件"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 msgid ""
 "Reusable cordless air cleaning\n"
 "                                            solution for electronics,\n"
 "                                            vehicle interiors and\n"
 "                                            workspaces."
-msgstr ""
+msgstr "适用于电子设备、汽车内饰和工作空间的可重复使用无线吹尘清洁方案。"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
+#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid ""
 "Reusable cordless air cleaning solution\n"
 "                                    for electronics, vehicle interiors and\n"
 "                                    workspaces."
-msgstr ""
+msgstr "适用于电子设备、汽车内饰和工作空间的可重复使用无线吹尘清洁方案。"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
-msgid ""
-"Reviewed with destination\n"
-"                                    requirements in mind."
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-msgid "Runtime"
-msgstr ""
+msgid ""
+"Reviewed with destination\n"
+"                                    requirements in mind."
+msgstr "以目的市场要求为前提进行审核。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "Safety Lock"
-msgstr ""
+msgid "Runtime"
+msgstr "续航时间"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
-msgid "Sample Validation"
-msgstr ""
+msgid "Safety Lock"
+msgstr "安全锁"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
-msgid "Sample validation"
-msgstr ""
+msgid "Sample Validation"
+msgstr "样品验证"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
-msgid "Sample validation illustration"
-msgstr ""
+msgid "Sample validation"
+msgstr "样品验证"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
-msgid ""
-"Samples reviewed against the agreed\n"
-"                                        specification."
+msgid "Sample validation illustration"
 msgstr ""
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
+msgid ""
+"Samples reviewed against the agreed\n"
+"                                        specification."
+msgstr "依据双方确认的规格审核样品。"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "Schedule"
-msgstr ""
+msgstr "排期"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
@@ -1858,99 +2132,115 @@ msgid ""
 "Schedule, quantities and progress\n"
 "                                        follow-up with the manufacturing\n"
 "                                        partner."
-msgstr ""
+msgstr "与制造合作伙伴协调排产、数量并跟进生产进度。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "See Manufacturing Control"
-msgstr ""
+msgstr "查看制造协同"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "See Our Approach"
-msgstr ""
+msgstr "查看我们的方式"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
+#: model_terms:ir.ui.view,arch_db:trade_website.products_index
 msgid "See Quality &amp; Documentation"
-msgstr ""
+msgstr "查看质量与文件"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.products_index
 msgid "Selected Products"
-msgstr ""
+msgstr "精选产品"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.products_index
-msgid ""
-"Selected for Opportunity,<br/>\n"
-"                            <span>Not Catalog Volume.</span>"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
 msgid ""
-"Selected products for U.S. market\n"
-"                                    evaluation and B2B sourcing programs."
-msgstr ""
+"Selected for Opportunity,<br/>\n"
+"                            <span>Not Catalog Volume.</span>"
+msgstr "聚焦真实机会，不做目录堆砌。</span>"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
+msgid ""
+"Selected products for U.S. market\n"
+"                                    evaluation and B2B sourcing programs."
+msgstr "面向美国市场评估与 B2B 采购项目筛选的产品。"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
 msgid ""
 "Selected products, not catalog dumping.\n"
 "                                    Each product is reviewed before it is\n"
 "                                    presented."
 msgstr ""
 
+
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
+#: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
 msgid ""
 "Share your product scope and target market.\n"
 "                                We will review how we can support it."
 msgstr ""
 
+
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
+#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid ""
 "Share your product, target specification and\n"
 "                                quantity. We will review factory and\n"
 "                                production options."
-msgstr ""
+msgstr "告诉我们产品、目标规格和数量，我们会评估工厂与生产方案。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "Shipment Preparation"
-msgstr ""
+msgstr "出货准备"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
-msgid "Shipment preparation"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
-msgid "Shipping preparation"
-msgstr ""
+msgid "Shipment preparation"
+msgstr "出货准备"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_manufacturing
-msgid "Shipping preparation illustration"
-msgstr ""
+msgid "Shipping preparation"
+msgstr "出货准备"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
-msgid ""
-"Six steps between a buyer request and a\n"
-"                                shipment-ready product."
+msgid "Shipping preparation illustration"
 msgstr ""
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_footer
 msgid ""
+"Six steps between a buyer request and a\n"
+"                                shipment-ready product."
+msgstr "从买家需求到具备出货条件的产品，共六个关键步骤。"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
+msgid ""
 "Sourcing, validation and manufacturing\n"
 "                                coordination between selected Chinese\n"
 "                                factories and U.S. buyers."
-msgstr ""
+msgstr "连接精选中国制造商与美国买家的采购、验证和制造协同。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
@@ -1960,10 +2250,12 @@ msgid ""
 "                                    products."
 msgstr ""
 
+
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
+#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "Specialty retailers"
-msgstr ""
+msgstr "专业零售商"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
@@ -1973,209 +2265,238 @@ msgid ""
 "                                    the manufacturing partner on your behalf.\n"
 "                                    We do not drop the order at the factory\n"
 "                                    gate."
-msgstr ""
+msgstr "我们代表买家与制造合作伙伴协同规格、定制及生产跟进，不会在订单交给工厂后就失去跟踪。"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
+#: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
 msgid ""
 "Specifications, materials and\n"
 "                                        factory capability confirmed before\n"
 "                                        any production."
-msgstr ""
+msgstr "生产前确认产品规格、材料与工厂能力。"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
+#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 msgid ""
 "Specifications, samples, customization\n"
 "                                    and production are coordinated directly\n"
 "                                    with manufacturing partners."
 msgstr ""
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-msgid "Speed Control"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
-msgid "Start a Conversation"
-msgstr ""
+msgid "Speed Control"
+msgstr "调速方式"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
-msgid "Start a Sourcing Project"
-msgstr ""
+msgid "Start a Conversation"
+msgstr "开始沟通"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-msgid "Storage"
-msgstr ""
+msgid "Start a Sourcing Project"
+msgstr "启动采购项目"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
+msgid "Storage"
+msgstr "存储"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
+#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
+#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid "Submit Request"
-msgstr ""
+msgstr "提交需求"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid "Supply Information"
-msgstr ""
+msgstr "供应信息"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid "TBD"
-msgstr ""
+msgstr "待确认"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-msgid "TBD CFM"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "TBD W"
-msgstr ""
+msgid "TBD CFM"
+msgstr "待确认 CFM"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-msgid "TBD dBA"
-msgstr ""
+msgid "TBD W"
+msgstr "待确认 W"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
+#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
+msgid "TBD dBA"
+msgstr "待确认 dBA"
+
+
+#. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid "TBD g"
-msgstr ""
+msgstr "待确认 g"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "TBD kHz"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-msgid "TBD m/s"
-msgstr ""
+msgid "TBD kHz"
+msgstr "待确认 kHz"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-msgid "TBD mAh"
-msgstr ""
+msgid "TBD m/s"
+msgstr "待确认 m/s"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
+msgid "TBD mAh"
+msgstr "待确认 mAh"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
+#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
+#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid "TBD min"
 msgstr ""
 
+
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid "TBD mm"
-msgstr ""
+msgstr "待确认 mm"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-msgid "TBD rpm"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "TOOLS &amp; EQUIPMENT"
-msgstr ""
+msgid "TBD rpm"
+msgstr "待确认 rpm"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
-msgid "Talk Through Your Sourcing Program"
-msgstr ""
+msgid "TOOLS &amp; EQUIPMENT"
+msgstr "工具与设备"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
-msgid "Target Delivery Date"
+msgid "Talk Through Your Sourcing Program"
 msgstr ""
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_quality
+msgid "Target Delivery Date"
+msgstr "目标交付日期"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.products_index
 msgid ""
 "Tell us the checks and documentation your\n"
 "                                program requires."
 msgstr ""
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.products_index
-msgid ""
-"Tell us the product category, target\n"
-"                                specification and quantity. We will review\n"
-"                                sourcing and factory options."
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
 msgid ""
-"Tell us the product, quantity and customization\n"
-"                            requirements. We will review product, factory and\n"
-"                            customization options."
-msgstr ""
+"Tell us the product category, target\n"
+"                                specification and quantity. We will review\n"
+"                                sourcing and factory options."
+msgstr "告诉我们产品类别、目标规格和预计数量，我们会评估采购与工厂方案。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
+msgid ""
+"Tell us the product, quantity and customization\n"
+"                            requirements. We will review product, factory and\n"
+"                            customization options."
+msgstr "告诉我们产品、数量与定制需求，我们会评估产品、工厂与定制方案。"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid ""
 "Tell us what you are looking\n"
 "                                            for. We will review product,\n"
 "                                            factory and customization\n"
 "                                            options."
-msgstr ""
+msgstr "告诉我们您的需求，我们会评估产品、工厂与定制方案。"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
+#: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
 msgid ""
 "Tell us what you are looking for. We will\n"
 "                                review product, factory and customization\n"
 "                                options and respond with next steps."
-msgstr ""
+msgstr "告诉我们您的需求，我们会评估产品、工厂与定制方案，并给出下一步建议。"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
+#: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote_thanks
 msgid ""
 "Tell us what you are sourcing and which\n"
 "                                market you are targeting."
 msgstr ""
 
+
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote_thanks
+#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid "Thank You"
-msgstr ""
+msgstr "谢谢"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid "Tool Weight"
-msgstr ""
+msgstr "工具重量"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
+#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid "Tool and blade documentation"
 msgstr ""
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
-msgid "U.S. MARKET READINESS"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
-msgid "U.S. Market Readiness"
-msgstr ""
+msgid "U.S. MARKET READINESS"
+msgstr "美国市场准备度"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
-msgid "U.S. market readiness and shipping illustration"
-msgstr ""
+msgid "U.S. Market Readiness"
+msgstr "美国市场准备度"
+
 
 #. module: trade_website
 #: model:website.menu,name:trade_website.menu_product_ultrasonic_cutter
@@ -2184,192 +2505,223 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:trade_website.products_index
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_footer
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
-msgid "Ultrasonic Cutter"
+msgid "U.S. market readiness and shipping illustration"
 msgstr ""
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
+msgid "Ultrasonic Cutter"
+msgstr "超声波切割刀"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
 msgid "Ultrasonic Cutter accessories kit"
 msgstr ""
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "Ultrasonic Frequency"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "Ultrasonic cutter in craft use"
-msgstr ""
+msgid "Ultrasonic Frequency"
+msgstr "超声波频率"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 #: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
-msgid "User manual"
+msgid "Ultrasonic cutter in craft use"
 msgstr ""
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
-msgid ""
-"Values marked TBD — Supplier confirmation\n"
-"                            pending."
-msgstr ""
+msgid "User manual"
+msgstr "用户说明书"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_ultrasonic_cutter
+msgid ""
+"Values marked TBD — Supplier confirmation\n"
+"                            pending."
+msgstr "标注“待确认”的参数仍需供应商确认。"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
 msgid ""
 "Values marked TBD — Supplier confirmation\n"
 "                            pending. Blade type, compatibility and\n"
 "                            replacement supply are key items for B2B\n"
 "                            programs."
-msgstr ""
+msgstr "标注“待确认”的参数仍需供应商确认。刀片类型、兼容性与替换供应能力是 B2B 项目的关键确认项。"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.product_instant_print_camera
-msgid ""
-"Values marked TBD — Supplier confirmation\n"
-"                            pending. Print technology must be confirmed\n"
-"                            before any consumable assumption is made."
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.product_air_duster
 msgid ""
-"Vents, dashboards and interior\n"
-"                                    detailing — plus general dust removal\n"
-"                                    at home and in the workshop."
-msgstr ""
+"Values marked TBD — Supplier confirmation\n"
+"                            pending. Print technology must be confirmed\n"
+"                            before any consumable assumption is made."
+msgstr "标注“待确认”的参数仍需供应商确认。在打印技术确认前，不对耗材方案作任何假设。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
-msgid "View All Products"
-msgstr ""
+msgid ""
+"Vents, dashboards and interior\n"
+"                                    detailing — plus general dust removal\n"
+"                                    at home and in the workshop."
+msgstr "可用于出风口、仪表台和车内细节清洁，也适合家庭与工作台的日常除尘。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.products_index
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
+msgid "View All Products"
+msgstr "查看全部产品"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
 msgid "View Product"
-msgstr ""
+msgstr "查看产品"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
 msgid "WHY U.S. BUSINESSES WORK WITH US"
-msgstr ""
+msgstr "为什么美国企业与我们合作"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
+#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
 msgid ""
 "We coordinate critical steps between\n"
 "                                    product selection and shipment — so\n"
 "                                    every product is supported by a\n"
 "                                    defined process on the factory side."
-msgstr ""
+msgstr "我们协同从产品筛选到出货的关键环节，让每个产品都有清晰、可追踪的工厂端执行流程。"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_solution
+#: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
 msgid ""
 "We coordinate the critical steps between U.S.\n"
 "                            buyers and Chinese manufacturers — from product\n"
 "                            definition and sampling to customization,\n"
 "                            production follow-up, quality review and shipping\n"
 "                            preparation."
-msgstr ""
+msgstr "我们协同美国买家与中国制造商之间的关键环节——从产品定义与打样，到定制、生产跟进、质量审查和出货准备。"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
+#: model_terms:ir.ui.view,arch_db:trade_website.products_index
 msgid ""
 "We do not simply publish factory\n"
 "                                    catalogs. Products are selected with the\n"
 "                                    destination market in mind."
-msgstr ""
+msgstr "我们不会简单发布工厂目录，而是结合目的市场筛选产品。"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.products_index
+#: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
 msgid ""
 "We focus on a limited set of products where\n"
 "                            manufacturing capability, customization\n"
 "                            flexibility and market fit justify deeper\n"
 "                            evaluation."
-msgstr ""
+msgstr "我们只聚焦少量在制造能力、定制灵活性与市场匹配度上值得深入验证的产品。"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
+#: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
 msgid ""
 "We focus on product selection, factory\n"
 "                            coordination and destination market readiness."
 msgstr ""
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
-msgid ""
-"We operate between the buyer and the factory,\n"
-"                            managing the information and execution that often\n"
-"                            gets lost between the two."
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote
 msgid ""
-"We review product, factory and\n"
-"                                        customization options before\n"
-"                                        responding. No obligation."
-msgstr ""
+"We operate between the buyer and the factory,\n"
+"                            managing the information and execution that often\n"
+"                            gets lost between the two."
+msgstr "我们位于买家与工厂之间，负责管理双方之间最容易丢失的信息与执行细节。"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
+msgid ""
+"We review product, factory and\n"
+"                                        customization options before\n"
+"                                        responding. No obligation."
+msgstr "我们会先审核产品、工厂与定制方案，再与您联系；提交需求不构成任何采购义务。"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
 msgid ""
 "We source, validate and deliver\n"
 "                                    market-ready products from selected\n"
 "                                    Chinese manufacturers, coordinating\n"
 "                                    specifications, samples, production,\n"
 "                                    quality, customization and shipment."
-msgstr ""
+msgstr "我们从精选中国制造商中筛选、验证并交付适合市场的产品，协调整个规格确认、样品、生产、质量、定制与出货流程。"
+
 
 #. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
+#: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
 msgid ""
 "We work between buyers and factories on product\n"
 "                            sourcing, validation and manufacturing\n"
 "                            coordination."
-msgstr ""
+msgstr "我们在买家与工厂之间提供产品采购、验证与制造协同。"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_our_advantage
-msgid "What We Are Not"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_quality
+msgid "What We Are Not"
+msgstr "我们不是什么"
+
+
+#. module: trade_website
+#: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
 msgid "What We Check"
-msgstr ""
+msgstr "我们检查什么"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
 msgid "What We Do"
-msgstr ""
+msgstr "我们做什么"
 
-#. module: trade_website
-#: model_terms:ir.ui.view,arch_db:trade_website.page_about_us
-msgid "Who We Work With"
-msgstr ""
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.trade_homepage
-msgid "YOUR SOURCING AND MANUFACTURING PARTNER"
-msgstr ""
+msgid "Who We Work With"
+msgstr "我们服务的客户"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_solution
-msgid ""
-"Your brand on selected\n"
-"                                    products."
-msgstr ""
+msgid "YOUR SOURCING AND MANUFACTURING PARTNER"
+msgstr "您的采购与制造合作伙伴"
+
 
 #. module: trade_website
 #: model_terms:ir.ui.view,arch_db:trade_website.page_request_quote_thanks
 msgid ""
+"Your brand on selected\n"
+"                                    products."
+msgstr "在精选产品上打造您的品牌。"
+
+
+msgid ""
 "Your request has been received. We will review\n"
 "                            product, factory and customization options and\n"
 "                            get back to you."
-msgstr ""
+msgstr "您的需求已收到。我们会评估产品、工厂与定制方案，并尽快与您联系。"
