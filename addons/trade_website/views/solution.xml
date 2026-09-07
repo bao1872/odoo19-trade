@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================================================= -->
+    <!-- /solution — main sales page: Manufacturing + Quality + Advantage -->
+    <!-- ============================================================= -->
+    <template id="page_solution" name="Our Solution">
+
+        <t t-call="website.layout">
+
+            <t t-set="additional_title">Our Solution</t>
+
+            <div id="wrap" class="oe_structure trade-site trade-page-solution">
+
+                <!-- HERO -->
+                <section class="trade-page-hero">
+                    <div class="container">
+                        <div class="trade-eyebrow">FROM PRODUCT SELECTION TO SHIPMENT</div>
+                        <h1 class="trade-page-title">
+                            From Product Selection<br/>
+                            <span>to Shipment.</span>
+                        </h1>
+                        <p class="trade-page-lead">
+                            We coordinate the critical steps between U.S.
+                            buyers and Chinese manufacturers — from product
+                            definition and sampling to customization,
+                            production follow-up, quality review and shipping
+                            preparation.
+                        </p>
+                        <div class="trade-actions">
+                            <a href="/request-quote"
+                               class="btn trade-btn-primary">
+                                Start a Sourcing Project
+                            </a>
+                            <a href="/products"
+                               class="btn trade-btn-secondary">
+                                Explore Our Products
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 6 PROCESS STEPS — use v04 process panels as visuals -->
+                <section class="trade-section trade-solution-steps">
+
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>How We Work</h2>
+                            <p>
+                                Six steps between a buyer request and a
+                                shipment-ready product.
+                            </p>
+                        </div>
+
+                        <div class="trade-step-grid">
+
+                            <div class="trade-step-tile">
+                                <div class="trade-visual trade-visual-process">
+                                    <img loading="lazy"
+                                         src="/trade_website/static/src/img/v04/process/01-product-alignment.webp"
+                                         alt="Product &amp; factory alignment"/>
+                                </div>
+                                <div class="trade-step-tile-body">
+                                    <span class="trade-step-index">01</span>
+                                    <h3>Product &amp; Factory Alignment</h3>
+                                    <p>
+                                        Specifications, materials and
+                                        factory capability confirmed before
+                                        any production.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="trade-step-tile">
+                                <div class="trade-visual trade-visual-process">
+                                    <img loading="lazy"
+                                         src="/trade_website/static/src/img/v04/process/02-sample-validation.webp"
+                                         alt="Sample validation"/>
+                                </div>
+                                <div class="trade-step-tile-body">
+                                    <span class="trade-step-index">02</span>
+                                    <h3>Sample Validation</h3>
+                                    <p>
+                                        Samples reviewed against the agreed
+                                        specification.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="trade-step-tile">
+                                <div class="trade-visual trade-visual-process">
+                                    <img loading="lazy"
+                                         src="/trade_website/static/src/img/v04/process/03-customization.webp"
+                                         alt="Customization and packaging"/>
+                                </div>
+                                <div class="trade-step-tile-body">
+                                    <span class="trade-step-index">03</span>
+                                    <h3>Customization &amp; Packaging</h3>
+                                    <p>
+                                        Logo, color, packaging and
+                                        accessory programs coordinated with
+                                        the factory.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="trade-step-tile">
+                                <div class="trade-visual trade-visual-process">
+                                    <img loading="lazy"
+                                         src="/trade_website/static/src/img/v04/process/04-production-coordination.webp"
+                                         alt="Production coordination"/>
+                                </div>
+                                <div class="trade-step-tile-body">
+                                    <span class="trade-step-index">04</span>
+                                    <h3>Production Coordination</h3>
+                                    <p>
+                                        Schedule, quantities and progress
+                                        follow-up with the manufacturing
+                                        partner.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="trade-step-tile">
+                                <div class="trade-visual trade-visual-process">
+                                    <img loading="lazy"
+                                         src="/trade_website/static/src/img/v04/process/05-quality-checkpoints.webp"
+                                         alt="Quality and documentation"/>
+                                </div>
+                                <div class="trade-step-tile-body">
+                                    <span class="trade-step-index">05</span>
+                                    <h3>Quality &amp; Documentation</h3>
+                                    <p>
+                                        Defined inspection points and
+                                        document review across production
+                                        and pre-shipment.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="trade-step-tile">
+                                <div class="trade-visual trade-visual-process">
+                                    <img loading="lazy"
+                                         src="/trade_website/static/src/img/v04/process/06-shipment-preparation.webp"
+                                         alt="Shipment preparation"/>
+                                </div>
+                                <div class="trade-step-tile-body">
+                                    <span class="trade-step-index">06</span>
+                                    <h3>Shipment Preparation</h3>
+                                    <p>
+                                        Carton data, labeling and shipment
+                                        readiness confirmed before handover.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- FACTORY-SIDE CONTROL -->
+                <section class="trade-section trade-capabilities">
+                    <div class="container">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-5">
+                                <div class="trade-eyebrow">FACTORY-SIDE CONTROL</div>
+                                <h2 class="trade-block-title">
+                                    Direct visibility across
+                                    factory coordination.
+                                </h2>
+                                <p class="trade-block-lead">
+                                    Specifications, customization and
+                                    production follow-up are managed with
+                                    the manufacturing partner on your behalf.
+                                    We do not drop the order at the factory
+                                    gate.
+                                </p>
+                                <a href="/manufacturing"
+                                   class="trade-link">
+                                    See Manufacturing Control
+                                </a>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="trade-visual trade-visual-process">
+                                    <img loading="lazy"
+                                         src="/trade_website/static/src/img/v04/supply/factory-floor.webp"
+                                         alt="Factory-side coordination illustration"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- QUALITY & DOCUMENTATION -->
+                <section class="trade-section">
+                    <div class="container">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-7 order-lg-2">
+                                <div class="trade-visual trade-visual-process">
+                                    <img loading="lazy"
+                                         src="/trade_website/static/src/img/v04/supply/quality-control.webp"
+                                         alt="Quality and documentation illustration"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="trade-eyebrow">QUALITY &amp; DOCUMENTATION</div>
+                                <h2 class="trade-block-title">
+                                    Defined checkpoints, not vague promises.
+                                </h2>
+                                <p class="trade-block-lead">
+                                    Product and packaging requirements are
+                                    defined up front and reviewed at defined
+                                    checkpoints. Available documentation is
+                                    confirmed per product before it is
+                                    presented as a compliance claim.
+                                </p>
+                                <a href="/quality"
+                                   class="trade-link">
+                                    See Quality &amp; Documentation
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- U.S. MARKET READINESS -->
+                <section class="trade-section trade-capabilities">
+                    <div class="container">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-5">
+                                <div class="trade-eyebrow">U.S. MARKET READINESS</div>
+                                <h2 class="trade-block-title">
+                                    Reviewed with destination
+                                    requirements in mind.
+                                </h2>
+                                <p class="trade-block-lead">
+                                    Product, packaging and documentation
+                                    expectations are aligned with the U.S.
+                                    destination market before production
+                                    begins. Logistics coordination covers
+                                    freight, customs documentation and
+                                    shipment readiness.
+                                </p>
+                                <a href="/our-advantage"
+                                   class="trade-link">
+                                    See Our Approach
+                                </a>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="trade-visual trade-visual-process">
+                                    <img loading="lazy"
+                                         src="/trade_website/static/src/img/v04/supply/shipping-port.webp"
+                                         alt="U.S. market readiness and shipping illustration"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- OEM -->
+                <section class="trade-section">
+                    <div class="container">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-7 order-lg-2">
+                                <div class="trade-visual trade-visual-process">
+                                    <img loading="lazy"
+                                         src="/trade_website/static/src/img/v04/use_cases/oem-private-label.webp"
+                                         alt="OEM and private label illustration"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="trade-eyebrow">OEM &amp; PRIVATE LABEL</div>
+                                <h2 class="trade-block-title">
+                                    Your brand on selected
+                                    products.
+                                </h2>
+                                <p class="trade-block-lead">
+                                    Customization options — logo, color,
+                                    packaging, manuals and accessories —
+                                    are confirmed per project.
+                                </p>
+                                <a href="/request-quote"
+                                   class="trade-link">
+                                    Discuss Customization
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FINAL CTA -->
+                <section class="trade-cta">
+                    <div class="container">
+                        <div class="trade-cta-inner">
+                            <h2>
+                                Looking for the Right Product
+                                or Manufacturing Partner?
+                            </h2>
+                            <p>
+                                Tell us what you are looking for. We will
+                                review product, factory and customization
+                                options and respond with next steps.
+                            </p>
+                            <div class="trade-actions trade-actions-center">
+                                <a href="/request-quote"
+                                   class="btn trade-btn-primary">
+                                    Start a Sourcing Project
+                                </a>
+                                <a href="/products"
+                                   class="btn trade-btn-ghost">
+                                    Browse Products
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </t>
+
+    </template>
+
+    <record id="page_solution_page" model="website.page">
+        <field name="name">Our Solution</field>
+        <field name="url">/solution</field>
+        <field name="is_published" eval="True"/>
+        <field name="view_id" ref="page_solution"/>
+    </record>
+
+</odoo>

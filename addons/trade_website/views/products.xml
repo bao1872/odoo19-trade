@@ -15,10 +15,15 @@
                 <section class="trade-page-hero">
                     <div class="container">
                         <div class="trade-eyebrow">PRODUCTS</div>
-                        <h1 class="trade-page-title">Selected Products</h1>
+                        <h1 class="trade-page-title">
+                            Selected for Opportunity,<br/>
+                            <span>Not Catalog Volume.</span>
+                        </h1>
                         <p class="trade-page-lead">
-                            Products selected for U.S. market evaluation and
-                            B2B sourcing programs.
+                            We focus on a limited set of products where
+                            manufacturing capability, customization
+                            flexibility and market fit justify deeper
+                            evaluation.
                         </p>
                     </div>
                 </section>
@@ -27,23 +32,32 @@
                     <div class="container">
                         <div class="row g-4">
 
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-xl-4">
                                 <article class="trade-product-card">
-                                    <div class="trade-product-media">
+                                    <div class="trade-visual trade-visual-product">
                                         <img loading="lazy"
-                                             src="/trade_website/static/src/img/products/air-duster/air-duster-card.webp"
-                                             alt="Cordless Air Duster product photo"/>
+                                             src="/trade_website/static/src/img/v04/products/air-duster.webp"
+                                             alt="Cordless Air Duster with nozzles"/>
                                     </div>
                                     <div class="trade-product-body">
+                                        <span class="trade-product-cat">
+                                            Cleaning &amp; Maintenance
+                                        </span>
                                         <h3>Cordless Air Duster</h3>
                                         <p>
-                                            Reusable air cleaning solution for
-                                            electronics, automotive and
-                                            workspace applications.
+                                            Reusable cordless air cleaning
+                                            solution for electronics,
+                                            vehicle interiors and
+                                            workspaces.
                                         </p>
-                                        <span class="trade-tag">
-                                            OEM / Private Label
-                                        </span>
+                                        <div class="trade-tags">
+                                            <span class="trade-tag">
+                                                OEM / Private Label
+                                            </span>
+                                            <span class="trade-tag">
+                                                Multi-Nozzle
+                                            </span>
+                                        </div>
                                         <a class="trade-link"
                                            href="/products/cordless-air-duster">
                                             View Product
@@ -52,21 +66,32 @@
                                 </article>
                             </div>
 
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-xl-4">
                                 <article class="trade-product-card">
-                                    <div class="trade-product-media">
+                                    <div class="trade-visual trade-visual-product">
                                         <img loading="lazy"
-                                             src="/trade_website/static/src/img/products/instant-print-camera/instant-camera-card.webp"
-                                             alt="Instant Print Camera product photo"/>
+                                             src="/trade_website/static/src/img/v04/products/instant-print-camera.webp"
+                                             alt="Instant Print Camera printing a photo"/>
                                     </div>
                                     <div class="trade-product-body">
+                                        <span class="trade-product-cat">
+                                            Consumer Electronics
+                                        </span>
                                         <h3>Instant Print Camera</h3>
                                         <p>
-                                            Compact instant-print platform for
-                                            gift, lifestyle and private-label
+                                            Compact instant-print platform
+                                            designed for gifts, lifestyle
+                                            products and private-label
                                             programs.
                                         </p>
-                                        <span class="trade-tag">Private Label</span>
+                                        <div class="trade-tags">
+                                            <span class="trade-tag">
+                                                Private Label
+                                            </span>
+                                            <span class="trade-tag">
+                                                Gift &amp; Lifestyle
+                                            </span>
+                                        </div>
                                         <a class="trade-link"
                                            href="/products/instant-print-camera">
                                             View Product
@@ -75,21 +100,31 @@
                                 </article>
                             </div>
 
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-xl-4">
                                 <article class="trade-product-card">
-                                    <div class="trade-product-media">
+                                    <div class="trade-visual trade-visual-product">
                                         <img loading="lazy"
-                                             src="/trade_website/static/src/img/products/ultrasonic-cutter/ultrasonic-cutter-card.webp"
-                                             alt="Ultrasonic Cutter product photo"/>
+                                             src="/trade_website/static/src/img/v04/products/ultrasonic-cutter.webp"
+                                             alt="Ultrasonic Cutter"/>
                                     </div>
                                     <div class="trade-product-body">
+                                        <span class="trade-product-cat">
+                                            Tools &amp; Equipment
+                                        </span>
                                         <h3>Ultrasonic Cutter</h3>
                                         <p>
-                                            Precision cutting tool platform for
-                                            workshop, craft and light
+                                            Precision cutting tool platform
+                                            for workshop, craft and light
                                             fabrication applications.
                                         </p>
-                                        <span class="trade-tag">OEM Available</span>
+                                        <div class="trade-tags">
+                                            <span class="trade-tag">
+                                                OEM Available
+                                            </span>
+                                            <span class="trade-tag">
+                                                Replaceable Blade
+                                            </span>
+                                        </div>
                                         <a class="trade-link"
                                            href="/products/ultrasonic-cutter">
                                             View Product
@@ -157,7 +192,7 @@
                             Cordless Air Duster
                         </div>
 
-                        <div class="row g-4 align-items-center">
+                        <div class="row align-items-center g-4 trade-product-hero-grid">
 
                             <div class="col-lg-6">
                                 <div class="trade-eyebrow">
@@ -176,7 +211,9 @@
 
                                 <div class="trade-tags trade-product-tags">
                                     <span class="trade-tag">Cordless</span>
-                                    <span class="trade-tag">OEM / Private Label</span>
+                                    <span class="trade-tag">
+                                        OEM / Private Label
+                                    </span>
                                     <span class="trade-tag">
                                         Multi-Nozzle Configuration
                                     </span>
@@ -195,8 +232,10 @@
                             </div>
 
                             <div class="col-lg-6">
-                                <div class="trade-product-image-placeholder">
-                                    <img src="/trade_website/static/src/img/products/air-duster/air-duster-detail.webp" alt="Cordless Air Duster product detail"/>
+                                <div class="trade-visual trade-visual-product trade-visual-hero-product">
+                                    <img
+                                        src="/trade_website/static/src/img/v04/products/air-duster.webp"
+                                        alt="Cordless Air Duster with nozzles"/>
                                 </div>
                             </div>
 
@@ -204,47 +243,54 @@
                     </div>
                 </section>
 
+                <section class="trade-section trade-capabilities">
+                    <div class="container">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-7 order-lg-2">
+                                <div class="trade-visual trade-visual-usecase">
+                                    <img loading="lazy"
+                                         src="/trade_website/static/src/img/v04/use_cases/electronics-cleaning.webp"
+                                         alt="Cleaning electronics with the cordless air duster"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 order-lg-1">
+                                <h2 class="trade-block-title">
+                                    Cleaner Devices.
+                                    A Cleaner Workspace.
+                                </h2>
+                                <p class="trade-block-lead">
+                                    A reusable alternative to disposable
+                                    compressed-air cans for keyboards,
+                                    electronics, lab and workshop
+                                    equipment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <section class="trade-section">
                     <div class="container">
-
-                        <div class="trade-section-heading">
-                            <h2>Product Overview</h2>
-                            <p>
-                                Typical application areas for this product
-                                platform.
-                            </p>
-                        </div>
-
-                        <div class="trade-overview-grid">
-                            <div class="trade-overview-item">
-                                <strong>Electronics</strong>
-                                <span>
-                                    Cleaning of keyboards, devices and
-                                    electronic assemblies.
-                                </span>
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-7">
+                                <div class="trade-visual trade-visual-usecase">
+                                    <img loading="lazy"
+                                         src="/trade_website/static/src/img/v04/use_cases/vehicle-cleaning.webp"
+                                         alt="Cleaning vehicle vents and interior"/>
+                                </div>
                             </div>
-                            <div class="trade-overview-item">
-                                <strong>Automotive Interiors</strong>
-                                <span>
-                                    Vents, dashboards and interior detailing.
-                                </span>
-                            </div>
-                            <div class="trade-overview-item">
-                                <strong>Workbench &amp; Tools</strong>
-                                <span>
-                                    Dust removal on benches, tools and
-                                    equipment.
-                                </span>
-                            </div>
-                            <div class="trade-overview-item">
-                                <strong>General Dust Removal</strong>
-                                <span>
-                                    Reusable alternative to disposable
-                                    compressed air cans.
-                                </span>
+                            <div class="col-lg-5">
+                                <h2 class="trade-block-title">
+                                    For Home, Car and
+                                    Everyday Use.
+                                </h2>
+                                <p class="trade-block-lead">
+                                    Vents, dashboards and interior
+                                    detailing — plus general dust removal
+                                    at home and in the workshop.
+                                </p>
                             </div>
                         </div>
-
                     </div>
                 </section>
 
@@ -321,7 +367,8 @@
                         </dl>
 
                         <p class="trade-spec-note">
-                            Values marked TBD — Supplier confirmation pending.
+                            Values marked TBD — Supplier confirmation
+                            pending.
                         </p>
 
                     </div>
@@ -338,35 +385,35 @@
                             <div class="trade-info-item">
                                 <strong>Logo</strong>
                                 <span>
-                                    Available options and MOQ confirmed per
+                                    Customization options confirmed per
                                     project.
                                 </span>
                             </div>
                             <div class="trade-info-item">
                                 <strong>Product Color</strong>
                                 <span>
-                                    Available options and MOQ confirmed per
+                                    Customization options confirmed per
                                     project.
                                 </span>
                             </div>
                             <div class="trade-info-item">
                                 <strong>Packaging</strong>
                                 <span>
-                                    Available options and MOQ confirmed per
+                                    Customization options confirmed per
                                     project.
                                 </span>
                             </div>
                             <div class="trade-info-item">
                                 <strong>Manual</strong>
                                 <span>
-                                    Available options and MOQ confirmed per
+                                    Customization options confirmed per
                                     project.
                                 </span>
                             </div>
                             <div class="trade-info-item">
                                 <strong>Accessories</strong>
                                 <span>
-                                    Available options and MOQ confirmed per
+                                    Customization options confirmed per
                                     project.
                                 </span>
                             </div>
@@ -489,7 +536,7 @@
                             Instant Print Camera
                         </div>
 
-                        <div class="row g-4 align-items-center">
+                        <div class="row align-items-center g-4 trade-product-hero-grid">
 
                             <div class="col-lg-6">
                                 <div class="trade-eyebrow">
@@ -502,8 +549,8 @@
 
                                 <p class="trade-product-lead">
                                     Compact instant-print camera platform
-                                    designed for gifts, lifestyle products and
-                                    private-label programs.
+                                    designed for gifts, lifestyle products
+                                    and private-label programs.
                                 </p>
 
                                 <div class="trade-tags trade-product-tags">
@@ -525,11 +572,39 @@
                             </div>
 
                             <div class="col-lg-6">
-                                <div class="trade-product-image-placeholder">
-                                    <img src="/trade_website/static/src/img/products/instant-print-camera/instant-camera-print.webp" alt="Instant Print Camera printing a photo"/>
+                                <div class="trade-visual trade-visual-product trade-visual-hero-product">
+                                    <img
+                                        src="/trade_website/static/src/img/v04/products/instant-print-camera.webp"
+                                        alt="Instant Print Camera printing a photo"/>
                                 </div>
                             </div>
 
+                        </div>
+                    </div>
+                </section>
+
+                <section class="trade-section trade-capabilities">
+                    <div class="container">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-7 order-lg-2">
+                                <div class="trade-visual trade-visual-usecase">
+                                    <img loading="lazy"
+                                         src="/trade_website/static/src/img/v04/use_cases/instant-camera-lifestyle.webp"
+                                         alt="Instant Print Camera in lifestyle settings"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 order-lg-1">
+                                <h2 class="trade-block-title">
+                                    Capture Moments.
+                                    Print Happiness.
+                                </h2>
+                                <p class="trade-block-lead">
+                                    Designed for gift programs, lifestyle
+                                    retail assortments and private-label
+                                    opportunities that need a tangible,
+                                    instantly printable photo experience.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -539,29 +614,28 @@
 
                         <div class="trade-section-heading">
                             <h2>Product Overview</h2>
-                            <p>
-                                Typical application areas for this product
-                                platform.
-                            </p>
                         </div>
 
                         <div class="trade-overview-grid">
                             <div class="trade-overview-item">
                                 <strong>Gift Programs</strong>
                                 <span>
-                                    Consumer gift and seasonal product lines.
+                                    Consumer gift and seasonal product
+                                    lines.
                                 </span>
                             </div>
                             <div class="trade-overview-item">
                                 <strong>Lifestyle Retail</strong>
                                 <span>
-                                    Lifestyle and specialty retail assortments.
+                                    Lifestyle and specialty retail
+                                    assortments.
                                 </span>
                             </div>
                             <div class="trade-overview-item">
                                 <strong>Private-Label Programs</strong>
                                 <span>
-                                    Branding, packaging and color programs.
+                                    Branding, packaging and color
+                                    programs.
                                 </span>
                             </div>
                         </div>
@@ -570,6 +644,40 @@
                 </section>
 
                 <section class="trade-section trade-capabilities">
+                    <div class="container">
+
+                        <div class="trade-section-heading">
+                            <h2>Printing Experience</h2>
+                            <p>
+                                Print technology to be confirmed. It
+                                defines the consumable model and U.S.
+                                market positioning.
+                            </p>
+                        </div>
+
+                        <div class="trade-info-grid trade-info-grid-4">
+                            <div class="trade-info-item">
+                                <strong>Print Technology</strong>
+                                <span class="trade-tbd">TBD</span>
+                            </div>
+                            <div class="trade-info-item">
+                                <strong>Print Media</strong>
+                                <span class="trade-tbd">TBD</span>
+                            </div>
+                            <div class="trade-info-item">
+                                <strong>Print Size</strong>
+                                <span class="trade-tbd">TBD</span>
+                            </div>
+                            <div class="trade-info-item">
+                                <strong>Print Time</strong>
+                                <span class="trade-tbd">TBD sec</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="trade-section">
                     <div class="container">
 
                         <div class="trade-section-heading">
@@ -589,22 +697,6 @@
                             <div class="trade-spec-row">
                                 <dt>Photo Resolution</dt>
                                 <dd class="trade-tbd">TBD</dd>
-                            </div>
-                            <div class="trade-spec-row">
-                                <dt>Print Technology</dt>
-                                <dd class="trade-tbd">TBD</dd>
-                            </div>
-                            <div class="trade-spec-row">
-                                <dt>Print Media</dt>
-                                <dd class="trade-tbd">TBD</dd>
-                            </div>
-                            <div class="trade-spec-row">
-                                <dt>Print Size</dt>
-                                <dd class="trade-tbd">TBD</dd>
-                            </div>
-                            <div class="trade-spec-row">
-                                <dt>Print Time</dt>
-                                <dd class="trade-tbd">TBD sec</dd>
                             </div>
                             <div class="trade-spec-row">
                                 <dt>Display</dt>
@@ -646,55 +738,54 @@
                         </dl>
 
                         <p class="trade-spec-note">
-                            Values marked TBD — Supplier confirmation pending.
-                            Print technology must be confirmed
-                            (ZINK / thermal / other) as it defines the
-                            consumable model and U.S. market positioning.
+                            Values marked TBD — Supplier confirmation
+                            pending. Print technology must be confirmed
+                            before any consumable assumption is made.
                         </p>
 
                     </div>
                 </section>
 
-                <section class="trade-section">
+                <section class="trade-section trade-capabilities">
                     <div class="container">
 
                         <div class="trade-section-heading">
-                            <h2>OEM &amp; Customization</h2>
+                            <h2>Private Label Options</h2>
                         </div>
 
                         <div class="trade-info-grid">
                             <div class="trade-info-item">
                                 <strong>Logo</strong>
                                 <span>
-                                    Available options and MOQ confirmed per
+                                    Customization options confirmed per
                                     project.
                                 </span>
                             </div>
                             <div class="trade-info-item">
                                 <strong>Product Color</strong>
                                 <span>
-                                    Available options and MOQ confirmed per
+                                    Customization options confirmed per
                                     project.
                                 </span>
                             </div>
                             <div class="trade-info-item">
                                 <strong>Packaging</strong>
                                 <span>
-                                    Available options and MOQ confirmed per
+                                    Customization options confirmed per
                                     project.
                                 </span>
                             </div>
                             <div class="trade-info-item">
                                 <strong>Manual</strong>
                                 <span>
-                                    Available options and MOQ confirmed per
+                                    Customization options confirmed per
                                     project.
                                 </span>
                             </div>
                             <div class="trade-info-item">
                                 <strong>Accessories</strong>
                                 <span>
-                                    Available options and MOQ confirmed per
+                                    Customization options confirmed per
                                     project.
                                 </span>
                             </div>
@@ -703,7 +794,7 @@
                     </div>
                 </section>
 
-                <section class="trade-section trade-capabilities">
+                <section class="trade-section">
                     <div class="container">
 
                         <div class="trade-section-heading">
@@ -736,7 +827,7 @@
                     </div>
                 </section>
 
-                <section class="trade-section">
+                <section class="trade-section trade-capabilities">
                     <div class="container">
 
                         <div class="trade-section-heading">
@@ -817,7 +908,7 @@
                             Ultrasonic Cutter
                         </div>
 
-                        <div class="row g-4 align-items-center">
+                        <div class="row align-items-center g-4 trade-product-hero-grid">
 
                             <div class="col-lg-6">
                                 <div class="trade-eyebrow">
@@ -836,7 +927,9 @@
 
                                 <div class="trade-tags trade-product-tags">
                                     <span class="trade-tag">Precision Tool</span>
-                                    <span class="trade-tag">Replaceable Blade</span>
+                                    <span class="trade-tag">
+                                        Replaceable Blade
+                                    </span>
                                     <span class="trade-tag">OEM Available</span>
                                 </div>
 
@@ -853,11 +946,39 @@
                             </div>
 
                             <div class="col-lg-6">
-                                <div class="trade-product-image-placeholder">
-                                    <img src="/trade_website/static/src/img/products/ultrasonic-cutter/ultrasonic-cutter-kit.webp" alt="Ultrasonic Cutter with case and accessories"/>
+                                <div class="trade-visual trade-visual-product trade-visual-hero-product">
+                                    <img
+                                        src="/trade_website/static/src/img/v04/products/ultrasonic-cutter.webp"
+                                        alt="Ultrasonic Cutter"/>
                                 </div>
                             </div>
 
+                        </div>
+                    </div>
+                </section>
+
+                <section class="trade-section trade-capabilities">
+                    <div class="container">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-7 order-lg-2">
+                                <div class="trade-visual trade-visual-usecase">
+                                    <img loading="lazy"
+                                         src="/trade_website/static/src/img/v04/use_cases/ultrasonic-craft.webp"
+                                         alt="Ultrasonic cutter in craft use"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 order-lg-1">
+                                <h2 class="trade-block-title">
+                                    Precision Tools
+                                    for Creative Ideas.
+                                </h2>
+                                <p class="trade-block-lead">
+                                    Designed for workshop, craft, model
+                                    making and light fabrication tasks.
+                                    Blade system, replaceable blades and
+                                    accessories confirmed per program.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -866,40 +987,30 @@
                     <div class="container">
 
                         <div class="trade-section-heading">
-                            <h2>Product Overview</h2>
+                            <h2>Blade &amp; Accessories</h2>
                             <p>
-                                Typical application areas for this product
-                                platform.
+                                B2B programs depend on a clear blade
+                                system and replacement accessory supply.
                             </p>
                         </div>
 
-                        <div class="trade-overview-grid">
-                            <div class="trade-overview-item">
-                                <strong>Workshop Use</strong>
-                                <span>
-                                    Precision cutting tasks in workshop
-                                    environments.
-                                </span>
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-5">
+                                <div class="trade-info-item">
+                                    <strong>Blade System</strong>
+                                    <span>
+                                        Blade type, compatibility and
+                                        replacement availability confirmed
+                                        per program.
+                                    </span>
+                                </div>
                             </div>
-                            <div class="trade-overview-item">
-                                <strong>Craft &amp; Hobby</strong>
-                                <span>
-                                    Craft, model-making and hobby
-                                    applications.
-                                </span>
-                            </div>
-                            <div class="trade-overview-item">
-                                <strong>Light Fabrication</strong>
-                                <span>
-                                    Light fabrication and prototyping tasks.
-                                </span>
-                            </div>
-                            <div class="trade-overview-item">
-                                <strong>Blade &amp; Accessory Supply</strong>
-                                <span>
-                                    Replacement blades and accessory
-                                    availability confirmed per program.
-                                </span>
+                            <div class="col-lg-7">
+                                <div class="trade-visual trade-visual-product">
+                                    <img loading="lazy"
+                                         src="/trade_website/static/src/img/v04/products/accessories-kit.webp"
+                                         alt="Ultrasonic Cutter accessories kit"/>
+                                </div>
                             </div>
                         </div>
 
@@ -975,9 +1086,10 @@
                         </dl>
 
                         <p class="trade-spec-note">
-                            Values marked TBD — Supplier confirmation pending.
-                            Blade system, blade compatibility and replacement
-                            blade supply are key items for B2B programs.
+                            Values marked TBD — Supplier confirmation
+                            pending. Blade type, compatibility and
+                            replacement supply are key items for B2B
+                            programs.
                         </p>
 
                     </div>
@@ -987,42 +1099,42 @@
                     <div class="container">
 
                         <div class="trade-section-heading">
-                            <h2>OEM &amp; Customization</h2>
+                            <h2>OEM</h2>
                         </div>
 
                         <div class="trade-info-grid">
                             <div class="trade-info-item">
                                 <strong>Logo</strong>
                                 <span>
-                                    Available options and MOQ confirmed per
+                                    Customization options confirmed per
                                     project.
                                 </span>
                             </div>
                             <div class="trade-info-item">
                                 <strong>Product Color</strong>
                                 <span>
-                                    Available options and MOQ confirmed per
+                                    Customization options confirmed per
                                     project.
                                 </span>
                             </div>
                             <div class="trade-info-item">
                                 <strong>Packaging</strong>
                                 <span>
-                                    Available options and MOQ confirmed per
+                                    Customization options confirmed per
                                     project.
                                 </span>
                             </div>
                             <div class="trade-info-item">
                                 <strong>Manual</strong>
                                 <span>
-                                    Available options and MOQ confirmed per
+                                    Customization options confirmed per
                                     project.
                                 </span>
                             </div>
                             <div class="trade-info-item">
                                 <strong>Accessories</strong>
                                 <span>
-                                    Available options and MOQ confirmed per
+                                    Customization options confirmed per
                                     project.
                                 </span>
                             </div>

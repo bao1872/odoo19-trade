@@ -12,18 +12,8 @@
     background: white;
 }
 
-.trade-product-media {
-    position: relative;
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-    background: var(--trade-bg);
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
+/* .trade-product-media legacy aspect-ratio moved to .trade-visual
+   (.trade-visual-product / .trade-visual-hero-product in site.scss). */
 
 .trade-product-body {
     padding: 20px;
@@ -72,18 +62,8 @@
     margin-top: 24px;
 }
 
-.trade-product-image-placeholder {
-    position: relative;
-    aspect-ratio: 4 / 3;
-    overflow: hidden;
-    background: var(--trade-bg);
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
+/* .trade-product-image-placeholder legacy moved to .trade-visual-hero-product
+   in site.scss (aspect-ratio 4/3). */
 
 /* ------------------------------------------------------------------ */
 /* Overview blocks                                                      */
@@ -302,4 +282,63 @@
             text-align: left;
         }
     }
+}
+
+/* ------------------------------------------------------------------ */
+/* Section heading variants                                            */
+/* ------------------------------------------------------------------ */
+
+.trade-section-title {
+    margin: 0;
+    color: var(--trade-navy-dark);
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 750;
+    letter-spacing: -0.025em;
+}
+
+.trade-section-sub {
+    margin: 8px 0 0;
+    color: var(--trade-blue-gray);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.trade-block-title {
+    margin: 8px 0 16px;
+    color: var(--trade-navy-dark);
+    font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+    font-weight: 750;
+    line-height: 1.18;
+    letter-spacing: -0.02em;
+}
+
+.trade-block-lead {
+    margin: 0;
+    color: #425463;
+    font-size: 1.02rem;
+    line-height: 1.7;
+}
+
+.trade-product-cat {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--trade-blue-gray);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.trade-product-body h3 {
+    margin: 0 0 8px;
+    color: var(--trade-navy-dark);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.trade-product-body > p {
+    margin: 0 0 14px;
+    color: var(--trade-muted);
+    font-size: 0.92rem;
+    line-height: 1.55;
 }

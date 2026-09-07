@@ -318,3 +318,40 @@
         padding: 56px 0;
     }
 }
+
+/* ------------------------------------------------------------------ */
+/* Shared image container (.trade-visual variants)                     */
+/* ------------------------------------------------------------------ */
+
+.trade-visual {
+    position: relative;
+    overflow: hidden;
+    background: var(--trade-bg);
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.trade-visual-hero {
+    aspect-ratio: 1.25 / 1;
+}
+
+.trade-visual-hero-product {
+    aspect-ratio: 4 / 3;
+}
+
+.trade-visual-product {
+    aspect-ratio: 16 / 10;
+}
+
+.trade-visual-process {
+    aspect-ratio: 16 / 10;
+}
+
+.trade-visual-usecase {
+    aspect-ratio: 16 / 9;
+}

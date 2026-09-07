@@ -1,53 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <!-- Official website.menu / website.main_menu — no navbar rewrite -->
+    <!--
+        Menu *entities* only — no parent_id / website_id here on purpose.
 
+        Why: Odoo renders each website's navigation from that website's
+        own "Top Menu for Website N" record. A menu written with
+        parent_id="website.main_menu" lands under the shared
+        "Default Main Menu" (invisible) AND every module upgrade would
+        reset that parent again, undoing any fix.
+
+        So the hierarchy is built by name in
+        migrations/<version>/post-migrate.py, which assigns parent_id and
+        website_id per website. Idempotent, upgrade-safe.
+    -->
+
+    <!-- Top-level conceptual groups -->
     <record id="menu_products" model="website.menu">
         <field name="name">Products</field>
         <field name="url">/products</field>
-        <field name="parent_id" ref="website.main_menu"/>
         <field name="sequence" type="int">20</field>
     </record>
 
-    <record id="menu_manufacturing" model="website.menu">
-        <field name="name">Manufacturing</field>
-        <field name="url">/manufacturing</field>
-        <field name="parent_id" ref="website.main_menu"/>
+    <record id="menu_solution" model="website.menu">
+        <field name="name">Our Solution</field>
+        <field name="url">/solution</field>
         <field name="sequence" type="int">30</field>
     </record>
 
-    <record id="menu_quality" model="website.menu">
-        <field name="name">Quality</field>
-        <field name="url">/quality</field>
-        <field name="parent_id" ref="website.main_menu"/>
-        <field name="sequence" type="int">40</field>
-    </record>
-
-    <record id="menu_our_advantage" model="website.menu">
-        <field name="name">Our Advantage</field>
-        <field name="url">/our-advantage</field>
-        <field name="parent_id" ref="website.main_menu"/>
-        <field name="sequence" type="int">50</field>
-    </record>
-
-    <record id="menu_about_us" model="website.menu">
-        <field name="name">About Us</field>
+    <record id="menu_about" model="website.menu">
+        <field name="name">About</field>
         <field name="url">/about-us</field>
-        <field name="parent_id" ref="website.main_menu"/>
-        <field name="sequence" type="int">60</field>
-    </record>
-
-    <record id="website.menu_contactus" model="website.menu">
-        <field name="name">Contact</field>
-        <field name="sequence" type="int">70</field>
+        <field name="sequence" type="int">50</field>
     </record>
 
     <record id="menu_request_quote" model="website.menu">
         <field name="name">Request a Quote</field>
         <field name="url">/request-quote</field>
-        <field name="parent_id" ref="website.main_menu"/>
         <field name="sequence" type="int">80</field>
+    </record>
+
+    <!-- Products children -->
+    <record id="menu_products_all" model="website.menu">
+        <field name="name">All Products</field>
+        <field name="url">/products</field>
+        <field name="sequence" type="int">21</field>
+    </record>
+
+    <record id="menu_product_air_duster" model="website.menu">
+        <field name="name">Cordless Air Duster</field>
+        <field name="url">/products/cordless-air-duster</field>
+        <field name="sequence" type="int">22</field>
+    </record>
+
+    <record id="menu_product_instant_camera" model="website.menu">
+        <field name="name">Instant Print Camera</field>
+        <field name="url">/products/instant-print-camera</field>
+        <field name="sequence" type="int">23</field>
+    </record>
+
+    <record id="menu_product_ultrasonic_cutter" model="website.menu">
+        <field name="name">Ultrasonic Cutter</field>
+        <field name="url">/products/ultrasonic-cutter</field>
+        <field name="sequence" type="int">24</field>
+    </record>
+
+    <!-- Our Solution children -->
+    <record id="menu_solution_overview" model="website.menu">
+        <field name="name">Overview</field>
+        <field name="url">/solution</field>
+        <field name="sequence" type="int">31</field>
+    </record>
+
+    <record id="menu_manufacturing" model="website.menu">
+        <field name="name">Manufacturing Control</field>
+        <field name="url">/manufacturing</field>
+        <field name="sequence" type="int">32</field>
+    </record>
+
+    <record id="menu_quality" model="website.menu">
+        <field name="name">Quality &amp; Documentation</field>
+        <field name="url">/quality</field>
+        <field name="sequence" type="int">33</field>
+    </record>
+
+    <record id="menu_our_advantage" model="website.menu">
+        <field name="name">Product Selection Focus</field>
+        <field name="url">/our-advantage</field>
+        <field name="sequence" type="int">34</field>
+    </record>
+
+    <!-- About children -->
+    <record id="menu_about_us" model="website.menu">
+        <field name="name">About Us</field>
+        <field name="url">/about-us</field>
+        <field name="sequence" type="int">51</field>
+    </record>
+
+    <record id="menu_contact" model="website.menu">
+        <field name="name">Contact</field>
+        <field name="url">/contactus</field>
+        <field name="sequence" type="int">52</field>
     </record>
 
 </odoo>

@@ -2,9 +2,10 @@
 <odoo>
 
     <!--
-        Inherit the official Odoo 19 homepage (website.homepage,
-        addons/website/data/website_data.xml). No upstream modification,
-        no new controller, no new route.
+        Inherit the official Odoo 19 homepage (website.homepage).
+        v0.4: 5 main visual sections (no hero small-block collage, no
+        separate Capabilities / Compliance / How-We-Work section — those
+        contents moved into /solution).
     -->
     <template
         id="trade_homepage"
@@ -16,15 +17,14 @@
 
             <div id="wrap" class="oe_structure trade-site trade-home">
 
-                <!-- ==================================================== -->
-                <!-- SECTION 1 — HERO                                     -->
-                <!-- ==================================================== -->
+                <!-- ============================================== -->
+                <!-- 1. HERO                                        -->
+                <!-- ============================================== -->
                 <section class="trade-hero">
                     <div class="container">
-                        <div class="row align-items-center g-4">
+                        <div class="row align-items-center g-4 trade-hero-grid">
 
-                            <div class="col-lg-6">
-
+                            <div class="col-lg-5 trade-hero-copy-col">
                                 <div class="trade-eyebrow">
                                     YOUR SOURCING AND MANUFACTURING PARTNER
                                 </div>
@@ -35,68 +35,31 @@
                                 </h1>
 
                                 <p class="trade-hero-copy">
-                                    We source, validate and deliver market-ready
-                                    products from selected Chinese manufacturers,
-                                    coordinating specifications, samples,
-                                    production, quality, customization and shipment.
+                                    We source, validate and deliver
+                                    market-ready products from selected
+                                    Chinese manufacturers, coordinating
+                                    specifications, samples, production,
+                                    quality, customization and shipment.
                                 </p>
 
                                 <div class="trade-actions">
-                                    <a href="/contactus"
+                                    <a href="/request-quote"
                                        class="btn trade-btn-primary">
                                         Request a Quote
                                     </a>
-
-                                    <a href="#products"
+                                    <a href="/products"
                                        class="btn trade-btn-secondary">
-                                        Explore Products
+                                        Explore Our Products
                                     </a>
                                 </div>
-
                             </div>
 
-                            <div class="col-lg-6">
-
-                                <div class="trade-hero-media">
-
-                                    <div class="trade-media-main">
-                                        <img
-                                            src="/trade_website/static/src/img/homepage/product-collage.webp"
-                                            alt="Selected products under evaluation: cordless air duster, instant print camera, ultrasonic cutter"/>
-                                        <div class="trade-media-caption">
-                                            <span>SELECTED</span>
-                                            <strong>
-                                                Products In Evaluation
-                                            </strong>
-                                        </div>
-                                    </div>
-
-                                    <div class="trade-media-small">
-                                        <img
-                                            loading="lazy"
-                                            src="/trade_website/static/src/img/process/factory-coordination.webp"
-                                            alt="Factory coordination illustration"/>
-                                        <div class="trade-media-caption">
-                                            <span>FACTORY</span>
-                                            <strong>Specification Alignment</strong>
-                                        </div>
-                                    </div>
-
-                                    <div class="trade-media-small">
-                                        <img
-                                            loading="lazy"
-                                            src="/trade_website/static/src/img/process/shipping-preparation.webp"
-                                            alt="Shipping preparation illustration"/>
-                                        <div class="trade-media-caption">
-                                            <span>SHIPPING</span>
-                                            <strong>
-                                                Packaging &amp; Shipment
-                                            </strong>
-                                        </div>
-                                    </div>
-
+                            <div class="col-lg-7 trade-hero-visual-col">
+                                <div class="trade-visual trade-visual-hero">
+                                    <img
+                                        src="/trade_website/static/src/img/v04/homepage/hero-product-stage.webp"
+                                        alt="Cordless Air Duster, Instant Print Camera and Ultrasonic Cutter on a presentation stage"/>
                                 </div>
-
                             </div>
 
                         </div>
@@ -104,47 +67,104 @@
                 </section>
 
 
-                <!-- ==================================================== -->
-                <!-- SECTION 2 — CONTROL POINTS                           -->
-                <!-- ==================================================== -->
-                <section id="advantage" class="trade-control-strip">
+                <!-- ============================================== -->
+                <!-- 2. CONTROL STRIP                               -->
+                <!-- ============================================== -->
+                <section class="trade-control-strip">
                     <div class="container">
                         <div class="row g-4">
 
                             <div class="col-md-6 col-lg-3">
                                 <div class="trade-control-item">
-                                    <strong>Direct Factory Access</strong>
-                                    <span>
-                                        Work with selected manufacturing partners.
+                                    <span class="trade-control-icon"
+                                          aria-hidden="true">
+                                        <svg viewBox="0 0 24 24"
+                                             width="22" height="22"
+                                             fill="none"
+                                             stroke="currentColor"
+                                             stroke-width="1.6">
+                                            <path d="M3 21V9l9-6 9 6v12"/>
+                                            <path d="M9 21v-7h6v7"/>
+                                        </svg>
                                     </span>
+                                    <div>
+                                        <strong>Direct Factory Access</strong>
+                                        <span>
+                                            Work with selected manufacturing
+                                            partners.
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="col-md-6 col-lg-3">
                                 <div class="trade-control-item">
-                                    <strong>Quality Checkpoints</strong>
-                                    <span>
-                                        Defined inspection points from sample
-                                        to shipment.
+                                    <span class="trade-control-icon"
+                                          aria-hidden="true">
+                                        <svg viewBox="0 0 24 24"
+                                             width="22" height="22"
+                                             fill="none"
+                                             stroke="currentColor"
+                                             stroke-width="1.6">
+                                            <path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/>
+                                            <path d="M9 12l2 2 4-4"/>
+                                        </svg>
                                     </span>
+                                    <div>
+                                        <strong>Quality Checkpoints</strong>
+                                        <span>
+                                            Defined inspection points from
+                                            sample to shipment.
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="col-md-6 col-lg-3">
                                 <div class="trade-control-item">
-                                    <strong>OEM / Private Label</strong>
-                                    <span>
-                                        Logo, packaging and product customization.
+                                    <span class="trade-control-icon"
+                                          aria-hidden="true">
+                                        <svg viewBox="0 0 24 24"
+                                             width="22" height="22"
+                                             fill="none"
+                                             stroke="currentColor"
+                                             stroke-width="1.6">
+                                            <path d="M12 3l9 5-9 5-9-5 9-5z"/>
+                                            <path d="M3 13l9 5 9-5"/>
+                                        </svg>
                                     </span>
+                                    <div>
+                                        <strong>OEM / Private Label</strong>
+                                        <span>
+                                            Logo, packaging and product
+                                            customization.
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="col-md-6 col-lg-3">
                                 <div class="trade-control-item">
-                                    <strong>Delivery Coordination</strong>
-                                    <span>
-                                        Production follow-up and U.S.-bound logistics.
+                                    <span class="trade-control-icon"
+                                          aria-hidden="true">
+                                        <svg viewBox="0 0 24 24"
+                                             width="22" height="22"
+                                             fill="none"
+                                             stroke="currentColor"
+                                             stroke-width="1.6">
+                                            <path d="M3 7h11v9H3z"/>
+                                            <path d="M14 10h4l3 3v3h-7z"/>
+                                            <circle cx="7" cy="18" r="2"/>
+                                            <circle cx="17" cy="18" r="2"/>
+                                        </svg>
                                     </span>
+                                    <div>
+                                        <strong>Delivery Coordination</strong>
+                                        <span>
+                                            Production follow-up and
+                                            U.S.-bound logistics.
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
 
@@ -153,36 +173,51 @@
                 </section>
 
 
-                <!-- ==================================================== -->
-                <!-- SECTION 3 — SELECTED PRODUCTS                        -->
-                <!-- ==================================================== -->
+                <!-- ============================================== -->
+                <!-- 3. FEATURED PRODUCTS                            -->
+                <!-- ============================================== -->
                 <section id="products" class="trade-section trade-products">
 
                     <div class="container">
 
-                        <div class="trade-section-heading">
+                        <div class="trade-products-head">
                             <div>
-                                <h2>Selected Products</h2>
-                                <p>
-                                    Focused products. Clear specifications.
-                                    Flexible sourcing.
+                                <h2 class="trade-section-title">Featured Products</h2>
+                                <p class="trade-section-sub">
+                                    Selected products for U.S. market
+                                    evaluation and B2B sourcing programs.
                                 </p>
                             </div>
+                            <a href="/products" class="trade-link">
+                                View All Products
+                            </a>
                         </div>
 
                         <div class="row g-4">
 
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-xl-4">
                                 <article class="trade-product-card">
-                                    <div class="trade-product-media"><img loading="lazy" src="/trade_website/static/src/img/products/air-duster/air-duster-card.webp" alt="Cordless Air Duster"/></div>
+                                    <div class="trade-visual trade-visual-product">
+                                        <img loading="lazy"
+                                             src="/trade_website/static/src/img/v04/products/air-duster.webp"
+                                             alt="Cordless Air Duster with nozzles"/>
+                                    </div>
                                     <div class="trade-product-body">
+                                        <span class="trade-product-cat">
+                                            Cleaning &amp; Maintenance
+                                        </span>
                                         <h3>Cordless Air Duster</h3>
                                         <p>
-                                            Reusable air cleaning solution for
-                                            electronics, automotive and
-                                            workspace applications.
+                                            Clean More.
+                                            Worry Less.
                                         </p>
-                                        <span class="trade-tag">OEM / Private Label</span>
+                                        <div class="trade-tags">
+                                            <span class="trade-tag">Cordless</span>
+                                            <span class="trade-tag">OEM</span>
+                                            <span class="trade-tag">
+                                                Multi-Nozzle
+                                            </span>
+                                        </div>
                                         <a class="trade-link"
                                            href="/products/cordless-air-duster">
                                             View Product
@@ -191,17 +226,33 @@
                                 </article>
                             </div>
 
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-xl-4">
                                 <article class="trade-product-card">
-                                    <div class="trade-product-media"><img loading="lazy" src="/trade_website/static/src/img/products/instant-print-camera/instant-camera-card.webp" alt="Instant Print Camera"/></div>
+                                    <div class="trade-visual trade-visual-product">
+                                        <img loading="lazy"
+                                             src="/trade_website/static/src/img/v04/products/instant-print-camera.webp"
+                                             alt="Instant Print Camera printing a photo"/>
+                                    </div>
                                     <div class="trade-product-body">
+                                        <span class="trade-product-cat">
+                                            Consumer Electronics
+                                        </span>
                                         <h3>Instant Print Camera</h3>
                                         <p>
-                                            Compact instant-print platform for
-                                            gift, lifestyle and private-label
-                                            programs.
+                                            Capture Moments.
+                                            Print Happiness.
                                         </p>
-                                        <span class="trade-tag">Private Label</span>
+                                        <div class="trade-tags">
+                                            <span class="trade-tag">
+                                                Instant Print
+                                            </span>
+                                            <span class="trade-tag">
+                                                Private Label
+                                            </span>
+                                            <span class="trade-tag">
+                                                Gift &amp; Lifestyle
+                                            </span>
+                                        </div>
                                         <a class="trade-link"
                                            href="/products/instant-print-camera">
                                             View Product
@@ -210,17 +261,31 @@
                                 </article>
                             </div>
 
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-xl-4">
                                 <article class="trade-product-card">
-                                    <div class="trade-product-media"><img loading="lazy" src="/trade_website/static/src/img/products/ultrasonic-cutter/ultrasonic-cutter-card.webp" alt="Ultrasonic Cutter"/></div>
+                                    <div class="trade-visual trade-visual-product">
+                                        <img loading="lazy"
+                                             src="/trade_website/static/src/img/v04/products/ultrasonic-cutter.webp"
+                                             alt="Ultrasonic Cutter"/>
+                                    </div>
                                     <div class="trade-product-body">
+                                        <span class="trade-product-cat">
+                                            Tools &amp; Equipment
+                                        </span>
                                         <h3>Ultrasonic Cutter</h3>
                                         <p>
-                                            Precision cutting tool platform for
-                                            workshop, craft and light
-                                            fabrication applications.
+                                            Precision Tools
+                                            for Creative Ideas.
                                         </p>
-                                        <span class="trade-tag">OEM Available</span>
+                                        <div class="trade-tags">
+                                            <span class="trade-tag">
+                                                Precision Tool
+                                            </span>
+                                            <span class="trade-tag">
+                                                Replaceable Blade
+                                            </span>
+                                            <span class="trade-tag">OEM</span>
+                                        </div>
                                         <a class="trade-link"
                                            href="/products/ultrasonic-cutter">
                                             View Product
@@ -230,73 +295,81 @@
                             </div>
 
                         </div>
-
-                        <div class="trade-section-footer">
-                            <a class="trade-link" href="/products">
-                                View All Products
-                            </a>
-                        </div>
                     </div>
                 </section>
 
 
-                <!-- ==================================================== -->
-                <!-- SECTION 4 — MANUFACTURING CONTROL                    -->
-                <!-- ==================================================== -->
-                <section id="manufacturing" class="trade-manufacturing">
+                <!-- ============================================== -->
+                <!-- 4. OUR MANUFACTURING SOLUTION (dark navy)       -->
+                <!-- ============================================== -->
+                <section class="trade-section trade-solution-strip">
 
                     <div class="container">
                         <div class="row g-4 align-items-center">
 
                             <div class="col-lg-5">
-                                <h2 class="trade-manufacturing-title">
+                                <div class="trade-eyebrow trade-eyebrow-light">
+                                    OUR MANUFACTURING SOLUTION
+                                </div>
+                                <h2 class="trade-solution-title">
                                     More Than Product Sourcing.<br/>
                                     A Controlled Supply Process.
                                 </h2>
-                                <p class="trade-manufacturing-copy">
-                                    We coordinate critical steps between product
-                                    selection and shipment, providing visibility
-                                    across factory, quality, customization and
-                                    delivery.
+                                <p class="trade-solution-copy">
+                                    We coordinate critical steps between
+                                    product selection and shipment — so
+                                    every product is supported by a
+                                    defined process on the factory side.
                                 </p>
-                                <a class="trade-link trade-link-light"
-                                   href="/manufacturing">
-                                    How We Control the Factory Side
+                                <a href="/solution" class="trade-link trade-link-light">
+                                    Explore Our Solution
                                 </a>
                             </div>
 
                             <div class="col-lg-7">
-                                <div class="trade-process-grid">
+                                <div class="trade-solution-tiles">
 
-                                    <div class="trade-process-block">
-                                        <strong>Factory Coordination</strong>
-                                        <span>
-                                            Specifications and production
-                                            requirements aligned with the factory.
+                                    <div class="trade-solution-tile">
+                                        <div class="trade-visual trade-visual-process">
+                                            <img loading="lazy"
+                                                 src="/trade_website/static/src/img/v04/process/01-product-alignment.webp"
+                                                 alt="Product and factory alignment"/>
+                                        </div>
+                                        <span class="trade-solution-tile-label">
+                                            Factory Alignment
                                         </span>
                                     </div>
 
-                                    <div class="trade-process-block">
-                                        <strong>Sample Validation</strong>
-                                        <span>
-                                            Samples reviewed before production
-                                            is confirmed.
+                                    <div class="trade-solution-tile">
+                                        <div class="trade-visual trade-visual-process">
+                                            <img loading="lazy"
+                                                 src="/trade_website/static/src/img/v04/process/02-sample-validation.webp"
+                                                 alt="Sample validation"/>
+                                        </div>
+                                        <span class="trade-solution-tile-label">
+                                            Sample Validation
                                         </span>
                                     </div>
 
-                                    <div class="trade-process-block">
-                                        <strong>Quality Inspection</strong>
-                                        <span>
-                                            Defined product and packaging
-                                            checkpoints before shipment.
+                                    <div class="trade-solution-tile">
+                                        <div class="trade-visual trade-visual-process">
+                                            <img loading="lazy"
+                                                 src="/trade_website/static/src/img/v04/process/05-quality-checkpoints.webp"
+                                                 alt="Quality checkpoints"/>
+                                        </div>
+                                        <span class="trade-solution-tile-label">
+                                            Quality Checkpoints
                                         </span>
                                     </div>
 
-                                    <div class="trade-process-block">
-                                        <strong>Shipping Preparation</strong>
-                                        <span>
-                                            Carton data, documentation and
-                                            shipment readiness confirmed.
+                                    <div class="trade-solution-tile">
+                                        <div class="trade-visual trade-visual-process">
+                                            <img loading="lazy"
+                                                 src="/trade_website/static/src/img/v04/process/06-shipment-preparation.webp"
+                                                 alt="Shipping preparation"/>
+                                        </div>
+                                        <span class="trade-solution-tile-label">
+                                            Shipping Preparation
                                         </span>
                                     </div>
 
@@ -308,227 +381,87 @@
                 </section>
 
 
-                <!-- ==================================================== -->
-                <!-- SECTION 5 — CAPABILITIES                             -->
-                <!-- ==================================================== -->
-                <section id="capabilities"
-                         class="trade-section trade-capabilities">
+                <!-- ============================================== -->
+                <!-- 5. WHY U.S. BUSINESSES WORK WITH US + CTA       -->
+                <!-- ============================================== -->
+                <section class="trade-section trade-advantage-cta">
 
                     <div class="container">
+                        <div class="row g-4 align-items-stretch">
 
-                        <div class="trade-section-heading">
-                            <div>
-                                <h2>From Factory Floor to Shipment</h2>
-                                <p>
-                                    The steps we manage on the factory side
-                                    before a product leaves China.
-                                </p>
-                            </div>
-                        </div>
+                            <div class="col-lg-7">
+                                <div class="trade-eyebrow">
+                                    WHY U.S. BUSINESSES WORK WITH US
+                                </div>
+                                <h2 class="trade-block-title">
+                                    From Good Products to
+                                    Great Opportunities.
+                                </h2>
 
-                        <div class="row g-4">
+                                <div class="trade-advantage-list">
 
-                            <div class="col-md-6 col-xl-3">
-                                <article class="trade-capability-card">
-                                    <div class="trade-capability-media">
-                                        Production
+                                    <div class="trade-advantage-item">
+                                        <strong>Focus on Real Opportunities</strong>
+                                        <span>
+                                            Selected products, not endless
+                                            catalogs. We focus on a limited
+                                            set of products where
+                                            manufacturing capability,
+                                            customization flexibility and
+                                            market fit justify deeper
+                                            evaluation.
+                                        </span>
                                     </div>
-                                    <div class="trade-capability-body">
-                                        <h3>Production Coordination</h3>
+
+                                    <div class="trade-advantage-item">
+                                        <strong>Factory-Side Coordination</strong>
+                                        <span>
+                                            Direct communication across
+                                            critical manufacturing steps —
+                                            specifications, samples,
+                                            customization and production
+                                            follow-up.
+                                        </span>
+                                    </div>
+
+                                    <div class="trade-advantage-item">
+                                        <strong>U.S. Market Readiness</strong>
+                                        <span>
+                                            Product, packaging and
+                                            documentation reviewed with
+                                            destination requirements in
+                                            mind.
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5">
+                                <div class="trade-cta trade-cta-tile">
+                                    <div class="trade-cta-inner">
+                                        <h2>
+                                            Ready to Start Your
+                                            Next Project?
+                                        </h2>
                                         <p>
-                                            Align specifications, schedule and
-                                            manufacturing requirements.
+                                            Tell us what you are looking
+                                            for. We will review product,
+                                            factory and customization
+                                            options.
                                         </p>
+                                        <div class="trade-actions trade-actions-center">
+                                            <a href="/request-quote"
+                                               class="btn trade-btn-primary">
+                                                Request a Quote
+                                            </a>
+                                            <a href="/contactus"
+                                               class="btn trade-btn-ghost">
+                                                Contact Us
+                                            </a>
+                                        </div>
                                     </div>
-                                </article>
-                            </div>
-
-                            <div class="col-md-6 col-xl-3">
-                                <article class="trade-capability-card">
-                                    <div class="trade-capability-media">
-                                        Inspection
-                                    </div>
-                                    <div class="trade-capability-body">
-                                        <h3>Quality Inspection</h3>
-                                        <p>
-                                            Define product and packaging
-                                            checkpoints before shipment.
-                                        </p>
-                                    </div>
-                                </article>
-                            </div>
-
-                            <div class="col-md-6 col-xl-3">
-                                <article class="trade-capability-card">
-                                    <div class="trade-capability-media">
-                                        Packaging
-                                    </div>
-                                    <div class="trade-capability-body">
-                                        <h3>Custom Packaging</h3>
-                                        <p>
-                                            Coordinate branding, manuals,
-                                            packaging and private-label
-                                            requirements.
-                                        </p>
-                                    </div>
-                                </article>
-                            </div>
-
-                            <div class="col-md-6 col-xl-3">
-                                <article class="trade-capability-card">
-                                    <div class="trade-capability-media">
-                                        Shipment
-                                    </div>
-                                    <div class="trade-capability-body">
-                                        <h3>Shipping Preparation</h3>
-                                        <p>
-                                            Confirm carton data, documentation
-                                            and shipment readiness.
-                                        </p>
-                                    </div>
-                                </article>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
-
-                <!-- ==================================================== -->
-                <!-- SECTION 6 — COMPLIANCE                               -->
-                <!-- ==================================================== -->
-                <section id="quality" class="trade-section trade-compliance">
-
-                    <div class="container">
-
-                        <div class="trade-section-heading">
-                            <div>
-                                <h2>Compliance Starts With the Product</h2>
-                                <p>
-                                    Requirements vary by product and destination.
-                                    We collect and review available factory
-                                    documentation before presenting compliance
-                                    claims to buyers.
-                                </p>
-                                <a class="trade-link" href="/quality">
-                                    See Our Quality Checkpoints
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="trade-compliance-grid">
-
-                            <div class="trade-compliance-block">
-                                <strong>Documentation Review</strong>
-                                <span>
-                                    Available factory documents collected and
-                                    checked against the product scope.
-                                </span>
-                            </div>
-
-                            <div class="trade-compliance-block">
-                                <strong>Product-Specific Requirements</strong>
-                                <span>
-                                    Applicable requirements depend on product
-                                    category and destination market.
-                                </span>
-                            </div>
-
-                            <div class="trade-compliance-block">
-                                <strong>Buyer Documentation Package</strong>
-                                <span>
-                                    Documents assembled per order so buyers can
-                                    review before shipment.
-                                </span>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
-
-                <!-- ==================================================== -->
-                <!-- SECTION 7 — HOW WE WORK                              -->
-                <!-- ==================================================== -->
-                <section id="process" class="trade-section trade-steps-wrap">
-
-                    <div class="container">
-
-                        <div class="trade-section-heading">
-                            <div>
-                                <h2>How We Work</h2>
-                                <p>
-                                    From product selection to shipment.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="trade-steps">
-
-                            <div class="trade-step">
-                                <div class="trade-step-index">01</div>
-                                <div class="trade-step-title">Product Selection</div>
-                            </div>
-
-                            <div class="trade-step">
-                                <div class="trade-step-index">02</div>
-                                <div class="trade-step-title">Supplier Validation</div>
-                            </div>
-
-                            <div class="trade-step">
-                                <div class="trade-step-index">03</div>
-                                <div class="trade-step-title">Sample &amp; Testing</div>
-                            </div>
-
-                            <div class="trade-step">
-                                <div class="trade-step-index">04</div>
-                                <div class="trade-step-title">Customization</div>
-                            </div>
-
-                            <div class="trade-step">
-                                <div class="trade-step-index">05</div>
-                                <div class="trade-step-title">Production Follow-up</div>
-                            </div>
-
-                            <div class="trade-step">
-                                <div class="trade-step-index">06</div>
-                                <div class="trade-step-title">Shipping</div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
-
-                <!-- ==================================================== -->
-                <!-- SECTION 8 — CTA                                      -->
-                <!-- ==================================================== -->
-                <section id="contact-cta" class="trade-cta">
-
-                    <div class="container">
-                        <div class="trade-cta-inner">
-
-                            <h2>
-                                Looking for the Right Product or
-                                Manufacturing Partner?
-                            </h2>
-
-                            <p>
-                                Tell us what you are looking for.
-                                We will review product, factory and
-                                customization options.
-                            </p>
-
-                            <div class="trade-actions trade-actions-center">
-                                <a href="/contactus"
-                                   class="btn trade-btn-primary">
-                                    Request a Quote
-                                </a>
-
-                                <a href="/contactus"
-                                   class="btn trade-btn-ghost">
-                                    Contact Us
-                                </a>
+                                </div>
                             </div>
 
                         </div>

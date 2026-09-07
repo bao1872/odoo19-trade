@@ -1,6 +1,7 @@
 /* Trade Website — homepage only styles.
  * Shared palette / buttons / headings live in site.scss.
  * Product card styles live in products.scss.
+ * Image container variants live in site.scss (.trade-visual-*).
  */
 
 /* ------------------------------------------------------------------ */
@@ -8,12 +9,12 @@
 /* ------------------------------------------------------------------ */
 
 .trade-hero {
-    padding: 88px 0 72px;
+    padding: 96px 0 84px;
     background: linear-gradient(100deg, #f4f7f9 0%, #ffffff 58%, #edf2f5 100%);
 }
 
 .trade-hero-title {
-    max-width: 680px;
+    max-width: 560px;
     margin: 0;
     color: var(--trade-navy-dark);
     font-size: clamp(2.7rem, 5vw, 4.8rem);
@@ -27,82 +28,16 @@
 }
 
 .trade-hero-copy {
-    max-width: 620px;
+    max-width: 540px;
     margin: 28px 0 0;
     color: #425463;
-    font-size: 1.12rem;
+    font-size: 1.1rem;
     line-height: 1.7;
 }
 
-/* Industrial collage — placeholders until real factory photos exist */
-.trade-hero-media {
-    display: grid;
-    grid-template-columns: 1.55fr 0.8fr;
-    grid-template-rows: repeat(2, 180px);
-    gap: 10px;
-}
-
-.trade-media-main,
-.trade-media-small {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    min-height: 160px;
-    padding: 0;
-    overflow: hidden;
-    background: var(--trade-navy-dark);
-    color: white;
-}
-
-.trade-media-main img,
-.trade-media-small img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-}
-
-.trade-media-caption {
-    position: relative;
-    z-index: 1;
-    padding: 24px;
-    color: white;
-    background: linear-gradient(
-        to top,
-        rgba(15, 34, 51, 0.85) 0%,
-        rgba(15, 34, 51, 0.25) 55%,
-        rgba(15, 34, 51, 0) 100%
-    );
-}
-
-.trade-media-main {
-    grid-row: 1 / span 2;
-}
-
-.trade-media-main span,
-.trade-media-small span {
-    margin-bottom: 5px;
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    opacity: 0.8;
-}
-
-.trade-media-main strong {
-    font-size: 1.7rem;
-    line-height: 1.15;
-}
-
-.trade-media-small strong {
-    font-size: 1rem;
-    line-height: 1.25;
-}
 
 /* ------------------------------------------------------------------ */
-/* SECTION 2 — CONTROL POINTS                                           */
+/* SECTION 2 — CONTROL STRIP                                           */
 /* ------------------------------------------------------------------ */
 
 .trade-control-strip {
@@ -112,8 +47,15 @@
 }
 
 .trade-control-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
     min-height: 112px;
-    padding: 25px 0;
+    padding: 28px 0;
+
+    > div {
+        display: block;
+    }
 
     strong,
     span {
@@ -121,7 +63,7 @@
     }
 
     strong {
-        margin-bottom: 7px;
+        margin-bottom: 6px;
         color: var(--trade-navy);
         font-size: 1rem;
     }
@@ -133,165 +75,129 @@
     }
 }
 
+.trade-control-icon {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--trade-line);
+    color: var(--trade-navy);
+}
+
+
 /* ------------------------------------------------------------------ */
-/* SECTION 4 — MANUFACTURING CONTROL (dark navy)                        */
+/* SECTION 3 — FEATURED PRODUCTS                                        */
 /* ------------------------------------------------------------------ */
 
-.trade-manufacturing {
-    padding: 84px 0;
+.trade-products-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* SECTION 4 — OUR MANUFACTURING SOLUTION (dark navy)                   */
+/* ------------------------------------------------------------------ */
+
+.trade-solution-strip {
     background: var(--trade-navy-dark);
     color: #e8eef2;
 }
 
-.trade-manufacturing-title {
-    margin-bottom: 20px;
-    color: white;
-    font-size: clamp(1.75rem, 3vw, 2.5rem);
-    font-weight: 700;
-    line-height: 1.16;
+.trade-eyebrow-light {
+    color: #8da4b5;
 }
 
-.trade-manufacturing-copy {
-    max-width: 520px;
-    margin: 0;
+.trade-solution-title {
+    margin: 12px 0 18px;
+    color: white;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 750;
+    line-height: 1.12;
+    letter-spacing: -0.03em;
+}
+
+.trade-solution-copy {
+    max-width: 480px;
+    margin: 0 0 24px;
     color: #b3c2cd;
     font-size: 1rem;
     line-height: 1.7;
 }
 
-.trade-process-grid {
+.trade-link-light {
+    color: #cfdae2;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.trade-solution-tiles {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
-}
-
-.trade-process-block {
-    padding: 22px;
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    background: rgba(255, 255, 255, 0.04);
-
-    strong,
-    span {
-        display: block;
-    }
-
-    strong {
-        margin-bottom: 7px;
-        color: white;
-        font-size: 1rem;
-    }
-
-    span {
-        color: #a8b7c2;
-        font-size: 0.88rem;
-        line-height: 1.5;
-    }
-}
-
-/* ------------------------------------------------------------------ */
-/* SECTION 5 — CAPABILITIES                                             */
-/* ------------------------------------------------------------------ */
-
-.trade-capabilities {
-    background: var(--trade-bg);
-}
-
-.trade-capability-card {
-    height: 100%;
-    overflow: hidden;
-    border: 1px solid var(--trade-line);
-    border-radius: var(--trade-radius);
-    background: white;
-}
-
-.trade-capability-media {
-    min-height: 150px;
-}
-
-.trade-capability-body {
-    padding: 20px;
-
-    h3 {
-        margin-bottom: 8px;
-        color: var(--trade-navy-dark);
-        font-size: 1rem;
-        font-weight: 700;
-    }
-
-    p {
-        margin: 0;
-        color: var(--trade-muted);
-        font-size: 0.88rem;
-        line-height: 1.55;
-    }
-}
-
-/* ------------------------------------------------------------------ */
-/* SECTION 6 — COMPLIANCE                                               */
-/* ------------------------------------------------------------------ */
-
-.trade-compliance-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px;
-}
-
-.trade-compliance-block {
-    padding: 24px;
-    border-left: 2px solid var(--trade-navy);
-    background: var(--trade-bg);
-
-    strong,
-    span {
-        display: block;
-    }
-
-    strong {
-        margin-bottom: 8px;
-        color: var(--trade-navy-dark);
-        font-size: 1rem;
-    }
-
-    span {
-        color: #687985;
-        font-size: 0.88rem;
-        line-height: 1.55;
-    }
-}
-
-/* ------------------------------------------------------------------ */
-/* SECTION 7 — HOW WE WORK                                              */
-/* ------------------------------------------------------------------ */
-
-.trade-steps-wrap {
-    background: white;
-}
-
-.trade-steps {
-    display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 14px;
 }
 
-.trade-step {
+.trade-solution-tile {
+    display: block;
+    position: relative;
+}
+
+.trade-solution-tile-label {
+    display: block;
+    margin-top: 10px;
+    color: #cfdae2;
+    font-size: 0.88rem;
+    font-weight: 650;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* SECTION 5 — WHY U.S. BUSINESSES WORK WITH US + CTA                    */
+/* ------------------------------------------------------------------ */
+
+.trade-advantage-cta {
+    background: white;
+}
+
+.trade-advantage-list {
+    margin-top: 22px;
+    display: grid;
+    gap: 18px;
+}
+
+.trade-advantage-item {
     padding-top: 16px;
     border-top: 2px solid var(--trade-line);
+
+    strong {
+        display: block;
+        margin-bottom: 6px;
+        color: var(--trade-navy-dark);
+        font-size: 1.05rem;
+    }
+
+    span {
+        display: block;
+        color: var(--trade-muted);
+        font-size: 0.95rem;
+        line-height: 1.65;
+    }
 }
 
-.trade-step-index {
-    color: var(--trade-copper);
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
+.trade-cta-tile {
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
 
-.trade-step-title {
-    margin-top: 8px;
-    color: var(--trade-navy);
-    font-size: 0.95rem;
-    font-weight: 650;
-    line-height: 1.4;
-}
 
 /* ------------------------------------------------------------------ */
 /* Responsive                                                           */
@@ -299,90 +205,31 @@
 
 @media (max-width: 991.98px) {
     .trade-hero {
-        padding-top: 64px;
+        padding: 64px 0;
     }
 
-    .trade-hero-media {
-        grid-template-rows: repeat(2, 150px);
+    .trade-control-item {
+        min-height: 0;
+        padding: 18px 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .trade-solution-tiles {
+        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 575.98px) {
-    .trade-hero {
-        padding: 52px 0;
-    }
-
     .trade-hero-title {
         font-size: 2.6rem;
     }
 
     .trade-hero-copy {
-        font-size: 1.05rem;
+        font-size: 1.02rem;
     }
 
-    .trade-hero-media {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-
-    .trade-media-main {
-        grid-row: auto;
-        min-height: 260px;
-    }
-
-    .trade-media-small {
-        min-height: 130px;
-    }
-
-    .trade-control-item {
-        min-height: 0;
-        padding: 14px 0;
-    }
-}
-
-/* Sections 4–7 responsive */
-@media (max-width: 991.98px) {
-    .trade-manufacturing {
-        padding: 64px 0;
-    }
-
-    .trade-steps {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 18px 14px;
-    }
-
-    .trade-compliance-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 767.98px) {
-    .trade-compliance-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .trade-manufacturing {
-        padding: 56px 0;
-    }
-
-    .trade-process-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .trade-steps {
-        grid-template-columns: 1fr;
-        gap: 14px;
-    }
-
-    .trade-step {
-        display: flex;
-        gap: 12px;
-        align-items: baseline;
-    }
-
-    .trade-step-title {
-        margin-top: 0;
+    .trade-solution-tile-label {
+        font-size: 0.82rem;
     }
 }

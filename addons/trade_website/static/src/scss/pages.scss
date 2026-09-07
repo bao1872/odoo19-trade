@@ -464,3 +464,58 @@
         padding: 20px;
     }
 }
+
+/* ------------------------------------------------------------------ */
+/* /solution — 6 process step tiles                                     */
+/* ------------------------------------------------------------------ */
+
+.trade-step-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.trade-step-tile {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.trade-step-tile-body {
+    padding: 14px 4px 0;
+}
+
+.trade-step-index {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--trade-copper);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.trade-step-tile-body h3 {
+    margin: 0 0 6px;
+    color: var(--trade-navy-dark);
+    font-size: 1.02rem;
+    font-weight: 700;
+}
+
+.trade-step-tile-body p {
+    margin: 0;
+    color: var(--trade-muted);
+    font-size: 0.88rem;
+    line-height: 1.55;
+}
+
+@media (max-width: 991.98px) {
+    .trade-step-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 575.98px) {
+    .trade-step-grid {
+        grid-template-columns: 1fr;
+    }
+}

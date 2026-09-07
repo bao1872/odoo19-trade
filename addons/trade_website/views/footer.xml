@@ -4,6 +4,9 @@
     <!-- Lightweight footer branding.
          Applied on top of the official footer (website.footer_custom) by
          priority, navbar/header structure untouched.
+         Footer groups: Products / Our Solution / Company
+         (Manufacturing + Quality + Our Advantage are consolidated under
+         "Our Solution".)
     -->
     <template id="trade_footer"
               inherit_id="website.layout"
@@ -49,11 +52,18 @@
                         </div>
 
                         <div class="col-lg-3 col-6">
-                            <h5>CAPABILITIES</h5>
+                            <h5>OUR SOLUTION</h5>
                             <ul>
-                                <li><a href="/manufacturing">Manufacturing</a></li>
-                                <li><a href="/quality">Quality</a></li>
-                                <li><a href="/our-advantage">Our Advantage</a></li>
+                                <li><a href="/solution">Overview</a></li>
+                                <li>
+                                    <a href="/manufacturing">Manufacturing Control</a>
+                                </li>
+                                <li>
+                                    <a href="/quality">Quality &amp; Documentation</a>
+                                </li>
+                                <li>
+                                    <a href="/our-advantage">Product Selection Focus</a>
+                                </li>
                             </ul>
                         </div>
 

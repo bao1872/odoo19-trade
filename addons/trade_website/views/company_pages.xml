@@ -41,7 +41,7 @@
 
                         <div class="trade-flow-grid">
 
-                            <div class="trade-flow-item"><div class="trade-flow-image"><img loading="lazy" src="/trade_website/static/src/img/process/factory-coordination.webp" alt="Factory coordination illustration"/></div>
+                            <div class="trade-flow-item"><div class="trade-flow-image"><img loading="lazy" src="/trade_website/static/src/img/v04/process/01-product-alignment.webp" alt="Factory coordination illustration"/></div>
                                 <span class="trade-flow-index">01</span>
                                 <strong>Specification Alignment</strong>
                                 <span>
@@ -50,7 +50,7 @@
                                 </span>
                             </div>
 
-                            <div class="trade-flow-item"><div class="trade-flow-image"><img loading="lazy" src="/trade_website/static/src/img/process/sample-validation.webp" alt="Sample validation illustration"/></div>
+                            <div class="trade-flow-item"><div class="trade-flow-image"><img loading="lazy" src="/trade_website/static/src/img/v04/process/02-sample-validation.webp" alt="Sample validation illustration"/></div>
                                 <span class="trade-flow-index">02</span>
                                 <strong>Sample Validation</strong>
                                 <span>
@@ -59,7 +59,7 @@
                                 </span>
                             </div>
 
-                            <div class="trade-flow-item"><div class="trade-flow-image"><img loading="lazy" src="/trade_website/static/src/img/process/factory-coordination.webp" alt="Production scheduling illustration"/></div>
+                            <div class="trade-flow-item"><div class="trade-flow-image"><img loading="lazy" src="/trade_website/static/src/img/v04/process/01-product-alignment.webp" alt="Production scheduling illustration"/></div>
                                 <span class="trade-flow-index">03</span>
                                 <strong>Production Scheduling</strong>
                                 <span>
@@ -68,7 +68,7 @@
                                 </span>
                             </div>
 
-                            <div class="trade-flow-item"><div class="trade-flow-image"><img loading="lazy" src="/trade_website/static/src/img/process/quality-checkpoints.webp" alt="Quality checkpoints illustration"/></div>
+                            <div class="trade-flow-item"><div class="trade-flow-image"><img loading="lazy" src="/trade_website/static/src/img/v04/process/05-quality-checkpoints.webp" alt="Quality checkpoints illustration"/></div>
                                 <span class="trade-flow-index">04</span>
                                 <strong>Quality Checkpoints</strong>
                                 <span>
@@ -77,7 +77,7 @@
                                 </span>
                             </div>
 
-                            <div class="trade-flow-item"><div class="trade-flow-image"><img loading="lazy" src="/trade_website/static/src/img/process/shipping-preparation.webp" alt="Packaging confirmation illustration"/></div>
+                            <div class="trade-flow-item"><div class="trade-flow-image"><img loading="lazy" src="/trade_website/static/src/img/v04/process/06-shipment-preparation.webp" alt="Packaging confirmation illustration"/></div>
                                 <span class="trade-flow-index">05</span>
                                 <strong>Packaging Confirmation</strong>
                                 <span>
@@ -86,7 +86,7 @@
                                 </span>
                             </div>
 
-                            <div class="trade-flow-item"><div class="trade-flow-image"><img loading="lazy" src="/trade_website/static/src/img/process/shipping-preparation.webp" alt="Shipping preparation illustration"/></div>
+                            <div class="trade-flow-item"><div class="trade-flow-image"><img loading="lazy" src="/trade_website/static/src/img/v04/process/06-shipment-preparation.webp" alt="Shipping preparation illustration"/></div>
                                 <span class="trade-flow-index">06</span>
                                 <strong>Shipping Preparation</strong>
                                 <span>
