@@ -4,7 +4,10 @@
  * no global body/button override.
  */
 
-.trade-site {
+/* Design tokens live on :root — header and footer render outside
+   .trade-site, so they need access to the same custom properties.
+   Only custom properties here, no body/button styling. */
+:root {
     --trade-navy: #17324d;
     --trade-navy-dark: #0f2233;
     --trade-blue-gray: #5f7487;
@@ -14,7 +17,9 @@
     --trade-line: #dde4e8;
     --trade-muted: #667783;
     --trade-radius: 2px;
+}
 
+.trade-site {
     color: var(--trade-navy-dark);
     background: var(--trade-white);
 
@@ -267,24 +272,55 @@
 }
 
 /* ------------------------------------------------------------------ */
-/* Header CTA — official navbar untouched, only link styling           */
+/* Public header — brand block + CTA (navbar structure untouched)       */
 /* ------------------------------------------------------------------ */
 
-@media (min-width: 992px) {
-    header .navbar-nav a[href="/request-quote"] {
-        margin-left: 10px;
-        padding: 8px 16px !important;
-        border: 1px solid var(--trade-copper);
-        border-radius: var(--trade-radius);
-        background: var(--trade-copper);
-        color: white !important;
-        font-weight: 650;
-    }
+.trade-header-brand {
+    display: flex;
+    flex-direction: column;
+    margin-right: 32px;
+    color: var(--trade-navy-dark);
+    text-decoration: none;
+    line-height: 1;
+}
 
-    header .navbar-nav a[href="/request-quote"]:hover {
-        border-color: #ad7131;
-        background: #ad7131;
-    }
+.trade-header-brand-main {
+    font-size: 1rem;
+    font-weight: 750;
+    letter-spacing: -0.02em;
+}
+
+.trade-header-brand-sub {
+    margin-top: 4px;
+    color: var(--trade-blue-gray);
+    font-size: 0.62rem;
+    font-weight: 650;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+}
+
+header .navbar {
+    min-height: 66px;
+}
+
+header .nav-link {
+    font-size: 0.9rem;
+}
+
+header .navbar-nav a[href="/request-quote"] {
+    margin-left: 12px;
+    padding: 10px 18px !important;
+    border: 1px solid var(--trade-copper);
+    border-radius: 2px;
+    background: var(--trade-copper);
+    color: #fff !important;
+    font-weight: 650;
+}
+
+header .navbar-nav a[href="/request-quote"]:hover {
+    border-color: #ad7131;
+    background: #ad7131;
+    color: #fff !important;
 }
 
 /* ------------------------------------------------------------------ */
@@ -337,7 +373,12 @@
 }
 
 .trade-visual-hero {
-    aspect-ratio: 1.25 / 1;
+    aspect-ratio: 1.48 / 1;
+}
+
+.trade-visual-hero img {
+    object-fit: cover;
+    object-position: center;
 }
 
 .trade-visual-hero-product {

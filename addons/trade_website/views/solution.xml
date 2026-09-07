@@ -58,7 +58,7 @@
                             <div class="trade-step-tile">
                                 <div class="trade-visual trade-visual-process">
                                     <img loading="lazy"
-                                         src="/trade_website/static/src/img/v04/process/01-product-alignment.webp"
+                                         src="/trade_website/static/src/img/v05/process/01-product-alignment-clean.webp"
                                          alt="Product &amp; factory alignment"/>
                                 </div>
                                 <div class="trade-step-tile-body">
@@ -75,7 +75,7 @@
                             <div class="trade-step-tile">
                                 <div class="trade-visual trade-visual-process">
                                     <img loading="lazy"
-                                         src="/trade_website/static/src/img/v04/process/02-sample-validation.webp"
+                                         src="/trade_website/static/src/img/v05/process/02-sample-validation-clean.webp"
                                          alt="Sample validation"/>
                                 </div>
                                 <div class="trade-step-tile-body">
@@ -91,7 +91,7 @@
                             <div class="trade-step-tile">
                                 <div class="trade-visual trade-visual-process">
                                     <img loading="lazy"
-                                         src="/trade_website/static/src/img/v04/process/03-customization.webp"
+                                         src="/trade_website/static/src/img/v05/process/03-customization-clean.webp"
                                          alt="Customization and packaging"/>
                                 </div>
                                 <div class="trade-step-tile-body">
@@ -108,7 +108,7 @@
                             <div class="trade-step-tile">
                                 <div class="trade-visual trade-visual-process">
                                     <img loading="lazy"
-                                         src="/trade_website/static/src/img/v04/process/04-production-coordination.webp"
+                                         src="/trade_website/static/src/img/v05/process/04-production-coordination-clean.webp"
                                          alt="Production coordination"/>
                                 </div>
                                 <div class="trade-step-tile-body">
@@ -125,7 +125,7 @@
                             <div class="trade-step-tile">
                                 <div class="trade-visual trade-visual-process">
                                     <img loading="lazy"
-                                         src="/trade_website/static/src/img/v04/process/05-quality-checkpoints.webp"
+                                         src="/trade_website/static/src/img/v05/process/05-quality-checkpoints-clean.webp"
                                          alt="Quality and documentation"/>
                                 </div>
                                 <div class="trade-step-tile-body">
@@ -142,7 +142,7 @@
                             <div class="trade-step-tile">
                                 <div class="trade-visual trade-visual-process">
                                     <img loading="lazy"
-                                         src="/trade_website/static/src/img/v04/process/06-shipment-preparation.webp"
+                                         src="/trade_website/static/src/img/v05/process/06-shipment-preparation-clean.webp"
                                          alt="Shipment preparation"/>
                                 </div>
                                 <div class="trade-step-tile-body">
@@ -266,7 +266,7 @@
                             <div class="col-lg-7 order-lg-2">
                                 <div class="trade-visual trade-visual-process">
                                     <img loading="lazy"
-                                         src="/trade_website/static/src/img/v04/use_cases/oem-private-label.webp"
+                                         src="/trade_website/static/src/img/v05/use_cases/oem-private-label-clean.webp"
                                          alt="OEM and private label illustration"/>
                                 </div>
                             </div>

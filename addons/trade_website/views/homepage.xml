@@ -24,14 +24,18 @@
                     <div class="container">
                         <div class="row align-items-center g-4 trade-hero-grid">
 
-                            <div class="col-lg-5 trade-hero-copy-col">
+                            <div class="col-lg-6 trade-hero-copy-col">
                                 <div class="trade-eyebrow">
                                     YOUR SOURCING AND MANUFACTURING PARTNER
                                 </div>
 
                                 <h1 class="trade-hero-title">
-                                    China Manufacturing.<br/>
-                                    <span>U.S. Market Execution.</span>
+                                    <span class="trade-hero-line">
+                                        China Manufacturing.
+                                    </span>
+                                    <span class="trade-hero-line trade-hero-accent">
+                                        U.S. Market Execution.
+                                    </span>
                                 </h1>
 
                                 <p class="trade-hero-copy">
@@ -54,10 +58,10 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-7 trade-hero-visual-col">
+                            <div class="col-lg-6 trade-hero-visual-col">
                                 <div class="trade-visual trade-visual-hero">
                                     <img
-                                        src="/trade_website/static/src/img/v04/homepage/hero-product-stage.webp"
+                                        src="/trade_website/static/src/img/v05/homepage/hero-product-stage-clean.webp"
                                         alt="Cordless Air Duster, Instant Print Camera and Ultrasonic Cutter on a presentation stage"/>
                                 </div>
                             </div>
@@ -307,7 +311,7 @@
                     <div class="container">
                         <div class="row g-4 align-items-center">
 
-                            <div class="col-lg-5">
+                            <div class="col-lg-4">
                                 <div class="trade-eyebrow trade-eyebrow-light">
                                     OUR MANUFACTURING SOLUTION
                                 </div>
@@ -326,13 +330,13 @@
                                 </a>
                             </div>
 
-                            <div class="col-lg-7">
+                            <div class="col-lg-8">
                                 <div class="trade-solution-tiles">
 
                                     <div class="trade-solution-tile">
                                         <div class="trade-visual trade-visual-process">
                                             <img loading="lazy"
-                                                 src="/trade_website/static/src/img/v04/process/01-product-alignment.webp"
+                                                 src="/trade_website/static/src/img/v05/process/01-product-alignment-clean.webp"
                                                  alt="Product and factory alignment"/>
                                         </div>
                                         <span class="trade-solution-tile-label">
@@ -343,7 +347,7 @@
                                     <div class="trade-solution-tile">
                                         <div class="trade-visual trade-visual-process">
                                             <img loading="lazy"
-                                                 src="/trade_website/static/src/img/v04/process/02-sample-validation.webp"
+                                                 src="/trade_website/static/src/img/v05/process/02-sample-validation-clean.webp"
                                                  alt="Sample validation"/>
                                         </div>
                                         <span class="trade-solution-tile-label">
@@ -354,7 +358,7 @@
                                     <div class="trade-solution-tile">
                                         <div class="trade-visual trade-visual-process">
                                             <img loading="lazy"
-                                                 src="/trade_website/static/src/img/v04/process/05-quality-checkpoints.webp"
+                                                 src="/trade_website/static/src/img/v05/process/05-quality-checkpoints-clean.webp"
                                                  alt="Quality checkpoints"/>
                                         </div>
                                         <span class="trade-solution-tile-label">
@@ -365,7 +369,7 @@
                                     <div class="trade-solution-tile">
                                         <div class="trade-visual trade-visual-process">
                                             <img loading="lazy"
-                                                 src="/trade_website/static/src/img/v04/process/06-shipment-preparation.webp"
+                                                 src="/trade_website/static/src/img/v05/process/06-shipment-preparation-clean.webp"
                                                  alt="Shipping preparation"/>
                                         </div>
                                         <span class="trade-solution-tile-label">
@@ -389,42 +393,34 @@
                     <div class="container">
                         <div class="row g-4 align-items-stretch">
 
-                            <div class="col-lg-7">
+                            <div class="col-lg-8">
                                 <div class="trade-eyebrow">
                                     WHY U.S. BUSINESSES WORK WITH US
                                 </div>
                                 <h2 class="trade-block-title">
-                                    From Good Products to
-                                    Great Opportunities.
+                                    From Good Products<br/>
+                                    to Great Opportunities.
                                 </h2>
 
-                                <div class="trade-advantage-list">
+                                <div class="trade-advantage-grid">
 
-                                    <div class="trade-advantage-item">
+                                    <article class="trade-advantage-item">
                                         <strong>Focus on Real Opportunities</strong>
                                         <span>
                                             Selected products, not endless
-                                            catalogs. We focus on a limited
-                                            set of products where
-                                            manufacturing capability,
-                                            customization flexibility and
-                                            market fit justify deeper
-                                            evaluation.
+                                            catalogs.
                                         </span>
-                                    </div>
+                                    </article>
 
-                                    <div class="trade-advantage-item">
+                                    <article class="trade-advantage-item">
                                         <strong>Factory-Side Coordination</strong>
                                         <span>
                                             Direct communication across
-                                            critical manufacturing steps —
-                                            specifications, samples,
-                                            customization and production
-                                            follow-up.
+                                            critical manufacturing steps.
                                         </span>
-                                    </div>
+                                    </article>
 
-                                    <div class="trade-advantage-item">
+                                    <article class="trade-advantage-item">
                                         <strong>U.S. Market Readiness</strong>
                                         <span>
                                             Product, packaging and
@@ -432,17 +428,16 @@
                                             destination requirements in
                                             mind.
                                         </span>
-                                    </div>
+                                    </article>
 
                                 </div>
                             </div>
 
-                            <div class="col-lg-5">
-                                <div class="trade-cta trade-cta-tile">
-                                    <div class="trade-cta-inner">
+                            <div class="col-lg-4">
+                                <div class="trade-cta-tile">
+                                    <div class="trade-cta-tile-inner">
                                         <h2>
-                                            Ready to Start Your
-                                            Next Project?
+                                            Ready to Start Your Next Project?
                                         </h2>
                                         <p>
                                             Tell us what you are looking
@@ -450,7 +445,7 @@
                                             factory and customization
                                             options.
                                         </p>
-                                        <div class="trade-actions trade-actions-center">
+                                        <div class="trade-actions">
                                             <a href="/request-quote"
                                                class="btn trade-btn-primary">
                                                 Request a Quote

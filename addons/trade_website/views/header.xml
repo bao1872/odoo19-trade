@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!--
+        Clean public header.
+
+        Inherits the official header templates (no navbar rewrite):
+        - website.template_header_default (desktop, lg+)
+        - website.template_header_mobile  (offcanvas, < lg)
+
+        Removed from public view:
+        - search box
+        - header text element (fake phone / promo text)
+        - social links
+        - portal Sign In
+        - portal user dropdown
+        - Odoo default header CTA
+
+        Kept:
+        - official website.menu rendering
+        - language selector
+        - mobile hamburger / offcanvas menu
+
+        "Global Sourcing" is a temporary site identity placeholder,
+        not the final brand name.
+    -->
+
+    <!-- ============================================================ -->
+    <!-- DESKTOP                                                       -->
+    <!-- ============================================================ -->
+    <template id="trade_header_default"
+              inherit_id="website.template_header_default"
+              name="Trade Header Default"
+              priority="120">
+
+        <!-- Site identity -->
+        <xpath expr="//t[@t-call='website.placeholder_header_brand']"
+               position="replace">
+
+            <a href="/"
+               class="navbar-brand trade-header-brand">
+
+                <span class="trade-header-brand-main">
+                    Global Sourcing
+                </span>
+
+                <span class="trade-header-brand-sub">
+                    China · U.S.
+                </span>
+
+            </a>
+
+        </xpath>
+
+        <!-- Remove public noise -->
+        <xpath expr="//t[@t-call='website.placeholder_header_search_box']"
+               position="replace"/>
+
+        <xpath expr="//t[@t-call='website.placeholder_header_text_element']"
+               position="replace"/>
+
+        <xpath expr="//t[@t-call='website.placeholder_header_social_links']"
+               position="replace"/>
+
+        <xpath expr="//t[@t-call='portal.placeholder_user_sign_in']"
+               position="replace"/>
+
+        <xpath expr="//t[@t-call='portal.user_dropdown']"
+               position="replace"/>
+
+        <xpath expr="//t[@t-call='website.placeholder_header_call_to_action']"
+               position="replace"/>
+
+    </template>
+
+
+    <!-- ============================================================ -->
+    <!-- MOBILE                                                        -->
+    <!-- ============================================================ -->
+    <template id="trade_header_mobile"
+              inherit_id="website.template_header_mobile"
+              name="Trade Header Mobile"
+              priority="120">
+
+        <!-- Site identity -->
+        <xpath expr="//t[@t-call='website.placeholder_header_brand']"
+               position="replace">
+
+            <a href="/"
+               class="navbar-brand trade-header-brand">
+
+                <span class="trade-header-brand-main">
+                    Global Sourcing
+                </span>
+
+                <span class="trade-header-brand-sub">
+                    China · U.S.
+                </span>
+
+            </a>
+
+        </xpath>
+
+        <!-- Remove public noise -->
+        <xpath expr="//t[@t-call='website.placeholder_header_search_box']"
+               position="replace"/>
+
+        <xpath expr="//t[@t-call='website.placeholder_header_text_element']"
+               position="replace"/>
+
+        <xpath expr="//t[@t-call='website.placeholder_header_social_links']"
+               position="replace"/>
+
+        <xpath expr="//t[@t-call='portal.placeholder_user_sign_in']"
+               position="replace"/>
+
+        <xpath expr="//t[@t-call='portal.user_dropdown']"
+               position="replace"/>
+
+        <xpath expr="//t[@t-call='website.header_call_to_action_large']"
+               position="replace"/>
+
+    </template>
+
+</odoo>

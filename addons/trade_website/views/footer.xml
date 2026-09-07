@@ -89,4 +89,40 @@
 
     </template>
 
+    <!-- Remove the Odoo copyright strip under the footer -->
+    <template id="trade_remove_footer_copyright"
+              inherit_id="website.layout"
+              name="Remove Footer Copyright"
+              priority="130">
+
+        <xpath expr="//*[hasclass('o_footer_copyright')]"
+               position="replace"/>
+
+    </template>
+
+    <!-- Safety net: remove the Odoo brand promotion message -->
+    <template id="trade_remove_brand_promotion"
+              inherit_id="website.brand_promotion"
+              name="Remove Brand Promotion"
+              priority="130">
+
+        <xpath expr="//t[@t-call='web.brand_promotion_message']"
+               position="replace"/>
+
+    </template>
+
+    <!--
+        Official /contactus ships a demo "My Company" block with a fake
+        address / phone / email. Remove it — no fake company data on a
+        public B2B site.
+    -->
+    <template id="trade_contactus_remove_demo_block"
+              inherit_id="website.contactus"
+              name="Contact Us - Remove Demo Contact Block"
+              priority="120">
+
+        <xpath expr="//div[hasclass('offset-lg-1')]" position="replace"/>
+
+    </template>
+
 </odoo>

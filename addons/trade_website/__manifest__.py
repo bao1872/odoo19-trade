@@ -22,7 +22,7 @@ Out of scope:
     """,
     "author": "Trade Website",
     "category": "Website/Website",
-    "version": "19.0.1.0.3",
+    "version": "19.0.1.0.4",
     "license": "LGPL-3",
     "depends": ["website", "website_crm"],
     "data": [
@@ -32,6 +32,7 @@ Out of scope:
         "views/company_pages.xml",
         "views/request_quote.xml",
         "views/navigation.xml",
+        "views/header.xml",
         "views/footer.xml",
     ],
     "assets": {

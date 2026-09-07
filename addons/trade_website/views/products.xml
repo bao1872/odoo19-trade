@@ -249,7 +249,7 @@
                             <div class="col-lg-7 order-lg-2">
                                 <div class="trade-visual trade-visual-usecase">
                                     <img loading="lazy"
-                                         src="/trade_website/static/src/img/v04/use_cases/electronics-cleaning.webp"
+                                         src="/trade_website/static/src/img/v05/use_cases/electronics-cleaning-clean.webp"
                                          alt="Cleaning electronics with the cordless air duster"/>
                                 </div>
                             </div>
@@ -275,7 +275,7 @@
                             <div class="col-lg-7">
                                 <div class="trade-visual trade-visual-usecase">
                                     <img loading="lazy"
-                                         src="/trade_website/static/src/img/v04/use_cases/vehicle-cleaning.webp"
+                                         src="/trade_website/static/src/img/v05/use_cases/vehicle-cleaning-clean.webp"
                                          alt="Cleaning vehicle vents and interior"/>
                                 </div>
                             </div>
@@ -589,7 +589,7 @@
                             <div class="col-lg-7 order-lg-2">
                                 <div class="trade-visual trade-visual-usecase">
                                     <img loading="lazy"
-                                         src="/trade_website/static/src/img/v04/use_cases/instant-camera-lifestyle.webp"
+                                         src="/trade_website/static/src/img/v05/use_cases/instant-camera-lifestyle-clean.webp"
                                          alt="Instant Print Camera in lifestyle settings"/>
                                 </div>
                             </div>
@@ -963,7 +963,7 @@
                             <div class="col-lg-7 order-lg-2">
                                 <div class="trade-visual trade-visual-usecase">
                                     <img loading="lazy"
-                                         src="/trade_website/static/src/img/v04/use_cases/ultrasonic-craft.webp"
+                                         src="/trade_website/static/src/img/v05/use_cases/ultrasonic-craft-clean.webp"
                                          alt="Ultrasonic cutter in craft use"/>
                                 </div>
                             </div>

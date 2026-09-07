@@ -355,8 +355,8 @@
 /* ------------------------------------------------------------------ */
 
 .trade-footer {
-    padding: 56px 0 32px;
-    background: var(--trade-navy-dark);
+    padding: 52px 0 28px;
+    background: var(--trade-navy-dark, #0f2233);
     color: #b9c7d1;
 
     a {
@@ -388,8 +388,12 @@
     }
 }
 
+.trade-footer h5,
 .trade-footer-brand {
-    color: white;
+    color: #fff;
+}
+
+.trade-footer-brand {
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.5;
