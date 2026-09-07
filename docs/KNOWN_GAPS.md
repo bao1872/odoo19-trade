@@ -1,16 +1,18 @@
 # KNOWN_GAPS
 
-> 这些是**未完成内容**，不是工程缺陷。`BLOCKING: no` 表示不阻塞 v1 发布。
+> 这些是**未完成内容**，不是工程缺陷。`STATUS: OPEN` + `BLOCKING: no` 表示不阻塞 v1 发布。不扩展成项目管理系统。
 
 ## GAP-001 — Global Sourcing 临时品牌名
 
+- STATUS: OPEN
 - BLOCKING: no
-- OWNER: business / supplier
+- OWNER: Owner / business
 - TRIGGER: 收到正式品牌命名
 - Note: 当前用临时名占位，非 bug。
 
 ## GAP-002 — 产品参数 TBD
 
+- STATUS: OPEN
 - BLOCKING: no
 - OWNER: supplier
 - TRIGGER: 工厂提供真实规格参数
@@ -18,6 +20,7 @@
 
 ## GAP-003 — accessories-kit 占位图
 
+- STATUS: OPEN
 - BLOCKING: no
 - OWNER: business
 - TRIGGER: 真实配件包素材到位
@@ -25,6 +28,7 @@
 
 ## GAP-004 — v04 supply 占位图
 
+- STATUS: OPEN
 - BLOCKING: no
 - OWNER: business
 - TRIGGER: 真实工厂 / QC / 出货素材到位

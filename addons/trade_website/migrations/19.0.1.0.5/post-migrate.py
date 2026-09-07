@@ -1,5 +1,14 @@
 """
-v0.5 — repair / stabilize the website navigation hierarchy.
+Purpose:
+    Wire navigation menu records into the website top menu via XML ID and mark noupdate.
+From version:
+    19.0.1.0.5
+Invariant:
+    Top-level menu count = 5 (EN) / 5 (ZH); parent_id set by XML ID, not translatable name.
+Destructive:
+    no
+Rollback assumption:
+    noupdate flag can be reset to False; navigation XML re-installs on module upgrade.
 
 The menu records in ``views/navigation.xml`` are now created with
 ``noupdate="1"`` and carry no parent_id / website_id. This migration wires

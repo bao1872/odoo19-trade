@@ -1,5 +1,14 @@
 """
-v0.6.2 — remove the duplicate custom Contact menu.
+Purpose:
+    Remove obsolete duplicate custom Contact menu and rewire per-website actual menu.
+From version:
+    19.0.1.0.6
+Invariant:
+    Top-level menu count = 5 after removal; official website.menu_contactus reused under About.
+Destructive:
+    yes — unlinks ONLY trade_website.menu_contact (our obsolete duplicate).
+Rollback assumption:
+    If needed, re-add the custom menu via XML; official menus remain untouched.
 
 We used to ship our own ``trade_website.menu_contact`` under About, which
 coexisted with Odoo's official ``website.menu_contactus`` (rendered
