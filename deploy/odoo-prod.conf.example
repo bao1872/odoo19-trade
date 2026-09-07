@@ -1,0 +1,28 @@
+[options]
+; Production Odoo 19 configuration — EXAMPLE ONLY.
+; Real secrets live in /etc/odoo19-trade.conf (server-local, 0640 root:odoo).
+; DO NOT put real secrets in this tracked file.
+
+addons_path = /opt/odoo19-trade/odoo-19/addons,/opt/odoo19-trade/addons
+data_dir = /var/lib/odoo19-trade
+
+db_host = localhost
+db_port = 5432
+db_user = odoo
+dbfilter = ^odoo19$
+
+; First deployment: Odoo served directly on :8069 (port 80 is occupied
+; by the existing unrelated app 'lineagem'). No reverse proxy in front,
+; therefore proxy_mode = False.
+http_interface = 0.0.0.0
+http_port = 8069
+proxy_mode = False
+
+logfile = /var/log/odoo19-trade/odoo.log
+log_level = info
+
+list_db = False
+workers = 0
+max_cron_threads = 1
+
+admin_passwd = <SERVER_LOCAL_SECRET>

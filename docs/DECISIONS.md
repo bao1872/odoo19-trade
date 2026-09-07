@@ -42,3 +42,23 @@
 - Decision: 直接 `UPDATE` / `DELETE` / `INSERT` 业务 / runtime 数据需 Owner 显式授权；诊断用 SQL 仅恢复实验环境，最终须用 code + migration 重建。
 - Reason: 前几轮直接改 `arch_db`、SQL 删记录是最大风险源。
 - Trigger to revisit: 永不默认放宽。
+
+## ADR-006 — Production Deployment Topology (first deployment)
+
+- Status: Accepted
+- Date: 2026-09-07
+- Decision: First production deployment of odoo19-trade on `175.178.86.231`
+  uses native Ubuntu + systemd, with Odoo served **directly on public port
+  8069** (`0.0.0.0:8069`), PostgreSQL local-only (DB `odoo19`). Nginx is NOT
+  placed in front of Odoo in this first deployment.
+- Reason: Port 80 was already occupied by an existing, unrelated application
+  `lineagem` (nginx catch-all `server_name _` → 301 → :8001). The C3 contract
+  forbids overwriting unrelated server blocks and forbids stopping unrelated
+  services occupying port 80 without separate authorization. Owner resolved
+  the collision by serving Odoo on `:8069`. Fresh production DB (local dev DB
+  not imported). Native deployment (Docker not used; Docker absent on server).
+- Trigger to revisit:
+  - port 80 is freed for Odoo → install `deploy/nginx/odoo19-trade.conf`,
+    switch Odoo to `127.0.0.1:8069` + `proxy_mode=True`, add 80→443 + TLS.
+  - multiple application nodes / orchestration needs emerge.
+  - hosting environment changes.

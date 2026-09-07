@@ -1,0 +1,16 @@
+[Unit]
+Description=Odoo 19 Trade (production)
+After=network.target postgresql.service
+Wants=postgresql.service
+
+[Service]
+Type=simple
+User=odoo
+Group=odoo
+WorkingDirectory=/opt/odoo19-trade
+ExecStart=/opt/odoo19-trade/venv/bin/python /opt/odoo19-trade/odoo-19/odoo-bin -c /etc/odoo19-trade.conf
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
