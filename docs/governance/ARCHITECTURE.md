@@ -4,15 +4,18 @@
 
 ## Boundary
 
-- **Presentation / Configuration Layer**（仍属 code change，须按 Change Class 验证）：
+- **Presentation Code**（属于 Git / code change，须按 Change Class 验证）：
   - QWeb / XML
   - SCSS
   - i18n
-  - 官方 Odoo 配置
-  - **但不引入新的** Python business logic / schema / custom core model
+- **Runtime Configuration**（可能无 Git diff，但仍需 approved scope + runtime evidence）：
+  - 官方 Odoo 设置
+  - 语言启用 / 默认语言
+  - 网站配置
+- 两层都**不得引入新的** Python business logic / schema / custom core model。
 - **Develop（C2/C3）**：仅当官方模型 / 配置不足以支撑**已验证**的真实业务结构。
 
-> QWeb / XML / SCSS 仍然属于 code change，必须按 Change Class 验证，不能因“Configure”而绕开 gate。
+> Presentation Code 是 code change，必须按 Change Class 验证，不能因“Configure”而绕开 gate。Runtime Configuration 即使不改 Git，也必须有 approved scope 与 runtime 证据。
 
 ## Out of Scope（来自 `trade_website/__manifest__.py`）
 
@@ -30,6 +33,8 @@
   - 网站表单 → 官方 `crm.lead`（不自定义字段，见 DECISIONS ADR-002）
   - i18n：EN (`en_US`) + ZH (`zh_CN`)，PO 347 条
   - 产品：`air-duster` / `instant-print-camera` / `ultrasonic-cutter`
+
+> Current Website v1 baseline facts（非永久架构不变量）：version `19.0.1.0.6`、PO 347 条。未来版本 / 翻译条数变化不视为架构违规。
 
 ## Supported Public Locales（语言不变量）
 

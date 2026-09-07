@@ -4,11 +4,19 @@ Purpose:
 From version:
     19.0.1.0.5
 Invariant:
-    Top-level menu count = 5 (EN) / 5 (ZH); parent_id set by XML ID, not translatable name.
+    All trade_website-owned menu records are wired by XML ID
+    into the intended hierarchy and their ir.model.data records
+    are marked noupdate.
+
+    This migration alone does NOT guarantee the final five-item
+    top-level navigation; duplicate Contact handling is completed
+    by 19.0.1.0.6.
 Destructive:
     no
 Rollback assumption:
-    noupdate flag can be reset to False; navigation XML re-installs on module upgrade.
+    No automatic rollback is supported.
+    Restoring a pre-1.0.5 state requires an explicit code/data
+    recovery plan; do not clear noupdate as an ad-hoc rollback.
 
 The menu records in ``views/navigation.xml`` are now created with
 ``noupdate="1"`` and carry no parent_id / website_id. This migration wires

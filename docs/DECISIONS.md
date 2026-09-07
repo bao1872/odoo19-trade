@@ -23,8 +23,8 @@
 
 - Status: Accepted
 - Date: 2026-09-07
-- Decision: 顶级菜单固定 5 项（EN+ZH 各一）；About 下含 About Us / Contact us；复用官方 website contact 菜单，不自定义。
-- Reason: runtime 证明 `website.menu_home` 仅为 template menu，非运行菜单；必须按真实运行层级治理。
+- Decision: 顶级菜单固定 5 项；About 下使用 Odoo 为该 website 创建的 per-website Contact menu copy；不创建 trade_website 自定义 Contact；绝不修改 shared XML-ID template `website.menu_contactus`。
+- Reason: Odoo 19 的 `website.menu_contactus` XML ID 指向 shared template；真正 runtime menu 是 website-scoped copy，无该 XML ID。`trade_website.menu_contact` 已被证明是错误的 duplicate entity。
 - Trigger to revisit: 业务需要新增顶级栏目（如独立 Solutions / Blog）时。
 
 ## ADR-004 — 资产治理：production-safe 进 repo，源素材留外部

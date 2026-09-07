@@ -235,7 +235,11 @@ Rollback assumption:
 
 ## 12. Content / Asset Governance
 
-Git repo：**只放 production-safe / public、runtime 必需的资产**。
+Git repo 可包含：
+- runtime 使用的 production-safe 公开资产
+- 经明确批准的 production-safe 发布资产
+
+私有 / 源素材留在外部。
 
 外部 / 私有「产品材料工作台」：
 
@@ -249,6 +253,18 @@ product-material-workspace/
 > 原始工厂照片 / supplier docs / quotes / certifications **MUST NOT** 自动进入 public Git repo。
 > 只有经过批准的 production-safe derivative 才进入：
 > `addons/trade_website/static/src/img/`
+
+### 资产删除护栏
+
+> **Zero runtime references are evidence of non-use, NOT authorization to delete an asset.**
+
+删除资产前必须确认：
+- asset class（资产类别）
+- ownership（归属）
+- external preservation（外部是否已留存）
+- release intent（是否明确弃用发布）
+
+仅以引用计数（reference count = 0）清理资产**禁止**。
 
 ## 13. Decision Log
 

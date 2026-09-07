@@ -4,11 +4,17 @@ Purpose:
 From version:
     19.0.1.0.6
 Invariant:
-    Top-level menu count = 5 after removal; official website.menu_contactus reused under About.
+    Final per-website top-level navigation contains exactly
+    five items. The website-generated per-website Contact
+    menu copy is placed under About. The shared
+    website.menu_contactus template remains untouched.
 Destructive:
     yes — unlinks ONLY trade_website.menu_contact (our obsolete duplicate).
 Rollback assumption:
-    If needed, re-add the custom menu via XML; official menus remain untouched.
+    No routine automatic rollback.
+    The custom trade_website.menu_contact entity is obsolete
+    by design and must not be independently recreated.
+    Any rollback must restore code and data consistently.
 
 We used to ship our own ``trade_website.menu_contact`` under About, which
 coexisted with Odoo's official ``website.menu_contactus`` (rendered
@@ -16,11 +22,14 @@ top-level on a clean install). That produced a 6th top-level menu, violating
 the strict 5-top-menu constraint.
 
 This migration removes ONLY our obsolete duplicate and then re-wires the
-navigation via ``configure_navigation``, which now reuses the official
-``website.menu_contactus`` under our About group.
+navigation via ``configure_navigation``, which reuses the website-generated
+per-website Contact menu copy — never the shared ``website.menu_contactus``
+template record. The real runtime copy has no XML ID and is located by
+website scope + top-menu context + exact URL.
 
-DO NOT unlink ``website.menu_home`` or ``website.menu_contactus`` — those are
-official menus we intentionally reuse.
+DO NOT unlink ``website.menu_home``. DO NOT mutate the shared
+``website.menu_contactus`` template (its ``website_id`` is NULL); only the
+per-website copy may be repositioned.
 """
 
 from odoo import SUPERUSER_ID, api
