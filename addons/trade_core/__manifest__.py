@@ -1,34 +1,23 @@
 {
-    'name': "trade_core",
+    "name": "Trade Core",
+    "summary": "Foundation for validated trade business extensions",
+    "description": """
+Trade Core
+==========
 
-    'summary': "Short (1 phrase/line) summary of the module's purpose",
+Reserved foundation for future CRM, sales, purchase and
+supply-chain extensions.
 
-    'description': """
-Long description of module's purpose
+Intentionally contains no custom business logic yet.
+Business extensions are added only after the workflow has
+been validated with real transactions.
     """,
-
-    'author': "My Company",
-    'website': "https://www.yourcompany.com",
-
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
-    # for the full list
-    'category': 'Uncategorized',
-    'version': '19.0.1.0.0',
-    'license': 'LGPL-3',
-
-    # any module necessary for this one to work correctly
-    'depends': ['base'],
-
-    # always loaded
-    'data': [
-        # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
-    ],
-    # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
-    ],
+    "author": "Trade Project",
+    "category": "Hidden",
+    "version": "19.0.1.0.0",
+    "license": "LGPL-3",
+    "depends": ["base"],
+    "data": [],
+    "installable": True,
+    "application": False,
 }
-

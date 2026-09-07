@@ -157,6 +157,10 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.trade-info-item-spaced {
+    margin-top: 12px;
+}
+
 .trade-info-item {
     padding: 20px;
     border-top: 2px solid var(--trade-navy);

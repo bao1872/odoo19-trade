@@ -8,10 +8,15 @@ Odoo renders each website's navigation from that website's own
 would be reset on every module upgrade.
 
 So the hierarchy is owned here, keyed strictly by **XML ID** (never by the
-translatable ``name`` field). Two callers use it:
+translatable ``name`` field).
 
-* ``post_init_hook``  — fresh install (records created by XML, then wired).
-* ``migrations/19.0.1.0.5/post-migrate.py`` — existing DB upgrade.
+Callers:
+
+* ``post_init_hook``            — fresh install (records created by XML, then wired).
+* ``migrations/19.0.1.0.5``      — establish the XML-ID hierarchy and mark
+  the menu's ir.model.data as noupdate so upgrades keep the wiring.
+* ``migrations/19.0.1.0.6``      — remove the obsolete duplicate custom
+  Contact menu and re-wire the real official website menus.
 
 (MENU_TREE order matters: a parent must appear before its children.)
 """

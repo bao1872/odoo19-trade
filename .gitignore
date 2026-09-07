@@ -5,3 +5,9 @@ odoo-19/
 __pycache__/
 *.pyc
 .DS_Store
+
+# local dev artifacts
+/screenshots/
+/trade_web_assets_*.zip
+.pytest_cache/
+.ruff_cache/
