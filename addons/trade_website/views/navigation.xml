@@ -107,12 +107,6 @@
         <field name="sequence" type="int">51</field>
     </record>
 
-    <record id="menu_contact" model="website.menu">
-        <field name="name">Contact</field>
-        <field name="url">/contactus</field>
-        <field name="sequence" type="int">52</field>
-    </record>
-
     </data>
 
 </odoo>

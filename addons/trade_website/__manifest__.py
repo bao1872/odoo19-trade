@@ -22,7 +22,7 @@ Out of scope:
     """,
     "author": "Trade Website",
     "category": "Website/Website",
-    "version": "19.0.1.0.5",
+    "version": "19.0.1.0.6",
     "license": "LGPL-3",
     "depends": ["website", "website_crm"],
     "post_init_hook": "post_init_hook",

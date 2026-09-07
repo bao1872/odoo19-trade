@@ -31,14 +31,18 @@ MENU_TREE = [
 
     ("menu_about", None, 50),
     ("menu_about_us", "menu_about", 51),
-    ("menu_contact", "menu_about", 52),
 
     ("menu_request_quote", None, 80),
 ]
 
 
 def configure_navigation(env):
-    """Wire the trade_website menu records into the website's top menu."""
+    """Wire the trade_website menu records into the website's top menu.
+
+    Also reuses Odoo's official ``website.menu_home`` (kept top-level) and
+    ``website.menu_contactus`` (moved under our About group), so we never
+    maintain a duplicate Contact entity.
+    """
     website = env["website"].sudo().search([], order="id", limit=1)
     if not website:
         return
@@ -70,6 +74,41 @@ def configure_navigation(env):
         })
 
         resolved[xml_name] = menu
+
+    # Reuse Odoo's official Home / Contact-us, but operate on the website's
+    # *own* menu records — the copies of ``website.menu_home`` /
+    # ``website.menu_contactus`` that Odoo creates for each website
+    # (``website_id`` set, no xmlid). The xmlid-backed records are SHARED
+    # TEMPLATES (``website_id`` is NULL) and must stay that way; writing
+    # ``website_id`` on them would pull the template into the website and
+    # render a duplicate alongside the real copy.
+    #
+    # We locate the website-scoped records by their stable ``url`` *under this
+    # website's top menu* (never by the translatable ``name`` field).
+    home_menu = env["website.menu"].sudo().search([
+        ("parent_id", "=", top_menu.id),
+        ("url", "=", "/"),
+        ("website_id", "=", website.id),
+    ], limit=1)
+
+    if home_menu:
+        home_menu.sudo().write({
+            "parent_id": top_menu.id,
+            "sequence": 10,
+        })
+
+    # Official Contact Us: move it under our About group.
+    contact_menu = env["website.menu"].sudo().search([
+        ("parent_id", "=", top_menu.id),
+        ("url", "=", "/contactus"),
+        ("website_id", "=", website.id),
+    ], limit=1)
+
+    if contact_menu:
+        contact_menu.sudo().write({
+            "parent_id": resolved["menu_about"].id,
+            "sequence": 52,
+        })
 
 
 def post_init_hook(env):
