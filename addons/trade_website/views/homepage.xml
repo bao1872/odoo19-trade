@@ -203,7 +203,7 @@
                                 <article class="trade-product-card">
                                     <div class="trade-visual trade-visual-product">
                                         <img loading="lazy"
-                                             src="/trade_website/static/src/img/v04/products/air-duster.webp"
+                                             src="/trade_website/static/src/img/products/air-duster/air-duster-card.webp"
                                              alt="Cordless Air Duster with nozzles"/>
                                     </div>
                                     <div class="trade-product-body">
@@ -234,7 +234,7 @@
                                 <article class="trade-product-card">
                                     <div class="trade-visual trade-visual-product">
                                         <img loading="lazy"
-                                             src="/trade_website/static/src/img/v04/products/instant-print-camera.webp"
+                                             src="/trade_website/static/src/img/products/instant-print-camera/instant-camera-card.webp"
                                              alt="Instant Print Camera printing a photo"/>
                                     </div>
                                     <div class="trade-product-body">
@@ -269,7 +269,7 @@
                                 <article class="trade-product-card">
                                     <div class="trade-visual trade-visual-product">
                                         <img loading="lazy"
-                                             src="/trade_website/static/src/img/v04/products/ultrasonic-cutter.webp"
+                                             src="/trade_website/static/src/img/products/ultrasonic-cutter/ultrasonic-cutter-card.webp"
                                              alt="Ultrasonic Cutter"/>
                                     </div>
                                     <div class="trade-product-body">
